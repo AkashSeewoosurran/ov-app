@@ -1,0 +1,57 @@
+
+.top5-container{
+    position: absolute;
+    height: 20%;
+    width: 15%;
+    top : 33%;
+  }
+
+  .top5-table {
+    background-color: var(--primary-color);
+    height: 100%;
+  }
+  
+  .top5Cell{
+    font-family: "monoBold", Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .top5header{
+    padding-right: 2px;
+    background-color: var(--secondary-color);
+  }
+
+  .top5-damage-row{
+    padding: 0;
+    margin: 0;
+  }
+
+ .playerNameCell{
+    // clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0 100%, 0 0);
+    // background-color: #131213;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "monoBold", Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: white;
+    text-align: left;
+    padding-left: 5px;
+  }
+
+  .mat-header-row {
+    background-color: #ff002a;
+    color: #ffffff;
+  }
+
+
+  img {
+    display: block;
+    margin: 4px;
+    width: 30px;
+    height: 30px;
+  }

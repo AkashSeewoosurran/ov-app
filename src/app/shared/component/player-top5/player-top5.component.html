@@ -1,0 +1,28 @@
+<div class="top5-container">
+    <table mat-table class="top5-table" [dataSource]="top5playersDamage">
+
+      <ng-container matColumnDef="playerName">
+        <th mat-header-cell *matHeaderCellDef> PLAYER</th>
+        <td mat-cell class="top5Cell playerNameCell" *matCellDef="let element"><img [src]="element.picUrl" /> {{element.playerName}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="rank">
+        <th mat-header-cell class="top5Header" *matHeaderCellDef>
+          ELIMS
+        </th>
+        <td mat-cell class="top5Cell" *matCellDef="let element">
+          <ng-container >
+            {{element.killNum}}
+          </ng-container>
+        </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="damage">
+        <th mat-header-cell *matHeaderCellDef> DMG </th>
+        <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.damage}} </td>
+      </ng-container>
+  
+      <tr mat-header-row class="mat-header-row" *matHeaderRowDef="top5Columns"></tr>
+      <tr mat-row class="top5-damage-row" *matRowDef="let row; columns: top5Columns;"></tr>
+    </table>
+   </div>
