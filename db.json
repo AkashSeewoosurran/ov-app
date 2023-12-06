@@ -12,89 +12,89 @@
   "localteaminfo": [
     {
       "teamId": 10,
-      "teamName": "TeamUniquexx",
-      "teamTag": "UNIQ test1",
-      "teamLogo64": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_64_64",
-      "teamLogo128": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_128_128",
-      "teamLogo256": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_256_256",
-      "id": 1
-    },
-    {
-      "teamId": 11,
-      "teamName": "INSOLENT ESPORTS",
-      "teamTag": "INSOLENT test2",
-      "teamLogo64": "https://image1.challengermode.com/41657744-a14a-4b79-9eda-08dbe061f63e_64_64",
-      "teamLogo128": "https://image1.challengermode.com/41657744-a14a-4b79-9eda-08dbe061f63e_128_128",
-      "teamLogo256": "https://image1.challengermode.com/41657744-a14a-4b79-9eda-08dbe061f63e_256_256",
-      "id": 2
-    },
-    {
-      "teamId": 12,
-      "teamName": "Team Thunders",
-      "teamTag": "THUNDERS test3",
-      "teamLogo64": "https://image1.challengermode.com/99839365-7fdc-4422-3778-08dbab2ffc3a_64_64",
-      "teamLogo128": "https://image1.challengermode.com/99839365-7fdc-4422-3778-08dbab2ffc3a_128_128",
-      "teamLogo256": "https://image1.challengermode.com/99839365-7fdc-4422-3778-08dbab2ffc3a_256_256",
-      "id": 3
-    },
-    {
-      "teamId": 13,
-      "teamName": "Ragnarök [MRU]",
-      "teamTag": "RAGNAROK ",
-      "teamLogo64": "https://image1.challengermode.com/4f39d80f-649c-4596-3c47-08db5bcb0207_64_64",
-      "teamLogo128": "https://image1.challengermode.com/4f39d80f-649c-4596-3c47-08db5bcb0207_128_128",
-      "teamLogo256": "https://image1.challengermode.com/4f39d80f-649c-4596-3c47-08db5bcb0207_256_256",
-      "id": 4
-    },
-    {
-      "teamId": 14,
-      "teamName": "Rolex1",
-      "teamTag": "ROLEX",
-      "teamLogo64": "https://image1.challengermode.com/a89ce432-fb9c-4071-96fe-08db4a81b282_64_64",
-      "teamLogo128": "https://image1.challengermode.com/a89ce432-fb9c-4071-96fe-08db4a81b282_128_128",
-      "teamLogo256": "https://image1.challengermode.com/a89ce432-fb9c-4071-96fe-08db4a81b282_256_256",
-      "id": 5
-    },
-    {
-      "teamId": 15,
-      "teamName": "Persecuter",
-      "teamTag": "PERSEC",
-      "teamLogo64": "https://image1.challengermode.com/18da9de7-39eb-4e2b-a223-08dbe0617259_64_64",
-      "teamLogo128": "https://image1.challengermode.com/18da9de7-39eb-4e2b-a223-08dbe0617259_128_128",
-      "teamLogo256": "https://image1.challengermode.com/18da9de7-39eb-4e2b-a223-08dbe0617259_256_256",
-      "id": 6
-    },
-    {
-      "teamId": 16,
-      "teamName": "OUTT4 SP4CE🚀",
-      "teamTag": "OUTT4",
-      "teamLogo64": "https://image1.challengermode.com/176ea8cc-d615-4c7c-a6e5-08dbe0617259_64_64",
-      "teamLogo128": "https://image1.challengermode.com/176ea8cc-d615-4c7c-a6e5-08dbe0617259_128_128",
-      "teamLogo256": "https://image1.challengermode.com/176ea8cc-d615-4c7c-a6e5-08dbe0617259_256_256",
-      "id": 7
-    },
-    {
-      "teamId": 17,
-      "teamName": "3S - Special Striking Squad",
-      "teamTag": "3S",
-      "teamLogo64": "https://image1.challengermode.com/d9090808-2060-4bae-1b17-08dbbf9eaf2d_64_64",
-      "teamLogo128": "https://image1.challengermode.com/d9090808-2060-4bae-1b17-08dbbf9eaf2d_128_128",
-      "teamLogo256": "https://image1.challengermode.com/d9090808-2060-4bae-1b17-08dbbf9eaf2d_256_256",
-      "id": 8
-    },
-    {
-      "teamId": 18,
-      "teamName": "MAU eSports",
+      "teamName": "MAU ESPORTS",
       "teamTag": "MAU",
       "teamLogo64": "https://image1.challengermode.com/eca740e1-13d5-4f3b-0989-08dacf03a750_64_64",
       "teamLogo128": "https://image1.challengermode.com/eca740e1-13d5-4f3b-0989-08dacf03a750_128_128",
       "teamLogo256": "https://image1.challengermode.com/eca740e1-13d5-4f3b-0989-08dacf03a750_256_256",
+      "id": 1
+    },
+    {
+      "teamId": 11,
+      "teamName": "REALISTS ESPORTS",
+      "teamTag": "rst",
+      "teamLogo64": "https://image1.challengermode.com/1ba2825f-d1f7-4e97-df11-08dbe0617259_64_64",
+      "teamLogo128": "https://image1.challengermode.com/1ba2825f-d1f7-4e97-df11-08dbe0617259_128_128",
+      "teamLogo256": "https://image1.challengermode.com/1ba2825f-d1f7-4e97-df11-08dbe0617259_256_256",
+      "id": 2
+    },
+    {
+      "teamId": 12,
+      "teamName": "REALISTS X FORCE",
+      "teamTag": "rstx",
+      "teamLogo64": "https://image1.challengermode.com/c5727249-2e2f-43ee-decb-08dbe0617259_64_64",
+      "teamLogo128": "https://image1.challengermode.com/c5727249-2e2f-43ee-decb-08dbe0617259_128_128",
+      "teamLogo256": "https://image1.challengermode.com/c5727249-2e2f-43ee-decb-08dbe0617259_256_256",
+      "id": 3
+    },
+    {
+      "teamId": 13,
+      "teamName": "MAD4 XTREME",
+      "teamTag": "Mad4x",
+      "teamLogo64": "https://image1.challengermode.com/d4cd990e-fccf-4bc1-bffb-08dbab2ffc39_64_64",
+      "teamLogo128": "https://image1.challengermode.com/d4cd990e-fccf-4bc1-bffb-08dbab2ffc39_128_128",
+      "teamLogo256": "https://image1.challengermode.com/d4cd990e-fccf-4bc1-bffb-08dbab2ffc39_256_256",
+      "id": 4
+    },
+    {
+      "teamId": 14,
+      "teamName": "OUTT4 SP4CE",
+      "teamTag": "spe",
+      "teamLogo64": "https://image1.challengermode.com/176ea8cc-d615-4c7c-a6e5-08dbe0617259_64_64",
+      "teamLogo128": "https://image1.challengermode.com/176ea8cc-d615-4c7c-a6e5-08dbe0617259_128_128",
+      "teamLogo256": "https://image1.challengermode.com/176ea8cc-d615-4c7c-a6e5-08dbe0617259_256_256",
+      "id": 5
+    },
+    {
+      "teamId": 15,
+      "teamName": "MATRIX ESPORT",
+      "teamTag": "mte",
+      "teamLogo64": "https://image1.challengermode.com/c94d5638-7bfd-4a2c-e1d7-08dbe0617259_64_64",
+      "teamLogo128": "https://image1.challengermode.com/c94d5638-7bfd-4a2c-e1d7-08dbe0617259_128_128",
+      "teamLogo256": "https://image1.challengermode.com/c94d5638-7bfd-4a2c-e1d7-08dbe0617259_256_256",
+      "id": 6
+    },
+    {
+      "teamId": 16,
+      "teamName": "BIG BLACK CROCODILE",
+      "teamTag": "bbc",
+      "teamLogo64": "https://image1.challengermode.com/b7e1f41e-aac1-435a-8f75-08da0e6a8ac4_64_64",
+      "teamLogo128": "https://image1.challengermode.com/b7e1f41e-aac1-435a-8f75-08da0e6a8ac4_128_128",
+      "teamLogo256": "https://image1.challengermode.com/b7e1f41e-aac1-435a-8f75-08da0e6a8ac4_256_256",
+      "id": 7
+    },
+    {
+      "teamId": 17,
+      "teamName": "TEAM EGOX",
+      "teamTag": "EGOx",
+      "teamLogo64": "https://image1.challengermode.com/3e9ee028-e220-4680-574f-08dbbf9eaf2d_64_64",
+      "teamLogo128": "https://image1.challengermode.com/3e9ee028-e220-4680-574f-08dbbf9eaf2d_128_128",
+      "teamLogo256": "https://image1.challengermode.com/3e9ee028-e220-4680-574f-08dbbf9eaf2d_256_256",
+      "id": 8
+    },
+    {
+      "teamId": 18,
+      "teamName": "TEAMUNIQUE",
+      "teamTag": "Uniq",
+      "teamLogo64": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_64_64",
+      "teamLogo128": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_128_128",
+      "teamLogo256": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_256_256",
       "id": 9
     },
     {
       "teamId": 19,
-      "teamName": "vengeance Esport",
-      "teamTag": "VENGEANCE",
+      "teamName": "VENGEANCE ESPORT",
+      "teamTag": "vce",
       "teamLogo64": "https://image1.challengermode.com/b360ec69-8a46-4467-cb49-08dbe0617259_64_64",
       "teamLogo128": "https://image1.challengermode.com/b360ec69-8a46-4467-cb49-08dbe0617259_128_128",
       "teamLogo256": "https://image1.challengermode.com/b360ec69-8a46-4467-cb49-08dbe0617259_256_256",
@@ -102,26 +102,26 @@
     },
     {
       "teamId": 20,
-      "teamName": "CRYPTØ",
-      "teamTag": "CRYPTO",
-      "teamLogo64": "https://image1.challengermode.com/5c97926f-2b6e-4051-8a40-08db4a81b282_64_64",
-      "teamLogo128": "https://image1.challengermode.com/5c97926f-2b6e-4051-8a40-08db4a81b282_128_128",
-      "teamLogo256": "https://image1.challengermode.com/5c97926f-2b6e-4051-8a40-08db4a81b282_256_256",
+      "teamName": "3S - SPECIAL STRIKING SQUAD",
+      "teamTag": "3S",
+      "teamLogo64": "https://image1.challengermode.com/d9090808-2060-4bae-1b17-08dbbf9eaf2d_64_64",
+      "teamLogo128": "https://image1.challengermode.com/d9090808-2060-4bae-1b17-08dbbf9eaf2d_128_128",
+      "teamLogo256": "https://image1.challengermode.com/d9090808-2060-4bae-1b17-08dbbf9eaf2d_256_256",
       "id": 11
     },
     {
       "teamId": 21,
-      "teamName": "HIDDEN POWERR",
-      "teamTag": "HIDDEN",
-      "teamLogo64": "https://image1.challengermode.com/5383ffea-ab54-42c0-910c-08db67ff1763_64_64",
-      "teamLogo128": "https://image1.challengermode.com/5383ffea-ab54-42c0-910c-08db67ff1763_128_128",
-      "teamLogo256": "https://image1.challengermode.com/5383ffea-ab54-42c0-910c-08db67ff1763_256_256",
+      "teamName": "MZR G",
+      "teamTag": "mzr",
+      "teamLogo64": "https://image1.challengermode.com/87e76644-d010-477b-5f69-08dbab2ffc3a_64_64",
+      "teamLogo128": "https://image1.challengermode.com/87e76644-d010-477b-5f69-08dbab2ffc3a_128_128",
+      "teamLogo256": "https://image1.challengermode.com/87e76644-d010-477b-5f69-08dbab2ffc3a_256_256",
       "id": 12
     },
     {
       "teamId": 22,
-      "teamName": "SMFxESPORTS.",
-      "teamTag": "SMFX",
+      "teamName": "SMFXESPORTS",
+      "teamTag": "SMF",
       "teamLogo64": "https://image1.challengermode.com/27555931-a5a2-4c2d-919c-08db31c47fdb_64_64",
       "teamLogo128": "https://image1.challengermode.com/27555931-a5a2-4c2d-919c-08db31c47fdb_128_128",
       "teamLogo256": "https://image1.challengermode.com/27555931-a5a2-4c2d-919c-08db31c47fdb_256_256",
@@ -129,29 +129,29 @@
     },
     {
       "teamId": 23,
-      "teamName": "Team EGOx",
-      "teamTag": "EGOX",
-      "teamLogo64": "https://image1.challengermode.com/3e9ee028-e220-4680-574f-08dbbf9eaf2d_64_64",
-      "teamLogo128": "https://image1.challengermode.com/3e9ee028-e220-4680-574f-08dbbf9eaf2d_128_128",
-      "teamLogo256": "https://image1.challengermode.com/3e9ee028-e220-4680-574f-08dbbf9eaf2d_256_256",
+      "teamName": "IAMESPORT",
+      "teamTag": "iam",
+      "teamLogo64": "https://image1.challengermode.com/7c992daa-d092-42dc-abcd-08dbd08b5c64_64_64",
+      "teamLogo128": "https://image1.challengermode.com/7c992daa-d092-42dc-abcd-08dbd08b5c64_128_128",
+      "teamLogo256": "https://image1.challengermode.com/7c992daa-d092-42dc-abcd-08dbd08b5c64_256_256",
       "id": 14
     },
     {
       "teamId": 24,
-      "teamName": "For You",
-      "teamTag": "4U",
-      "teamLogo64": "https://image1.challengermode.com/02c3902a-8a03-42b2-6072-08db67fe1fe8_64_64",
-      "teamLogo128": "https://image1.challengermode.com/02c3902a-8a03-42b2-6072-08db67fe1fe8_128_128",
-      "teamLogo256": "https://image1.challengermode.com/02c3902a-8a03-42b2-6072-08db67fe1fe8_256_256",
+      "teamName": "HIDDEN POWERR",
+      "teamTag": "hp",
+      "teamLogo64": "https://image1.challengermode.com/5383ffea-ab54-42c0-910c-08db67ff1763_64_64",
+      "teamLogo128": "https://image1.challengermode.com/5383ffea-ab54-42c0-910c-08db67ff1763_128_128",
+      "teamLogo256": "https://image1.challengermode.com/5383ffea-ab54-42c0-910c-08db67ff1763_256_256",
       "id": 15
     },
     {
       "teamId": 25,
-      "teamName": "MRU ILLEGALS",
-      "teamTag": "MRU",
-      "teamLogo64": "https://image1.challengermode.com/ba5c1278-7180-46c3-90cd-08dbe0617259_64_64",
-      "teamLogo128": "https://image1.challengermode.com/ba5c1278-7180-46c3-90cd-08dbe0617259_128_128",
-      "teamLogo256": "https://image1.challengermode.com/ba5c1278-7180-46c3-90cd-08dbe0617259_256_256",
+      "teamName": "DEALERS EXECUTION",
+      "teamTag": "D3x",
+      "teamLogo64": "https://image1.challengermode.com/d9b5356b-f20a-4ddd-fa72-08dbbf9eaf2c_64_64",
+      "teamLogo128": "https://image1.challengermode.com/d9b5356b-f20a-4ddd-fa72-08dbbf9eaf2c_128_128",
+      "teamLogo256": "https://image1.challengermode.com/d9b5356b-f20a-4ddd-fa72-08dbbf9eaf2c_256_256",
       "id": 16
     }
   ],
