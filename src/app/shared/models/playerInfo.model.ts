@@ -39,6 +39,10 @@ export interface PlayerInfoList {
   useFlashGrenadeNum: number;
 }
 
+export interface lstPlayerInfo {
+  playerInfoList : PlayerInfoList[]
+}
+
 export interface PlayerStatus {
   uId: string;
   teamName: string;

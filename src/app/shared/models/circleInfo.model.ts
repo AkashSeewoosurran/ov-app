@@ -5,3 +5,8 @@ export interface CircleInfo {
     Counter: number,  
     MaxTime: number,
 }
+
+export interface CircleZone {
+    GameTime : number,
+    circleInfo : CircleInfo
+}

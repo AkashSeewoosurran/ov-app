@@ -11,6 +11,10 @@ export interface TeamInfoList {
   players: PlayerStatus[];
 }
 
+export interface lstTeamInfo {
+  teamInfoList : TeamInfoList[]
+}
+
 export interface LocalTeamInfo {
   teamId: number;
   teamName: string;
