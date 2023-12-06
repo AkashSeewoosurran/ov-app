@@ -1,0 +1,32 @@
+<div class="name-box">
+  <div class="start-box">
+    <img class="player-pic" [src]="this.currentPlayerInfo?.character" />
+  </div>
+  <div class="middle-box"></div>
+  <div class="end-box">
+    <div class="playerInfo">
+      <div class="logo">
+        <img class="logo-pic" src="assets/impact.png">
+      </div>
+      <div class="text">
+        <p>{{currentPlayerInfo?.damage}} </p>
+      </div>
+    </div>
+    <div class="playerInfo">
+      <div class="logo">
+        <img class="logo-pic" src="assets/grenade.png">
+      </div>
+      <div class="text">
+        <p>{{currentPlayerInfo?.killNumByGrenade}}</p>
+      </div>
+    </div>
+    <div class="playerInfo">
+      <div class="logo">
+        <img class="logo-pic" src="assets/hit.png">
+      </div>
+      <div class="text">
+        <p>{{currentPlayerInfo?.heal}}</p>
+      </div>
+    </div>
+  </div>
+</div>
