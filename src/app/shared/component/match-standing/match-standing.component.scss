@@ -1,0 +1,22 @@
+img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.row-header {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    font-weight: bold;
+}
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    mat-card {
+        margin: 0 10px;
+        width: 50%;
+    }
+}
