@@ -1,0 +1,16 @@
+<div class="announcement-wrapper">  
+    <div class="announcement" *ngIf="announcement" [@fadeInOut]>
+            <div class="left">
+                <img class="left-logo" [src]="announcement.logoPicUrl"/>
+            </div>
+            <div class="middle">
+                <div class="top-text">{{announcement.teamName}}</div>
+                <div class="bottom-text">BACK TO LOBBY!</div>
+            </div>
+            <div class="right">
+                <div class="right-top-text">#{{announcement.rank}}</div>
+                <div class="right-bottom-text">ELIMS   {{announcement.killNum}}</div>
+            </div>
+        </div>
+        <ng-template #empty></ng-template>
+    </div>
