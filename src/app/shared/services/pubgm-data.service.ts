@@ -14,10 +14,11 @@ import {
   LocalTeamInfo,
   TeamInfoList,
   ExcelTeamInfo,
+  lstTeamInfo,
 } from '../models/teamInfo.model';
-import { ObsPlayer, PlayerInfoList } from '../models/playerInfo.model';
+import { ObsPlayer, PlayerInfoList, lstPlayerInfo } from '../models/playerInfo.model';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { CircleInfo } from '../models/circleInfo.model';
+import { CircleInfo, CircleZone } from '../models/circleInfo.model';
 import { MatchStandingInfo } from '../models/matchStanding.model';
 
 @Injectable({
@@ -30,21 +31,21 @@ export class PubgmDataService {
 
   constructor(public http: HttpClient) {}
 
-  getTeamInfoList(): Observable<TeamInfoList[]> {
-    return interval(2000).pipe(
+  getTeamInfoList(): Observable<lstTeamInfo> {
+    return interval(1000).pipe(
       switchMap(() => {
-        return this.http.get<TeamInfoList[]>(
-          `${this.localService}/getteaminfolist`
+        return this.http.get<lstTeamInfo>(
+          `${this.service}/getteaminfolist`
         );
       })
     );
   }
 
-  getPlayerInfoList(): Observable<PlayerInfoList[]> {
-    return interval(2000).pipe(
+  getPlayerInfoList(): Observable<lstPlayerInfo> {
+    return interval(1000).pipe(
       switchMap(() => {
-        return this.http.get<PlayerInfoList[]>(
-          `${this.localService}/gettotalplayerlist`
+        return this.http.get<lstPlayerInfo>(
+          `${this.service}/gettotalplayerlist`
         );
       })
     );
@@ -55,18 +56,30 @@ export class PubgmDataService {
   }
 
   getObservingPlayer(): Observable<ObsPlayer> {
-    return this.http.get<ObsPlayer>(`${this.localService}/getobservingplayer`);
+    return interval(1000).pipe(
+      switchMap(() => {
+        return this.http.get<ObsPlayer>(
+          `${this.service}/getobservingplayer`
+        );
+      })
+    );
   }
 
-  getCircleInfo(): Observable<CircleInfo> {
-    return this.http.get<CircleInfo>(`${this.localService}/getcircleinfo`);
+  getCircleInfo(): Observable<CircleZone> {
+    return interval(1000).pipe(
+      switchMap(() => {
+        return this.http.get<CircleZone>(
+          `${this.service}/getcircleinfo`
+        );
+      })
+    );
   }
 
   corsTest(): Observable<TeamInfoList[]> {
-    return interval(2000).pipe(
+    return interval(1000).pipe(
       switchMap(() => {
         return this.http.get<TeamInfoList[]>(
-          `${this.localService}/getteaminfolist`
+          `${this.service}/getteaminfolist`
         );
       })
     );
