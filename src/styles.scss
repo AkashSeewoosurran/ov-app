@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100vh; }
+body { background-color: transparent; }
+
+
+@font-face {
+    font-family: 'Vermin Vibes 1989';
+    src: url('^/assets/fonts/VerminVibes1989.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'monoBold';
+    src: url('^/assets/fonts/Disket-Mono-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'monoReg';
+    src: url('^/assets/fonts/Disket-Mono-Regular.ttf') format('truetype');
+  }
+
+  :root{
+    --primary-color: #131213;
+    --secondary-color: #ff002a;
+    --tertiary-color: #ffffff;
+  }
