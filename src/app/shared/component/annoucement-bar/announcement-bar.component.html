@@ -1,0 +1,10 @@
+<div class="container" [@slideInOutAnimationRight] = "slideAnnouncement ? 'in' : 'out'">
+    <div class="logo-container">
+        <img src="assets/players/default.png" >
+    </div>
+    <div class="text-container">
+        <span class="player-name">{{player.playerName}}</span>
+        <span class="message">{{announcementMessage}}</span>
+    </div>
+    <img class="team-logo" [src]="player.picUrl"/>
+</div>
