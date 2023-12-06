@@ -53,13 +53,15 @@ export class DashboardComponent implements OnInit {
 
       /* save data */
       this.excelData = utils.sheet_to_json<ExcelTeamInfo>(ws);
+
+
       console.log(this.excelData);
     };
     reader.readAsBinaryString(target.files[0]);
   }
 
   saveData() {
-    // this.updateExcelDataSequentially();
+
     this.service.saveExcelTeamInfoList(this.excelData).subscribe({
       complete: () => {
         this.getExcelTeamInfoList();

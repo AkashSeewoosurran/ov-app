@@ -27,7 +27,7 @@ export class ObsPlayerComponent implements OnInit {
       this.service.getPlayerInfoList(),
       this.service.getObservingPlayer(),
     ]).subscribe(([playerInfoList, currentPlayer]) => {
-      this.assignDataToCurrentPlayer(playerInfoList , currentPlayer);
+      this.assignDataToCurrentPlayer(playerInfoList.playerInfoList , currentPlayer);
     }
     );
 
@@ -45,7 +45,6 @@ export class ObsPlayerComponent implements OnInit {
           .catch(() => {
             this.currentPlayerInfo!.character = 'assets/players/default.png'; // Update the property assignment
           });
-        console.log("currentPlayerInfo: ", this.currentPlayerInfo);
   }
 
   private checkImageExists(url: string): Promise<boolean> {

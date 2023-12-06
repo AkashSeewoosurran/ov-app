@@ -18,7 +18,7 @@ import {
   animate,
 } from '@angular/animations';
 import { PubgmDataService } from '../../services/pubgm-data.service';
-import { CircleInfo } from '../../models/circleInfo.model';
+import { CircleInfo, CircleZone } from '../../models/circleInfo.model';
 
 @Component({
   selector: 'app-zone-progressbar',
@@ -50,7 +50,7 @@ export class ZoneProgressbarComponent implements OnInit, OnDestroy {
   value: number = 100;
   timeLeft: number = 0;
   private subscription: Subscription;
-  circleInfo: CircleInfo;
+  circleInfo: CircleZone;
   currentCircleInfo: CircleInfo = {
     GameTime: 160,
     CircleStatus: 0,
@@ -65,48 +65,23 @@ export class ZoneProgressbarComponent implements OnInit, OnDestroy {
   timerStarted: boolean = false;
   private alive: boolean = true;
 
+  triggerTime : number = 0;
+
   constructor(private service: PubgmDataService) {}
 
   ngOnInit(): void {
     this.service.getCircleInfo().subscribe({
-      next: (circleInfo: CircleInfo) => {
+      next: (circleInfo: CircleZone) => {
+        console.log("circleInfo", circleInfo);
         this.circleInfo = circleInfo;
+        if(circleInfo.circleInfo.CircleStatus == 0){
+          console.log(this.circleInfo.circleInfo.MaxTime - this.circleInfo.circleInfo.Counter);
+            if(this.circleInfo.circleInfo.MaxTime - this.circleInfo.circleInfo.Counter == 15){
+              console.log("NEED TO START PROGRESS BAR");
+              this.progressBoolean.next(true);
+            }
+        }
       },
-    });
-
-    interval(1000).subscribe(() => {
-      console.log(this.circleInfo.GameTime);
-      this.currentCircleInfo.GameTime = this.circleInfo.GameTime++;
-      switch (true) {
-        case this.currentCircleInfo.GameTime >= 170 &&
-          this.currentCircleInfo.GameTime <= 185:
-          this.currentCircleInfo.CircleIndex = 1;
-          this.progressBoolean.next(true);
-          break;
-        case this.currentCircleInfo.GameTime >= 190 &&
-          this.currentCircleInfo.GameTime <= 205:
-          this.currentCircleInfo.CircleIndex = 2;
-          this.progressBoolean.next(true);
-          break;
-        case this.currentCircleInfo.GameTime <= 650:
-          this.currentCircleInfo.CircleIndex = 3;
-          break;
-        case this.currentCircleInfo.GameTime <= 770:
-          this.currentCircleInfo.CircleIndex = 4;
-          break;
-        case this.currentCircleInfo.GameTime <= 890:
-          this.currentCircleInfo.CircleIndex = 5;
-          break;
-        case this.currentCircleInfo.GameTime <= 980:
-          this.currentCircleInfo.CircleIndex = 6;
-          break;
-        case this.currentCircleInfo.GameTime <= 1070:
-          this.currentCircleInfo.CircleIndex = 7;
-          break;
-        case this.currentCircleInfo.GameTime <= 1130:
-          this.currentCircleInfo.CircleIndex = 8;
-          break;
-      }
     });
 
     this.progressBoolean

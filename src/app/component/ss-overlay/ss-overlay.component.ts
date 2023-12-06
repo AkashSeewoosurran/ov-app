@@ -12,6 +12,7 @@ import {
   PlayerStatus,
 } from 'src/app/shared/models/playerInfo.model';
 import {
+  ExcelTeamInfo,
   LocalTeamInfo,
   TeamInfoList,
 } from 'src/app/shared/models/teamInfo.model';
@@ -62,9 +63,9 @@ import { SharedService } from 'src/app/shared/services/shared-service.service';
   ],
 })
 export class SsOverlayComponent implements OnInit {
-  localTeamInfo: LocalTeamInfo[] = [];
+  localTeamInfo: ExcelTeamInfo[] = [];
   teamInfoList: TeamInfoList[] = [];
-  teamInfo: LocalTeamInfo | undefined;
+  teamInfo: ExcelTeamInfo | undefined;
   top5boolean: boolean = false;
 
   lstTestArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -75,7 +76,7 @@ export class SsOverlayComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.service.getLocalTeamInfo().subscribe((res) => {
+    this.service.getExcelTeamInfoList().subscribe((res) => {
       this.localTeamInfo = res;
     });
 
@@ -87,24 +88,26 @@ export class SsOverlayComponent implements OnInit {
       this.service.getTeamInfoList(),
       this.service.getPlayerInfoList(),
     ]).subscribe(([teamInfoList, playerInfoList]) => {
-      this.filterTill5Teams(teamInfoList);
-      this.assignLogoToPlayersAndSort(playerInfoList, this.localTeamInfo);
+      this.filterTill5Teams(teamInfoList.teamInfoList);
+      this.assignLogoToPlayersAndSort(playerInfoList.playerInfoList, this.localTeamInfo);
       this.AddPlayerStatusToTeamInfoList(
-        this.assignLogoToTeamsAndSort(teamInfoList, this.localTeamInfo),
-        playerInfoList
+        this.assignLogoToTeamsAndSort(teamInfoList.teamInfoList, this.localTeamInfo),
+        playerInfoList.playerInfoList
       );
     });
   }
 
   assignLogoToPlayersAndSort(
     res: PlayerInfoList[],
-    localTeamInfo: LocalTeamInfo[]
+    localTeamInfo: ExcelTeamInfo[]
   ): void {
     res.forEach((player: PlayerInfoList) => {
       this.teamInfo = localTeamInfo.find(
-        (localTeam: LocalTeamInfo) => localTeam.teamName === player.teamName
+        (localTeam: ExcelTeamInfo) => localTeam.teamName === player.teamName
       );
-      player.picUrl = `assets/Logo/${player.teamName}.png`;
+      if(this.teamInfo){
+        player.picUrl = this.teamInfo.teamLogo64;
+      }
     });
     this.sharedService.updatePlayerInfoList(res);
   }
@@ -118,11 +121,11 @@ export class SsOverlayComponent implements OnInit {
 
   assignLogoToTeamsAndSort(
     res: TeamInfoList[],
-    localTeamInfo: LocalTeamInfo[]
+    localTeamInfo: ExcelTeamInfo[]
   ): TeamInfoList[] {
     res.forEach((team: TeamInfoList) => {
       this.teamInfo = localTeamInfo.find(
-        (localTeam: LocalTeamInfo) =>
+        (localTeam: ExcelTeamInfo) =>
           localTeam.teamName === team.teamName ||
           localTeam.teamId === team.teamId
       );
@@ -131,7 +134,10 @@ export class SsOverlayComponent implements OnInit {
       } else {
         team.teamTag = team.teamName.slice(0, 4);
       }
-      team.logoPicUrl = `${this.teamInfo?.teamLogo}`;
+      if(this.teamInfo){
+        team.logoPicUrl = `${this.teamInfo.teamLogo64}`;
+      }
+
     });
     return res.sort((a: any, b: any) => {
       if (a.liveMemberNum === 0 && b.liveMemberNum !== 0) {

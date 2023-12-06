@@ -78,8 +78,8 @@ export class MatchStandingComponent
       .subscribe(([localTeamInfo, playerInfoList, teamInfoList]) => {
         console.log('afterviewinit');
         this.localTeamInfo = localTeamInfo;
-        this.playerInfoList = playerInfoList;
-        this.teamInfoList = teamInfoList;
+        this.playerInfoList = playerInfoList.playerInfoList;
+        this.teamInfoList = teamInfoList.teamInfoList;
       });
   }
 
