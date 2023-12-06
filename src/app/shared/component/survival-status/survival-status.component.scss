@@ -1,1 +1,124 @@
+.mdc-data-table__cell,
+.mdc-data-table__header-cell {
+  padding: 0;
+}
+
+.container-box {
+  float: right;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  overflow: hidden;
+  width: 18%;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  tr {
+    height: 36px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--secondary-color);
+  }
+  td::before {
+    font-family: "freecam", Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    color: var(--tertiary-color);
+    min-width: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+table {
+  overflow: hidden;
+  vertical-align: bottom;
+  padding-bottom: 25%;
+  background-color: transparent;
+
+}
+
+.teamName {
+  line-height: 24px;
+  font-weight: bold;
+  color: var(--tertiary-color);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: block;
+    margin: 4px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.aliveRowbackground {
+  background-color: var(--secondary-color);;
+}
+
+.imageDead {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.alive-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
+
+.teamNameCell,
+.playerNameCell {
+  font-family: "monoBold", Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: var(--tertiary-color);
+  text-align: left;
+  padding-left: 5px;
+}
+
+.matRows {
+  position: relative;
+  background-color: #131213de;
+}
+
+.aliveStatus {
+  clip-path: polygon(25% 0, 75% 0, 75% 100%, 25% 100%);
+  height: 20px;
+  width: 10px;
+}
+
+
+
+th,
+.mat-header-cell {
+  color: var(--tertiary-color);
+  font-family: "monoReg", Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+
+.killCell,
+.aliveCell,
+.aliveHeaderCell {
+  padding: 0 10px 0 10px;
+}
+
+.killCell {
+  font-family: "monoBold", Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: var(--tertiary-color);
+  text-align: center;
+}
 
