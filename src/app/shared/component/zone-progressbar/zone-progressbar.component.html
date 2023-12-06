@@ -1,0 +1,10 @@
+<div class="bar-container" [@slideUpDown]="(progressBoolean | async) ? 'down' : 'up'">
+    <div class="timer-container"><span class="timer-text"> {{this.timeLeft }}</span></div>
+    <div class="close-container">
+        <span class="close-text"> CIRCLE CLOSING IN </span>
+    </div>
+    <div class="progress-container">
+        <mat-progress-bar mode="determinate" [value]="value"></mat-progress-bar>
+    </div>
+
+</div>

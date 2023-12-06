@@ -1,0 +1,62 @@
+.bar-container {
+    width: 50%;
+    height: 41px;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:host ::ng-deep mat-progress-bar {
+    --mdc-linear-progress-active-indicator-height: 41px;
+    --mdc-linear-progress-track-height: 41px;
+    --mdc-linear-progress-active-indicator-color: var(--secondary-color);
+    --mdc-linear-progress-track-color: var(--primary-color);
+}
+
+.progress-container {
+    width: 80%;
+    transform: skew(-20deg);
+}
+
+.timer-container {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    transform: skew(-20deg);
+}
+
+.close-container {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tertiary-color);
+    transform: skew(-20deg);
+}
+
+.close-text {
+    width: 80%;
+    font-family: "monoBold", Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    text-wrap: balance;
+    transform: skew(20deg);
+}
+
+.timer-text {
+    font-family: "monoBold", Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: var(--tertiary-color);
+    transform: skew(20deg);
+}
