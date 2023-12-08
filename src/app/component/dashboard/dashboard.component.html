@@ -54,10 +54,16 @@
 
   </mat-tab>
   <mat-tab label="MATCH STANDING">
-    <app-match-standing></app-match-standing>
+    <div class="container">
+      <div class="match-container">
+        <app-match-standing></app-match-standing>
+      </div>
+      <div class="game-container">
+        <app-game-standing></app-game-standing>
+      </div>
+    </div>
   </mat-tab>
   <mat-tab label="GAME STANDING">
-    <app-game-standing></app-game-standing>
   </mat-tab>
 </mat-tab-group>
 

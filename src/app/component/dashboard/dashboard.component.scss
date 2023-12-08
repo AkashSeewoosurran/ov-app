@@ -39,3 +39,14 @@
         width: 50%;
     }
 }
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+    .game-container,
+    .match-container {
+        width: 50%;
+    }
+}
