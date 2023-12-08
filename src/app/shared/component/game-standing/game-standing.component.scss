@@ -17,6 +17,11 @@ img {
 
     mat-card {
         margin: 0 10px;
-        width: 50%;
+        width: 100%;
     }
+}
+
+.header-card {
+    height: auto;
+    overflow: hidden;
 }
