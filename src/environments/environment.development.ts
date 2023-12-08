@@ -10,4 +10,5 @@ export const environment = {
   },
   apiUrl: 'http://192.168.100.236:10086',
   localUrl: 'http://127.0.0.1:3002',
+  matchUrl: 'http://localhost:3000',
 };
