@@ -1,4 +1,4 @@
-<div class="top5-container">
+<div class="top5-container" [@slideInOutAnimationLeft]="showTop5 ? 'in' : 'out'">
     <table mat-table class="top5-table" [dataSource]="top5playersDamage">
 
       <ng-container matColumnDef="playerName">
