@@ -6,6 +6,7 @@ import {
   concatMap,
   from,
   interval,
+  map,
   of,
   switchMap,
 } from 'rxjs';
@@ -16,9 +17,12 @@ import {
   ExcelTeamInfo,
   lstTeamInfo,
 } from '../models/teamInfo.model';
-import { ObsPlayer, PlayerInfoList, lstPlayerInfo } from '../models/playerInfo.model';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { CircleInfo, CircleZone } from '../models/circleInfo.model';
+import {
+  ObsPlayer,
+  PlayerInfoList,
+  lstPlayerInfo,
+} from '../models/playerInfo.model';
+import { CircleZone } from '../models/circleInfo.model';
 import { MatchStandingInfo } from '../models/matchStanding.model';
 
 @Injectable({
@@ -27,29 +31,65 @@ import { MatchStandingInfo } from '../models/matchStanding.model';
 export class PubgmDataService {
   private service = environment.apiUrl;
   private localService = environment.localUrl;
-  destroyRef = inject(DestroyRef);
+  private matchService = environment.matchUrl;
 
   constructor(public http: HttpClient) {}
 
-  getTeamInfoList(): Observable<lstTeamInfo> {
+  getTeamInfoList(): Observable<TeamInfoList[]> {
     return interval(1000).pipe(
       switchMap(() => {
-        return this.http.get<lstTeamInfo>(
-          `${this.service}/getteaminfolist`
+        return this.http.get<TeamInfoList[]>(
+          `${this.localService}/getteaminfolist`
         );
       })
     );
   }
 
-  getPlayerInfoList(): Observable<lstPlayerInfo> {
+  // getTeamInfoList(): Observable<lstTeamInfo> {
+  //   return interval(1000).pipe(
+  //     switchMap(() => {
+  //       return this.http.get<lstTeamInfo>(
+  //         `${this.service}/getteaminfolist`
+  //       );
+  //     })
+  //   );
+  // }
+
+  //local use without api
+  getPlayerInfoList(): Observable<PlayerInfoList[]> {
     return interval(1000).pipe(
       switchMap(() => {
-        return this.http.get<lstPlayerInfo>(
-          `${this.service}/gettotalplayerlist`
+        return this.http.get<PlayerInfoList[]>(
+          `${this.localService}/gettotalplayerlist`
         );
+      }),
+      map((playerInfoListArray: PlayerInfoList[]) => {
+        return playerInfoListArray.map((playerInfoList) => {
+          // Assign a default value to an attribute
+          playerInfoList.character = 'assets/players/default.png';
+          return playerInfoList;
+        });
       })
     );
   }
+
+  // getPlayerInfoList(): Observable<lstPlayerInfo> {
+  //   return interval(1000).pipe(
+  //     switchMap(() => {
+  //       return this.http.get<lstPlayerInfo>(
+  //         `${this.localService}/gettotalplayerlist`
+  //       );
+  //     }),
+  //     map((lstPlayerInfo: lstPlayerInfo) => {
+  //       lstPlayerInfo.playerInfoList = lstPlayerInfo.playerInfoList.map(playerInfoList => {
+  //         // Assign a default value to an attribute
+  //         playerInfoList.character = 'assets/players/transparent.png';
+  //         return playerInfoList;
+  //       });
+  //       return lstPlayerInfo;
+  //     })
+  //   );
+  // }
 
   getLocalTeamInfo(): Observable<LocalTeamInfo[]> {
     return this.http.get<LocalTeamInfo[]>(`${this.localService}/getteaminfo`);
@@ -59,7 +99,7 @@ export class PubgmDataService {
     return interval(1000).pipe(
       switchMap(() => {
         return this.http.get<ObsPlayer>(
-          `${this.service}/getobservingplayer`
+          `${this.localService}/getobservingplayer`
         );
       })
     );
@@ -68,9 +108,7 @@ export class PubgmDataService {
   getCircleInfo(): Observable<CircleZone> {
     return interval(1000).pipe(
       switchMap(() => {
-        return this.http.get<CircleZone>(
-          `${this.service}/getcircleinfo`
-        );
+        return this.http.get<CircleZone>(`${this.service}/getcircleinfo`);
       })
     );
   }
@@ -78,9 +116,7 @@ export class PubgmDataService {
   corsTest(): Observable<TeamInfoList[]> {
     return interval(1000).pipe(
       switchMap(() => {
-        return this.http.get<TeamInfoList[]>(
-          `${this.service}/getteaminfolist`
-        );
+        return this.http.get<TeamInfoList[]>(`${this.service}/getteaminfolist`);
       })
     );
   }
@@ -131,14 +167,14 @@ export class PubgmDataService {
   saveMatchStanding(matchStanding: MatchStandingInfo[], matchId: number) {
     return from(matchStanding).pipe(
       concatMap((team) =>
-        this.http.post(`${this.localService}/matchstanding${matchId}`, team)
+        this.http.post(`${this.matchService}/matchstanding${matchId}`, team)
       )
     );
   }
 
   getMatchStanding(matchId: number): Observable<MatchStandingInfo[]> {
     return this.http.get<MatchStandingInfo[]>(
-      `${this.localService}/matchstanding${matchId}?_sort=totalPoints&_order=desc`
+      `${this.matchService}/matchstanding${matchId}?_sort=totalPoints&_order=desc`
     );
   }
 }
