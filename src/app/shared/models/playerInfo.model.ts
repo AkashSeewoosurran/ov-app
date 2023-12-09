@@ -40,7 +40,7 @@ export interface PlayerInfoList {
 }
 
 export interface lstPlayerInfo {
-  playerInfoList : PlayerInfoList[]
+  playerInfoList: PlayerInfoList[];
 }
 
 export interface PlayerStatus {
@@ -55,4 +55,17 @@ export interface PlayerStatus {
 
 export interface ObsPlayer {
   observingPlayer: { 0: string; GunADS: boolean };
+}
+
+export interface mvpPlayer {
+  uId: string;
+  playerName: string;
+  teamName: string;
+  damage: number;
+  assists: number;
+  survivalTime: number;
+  inDamage: number;
+  knockouts: number;
+  killNum: number;
+  rank: number;
 }
