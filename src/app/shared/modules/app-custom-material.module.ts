@@ -7,6 +7,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
+import { MatListModule } from '@angular/material/list';
 // Import other Angular Material modules here
 
 const materialModules = [
@@ -18,6 +19,7 @@ const materialModules = [
   MatCardModule,
   MatToolbarModule,
   MatSelectModule,
+  MatListModule,
 ];
 
 @NgModule({
