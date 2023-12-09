@@ -11,6 +11,7 @@ import { AnnoucementElimsComponent } from '../component/annoucement-elims/annouc
 import { MatchStandingComponent } from '../component/match-standing/match-standing.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GameStandingComponent } from '../component/game-standing/game-standing.component';
+import { PlayerStatsComponent } from '../component/player-stats/player-stats.component';
 
 const components = [
   SurvivalStatusComponent,
@@ -22,6 +23,7 @@ const components = [
   AnnoucementElimsComponent,
   MatchStandingComponent,
   GameStandingComponent,
+  PlayerStatsComponent,
 ];
 
 const modules = [
