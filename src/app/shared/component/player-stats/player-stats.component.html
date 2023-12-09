@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>MVP PLAYER</mat-card-title>
+        <mat-card-subtitle>Generate MVP player</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="mvp-container" *ngIf="mvpPlayer">
+            <mat-list>
+                <mat-list-item >PLAYER : {{mvpPlayer.playerName}}</mat-list-item>
+                <mat-list-item >TEAM : {{mvpPlayer.teamName}}</mat-list-item>
+                <mat-list-item >ELIMS : {{mvpPlayer.killNum}}</mat-list-item>
+                <mat-list-item >DAMAGE : {{mvpPlayer.damage}}</mat-list-item>
+              </mat-list>
+              <mat-list>
+                <mat-list-item >ASSISTS : {{mvpPlayer.assists}}</mat-list-item>
+                <mat-list-item >KNOCKOUTS : {{mvpPlayer.knockouts}}</mat-list-item>
+                <mat-list-item >SURVIVE TIME : {{mvpPlayer.survivalTime}}</mat-list-item>
+                <mat-list-item >DAMAGE TAKEN : {{mvpPlayer.inDamage}}</mat-list-item>
+              </mat-list>
+        </div>
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button mat-raised-button color="primary" (click)="getMvpPlayer()">Generate</button>
+    </mat-card-actions>
+</mat-card>
