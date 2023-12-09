@@ -17,6 +17,9 @@
                 <mat-list-item >SURVIVE TIME : {{mvpPlayer.survivalTime}}</mat-list-item>
                 <mat-list-item >DAMAGE TAKEN : {{mvpPlayer.inDamage}}</mat-list-item>
               </mat-list>
+              <div class="img-container">
+                <img [src]="mvpPlayer.character" />
+              </div>
         </div>
     </mat-card-content>
     <mat-card-actions align="end">

@@ -3,6 +3,19 @@
     flex-direction: row;
 
     mat-list {
-        width: 50%;
+        width: 33%;
     }
+
+    .img-container {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: auto;
+            height: 200px;
+        }
+    }
+
 }
