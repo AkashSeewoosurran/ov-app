@@ -68,4 +68,6 @@ export interface mvpPlayer {
   knockouts: number;
   killNum: number;
   rank: number;
+  character: string;
+  teamLogo: string;
 }

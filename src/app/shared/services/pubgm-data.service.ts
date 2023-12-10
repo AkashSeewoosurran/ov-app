@@ -4,6 +4,7 @@ import {
   Observable,
   catchError,
   concatMap,
+  forkJoin,
   from,
   interval,
   map,
@@ -38,9 +39,27 @@ export class PubgmDataService {
   getTeamInfoList(): Observable<TeamInfoList[]> {
     return interval(1000).pipe(
       switchMap(() => {
-        return this.http.get<TeamInfoList[]>(
-          `${this.localService}/getteaminfolist`
-        );
+        return forkJoin({
+          teamInfoListArray: this.http.get<TeamInfoList[]>(
+            `${this.localService}/getteaminfolist`
+          ),
+          localTeamInfo: this.http.get<LocalTeamInfo[]>(
+            `${this.localService}/getteaminfo`
+          ),
+        });
+      }),
+      map(({ teamInfoListArray, localTeamInfo }) => {
+        return teamInfoListArray.map((teamInfoList) => {
+          const matchingTeam = localTeamInfo.find(
+            (team) => team.teamName === teamInfoList.teamName
+          );
+
+          if (matchingTeam) {
+            teamInfoList.logoPicUrl = matchingTeam.teamLogo;
+          }
+
+          return teamInfoList;
+        });
       })
     );
   }
@@ -59,14 +78,28 @@ export class PubgmDataService {
   getPlayerInfoList(): Observable<PlayerInfoList[]> {
     return interval(1000).pipe(
       switchMap(() => {
-        return this.http.get<PlayerInfoList[]>(
-          `${this.localService}/gettotalplayerlist`
-        );
+        return forkJoin({
+          playerInfoListArray: this.http.get<PlayerInfoList[]>(
+            `${this.localService}/gettotalplayerlist`
+          ),
+          localTeamInfo: this.http.get<LocalTeamInfo[]>(
+            `${this.localService}/getteaminfo`
+          ),
+        });
       }),
-      map((playerInfoListArray: PlayerInfoList[]) => {
+      map(({ playerInfoListArray, localTeamInfo }) => {
         return playerInfoListArray.map((playerInfoList) => {
           // Assign a default value to an attribute
           playerInfoList.character = 'assets/players/default.png';
+          // Add the localteamInfo.teamLogo to the playerInfoList.picUrl
+          const matchingTeam = localTeamInfo.find(
+            (team) => team.teamName === playerInfoList.teamName
+          );
+
+          if (matchingTeam) {
+            playerInfoList.picUrl = matchingTeam.teamLogo;
+          }
+
           return playerInfoList;
         });
       })

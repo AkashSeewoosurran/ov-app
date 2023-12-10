@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PubgmDataService } from '../../services/pubgm-data.service';
 import { PlayerInfoList, mvpPlayer } from '../../models/playerInfo.model';
 import { AppCustomMaterialModule } from '../../modules/app-custom-material.module';
+import { LocalTeamInfo } from '../../models/teamInfo.model';
 
 @Component({
   selector: 'app-player-stats',
@@ -24,11 +25,20 @@ export class PlayerStatsComponent implements OnInit, AfterViewInit {
     knockouts: 0,
     killNum: 0,
     rank: 0,
+    character: '',
+    teamLogo: '',
   };
+  localTeamInfo: LocalTeamInfo[] = [];
 
   constructor(private service: PubgmDataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.service.getLocalTeamInfo().subscribe({
+      next: (data) => {
+        this.localTeamInfo = data;
+      },
+    });
+  }
 
   ngAfterViewInit(): void {
     this.service.getPlayerInfoList().subscribe({
@@ -69,9 +79,45 @@ export class PlayerStatsComponent implements OnInit, AfterViewInit {
       knockouts: highestStatsPlayer.knockouts,
       killNum: highestStatsPlayer.killNum,
       rank: highestStatsPlayer.rank,
+      character: highestStatsPlayer.character,
+      teamLogo: highestStatsPlayer.picUrl,
     };
 
     console.log(mvpPlayer);
+
+    this.headToHead();
+    this.top4Gunslingers();
     this.mvpPlayer = mvpPlayer;
+  }
+
+  headToHead(): void {
+    const headToHead = this.playerInfoList$
+      .sort((a, b) => {
+        return b.killNum - a.killNum;
+      })
+      .slice(0, 2);
+
+    console.log(headToHead);
+  }
+
+  top4Gunslingers(): void {
+    const top4Gunslingers = this.playerInfoList$
+      .sort((a, b) => {
+        return b.damage - a.damage;
+      })
+      .map((player) => {
+        return {
+          playerName: player.playerName,
+          damage: player.damage,
+          killNum: player.killNum,
+          character: player.character,
+          rank: player.rank,
+          teamName: player.teamName,
+          teamLogo: player.picUrl,
+        };
+      })
+      .slice(0, 4);
+
+    console.log(top4Gunslingers);
   }
 }
