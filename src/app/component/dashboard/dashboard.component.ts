@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { MatTableDataSource } from '@angular/material/table';
 import { ExcelTeamInfo } from 'src/app/shared/models/teamInfo.model';
 import { PubgmDataService } from 'src/app/shared/services/pubgm-data.service';
@@ -11,9 +12,22 @@ import { WorkBook, WorkSheet, read, utils } from 'xlsx';
 })
 export class DashboardComponent implements OnInit {
   excelData: ExcelTeamInfo[] = [];
-  displayedColumns: string[] = ['teamId', 'teamName', 'teamTag', 'teamLogo64'];
+  displayedColumns: string[] = [
+    'teamId',
+    'teamLogo64',
+    'teamName',
+    'teamTag',
+    'member1',
+    'member2',
+    'member3',
+    'member4',
+    'member5',
+  ];
   dataSource: MatTableDataSource<ExcelTeamInfo>;
   localData: ExcelTeamInfo[] = [];
+  showTop5Kills: boolean;
+  showSurvivalStatus: boolean;
+  showPlayerDetails: boolean;
 
   constructor(
     private service: PubgmDataService,
@@ -21,8 +35,29 @@ export class DashboardComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    console.log('DashboardComponent');
+    this.service.getDashboardData().subscribe((data) => {
+      this.showTop5Kills = data[0].toggleValue;
+      this.showSurvivalStatus = data[1].toggleValue;
+      this.showPlayerDetails = data[2].toggleValue;
+    });
     this.getExcelTeamInfoList();
+  }
+
+  onToggleChange(
+    event: MatSlideToggleChange,
+    toggleId: number,
+    toggleName: string
+  ) {
+    const toggleValue = event.checked;
+    const toggleData = {
+      toggleName: toggleName,
+      toggleValue: toggleValue,
+    };
+    this.service.updateDashboardData(toggleData, toggleId).subscribe({
+      next: (res) => {
+        console.log(res);
+      },
+    });
   }
 
   getExcelTeamInfoList() {
@@ -54,14 +89,12 @@ export class DashboardComponent implements OnInit {
       /* save data */
       this.excelData = utils.sheet_to_json<ExcelTeamInfo>(ws);
 
-
       console.log(this.excelData);
     };
     reader.readAsBinaryString(target.files[0]);
   }
 
   saveData() {
-
     this.service.saveExcelTeamInfoList(this.excelData).subscribe({
       complete: () => {
         this.getExcelTeamInfoList();

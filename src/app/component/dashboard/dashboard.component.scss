@@ -14,7 +14,7 @@
 
     mat-card {
         margin: 0 10px;
-        width: 50%;
+        width: 100%;
     }
 
     button {
@@ -33,20 +33,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
 
     mat-card {
         margin: 0 10px;
-        width: 50%;
+        width: 100%;
+    }
+
+    th,
+    .mat-header-cell {
+        color: var(--tertiary-color);
+        font-family: "superBlack", Arial, Helvetica, sans-serif;
+        font-size: large;
+    }
+
+    td,
+    .mat-cell {
+        font-family: "monoReg", Arial, Helvetica, sans-serif;
+        font-size: medium;
     }
 }
 
 
 .container {
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+}
 
-    .game-container,
-    .match-container {
-        width: 50%;
-    }
+.overlay-container {
+    width: 100%;
+}
+
+img {
+
+    width: auto;
+    height: 60px;
+}
+
+.mat-column-teamLogo64 {
+    background-color: var(--primary-color);
 }
