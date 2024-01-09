@@ -1,4 +1,4 @@
-<div class="name-box">
+<div class="name-box" [@slideDownUp] = "showPlayerDetails ? 'up' : 'down'">
   <div class="start-box">
     <img class="player-pic" [src]="this.currentPlayerInfo?.character" />
   </div>
