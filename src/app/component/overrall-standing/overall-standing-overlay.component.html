@@ -1,0 +1,96 @@
+<div class="background">
+
+    <div class="table-container">
+        <div class="top8-container" >
+            <table mat-table class="top5-table" [dataSource]="dataSourceLeft">
+        
+              <ng-container matColumnDef="lrank">
+                <th mat-header-cell *matHeaderCellDef>#</th>
+                <td mat-cell class="top5Cell playerNameCell" *matCellDef="let element; let i = index"> {{element.rank}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="lteamLogo">
+                <th mat-header-cell class="top5Header" *matHeaderCellDef></th>
+                <td mat-cell class="top5Cell" *matCellDef="let element; let i = index">
+                    <img [ngClass]="{'first': i === 0, 'second': i === 1, 'third': i === 2 , 'remaining' : i > 2 }" [src]="element.teamLogo" />
+                </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="lteamName">
+                <th mat-header-cell *matHeaderCellDef> TEAM NAME </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element; let i = index"> {{element.teamName}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="lwins">
+                <th mat-header-cell *matHeaderCellDef> WWCD </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element; let i = index"> {{element.wins}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="lplacement">
+                <th mat-header-cell *matHeaderCellDef> PLC </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element; let i = index"> {{element.placementPoints}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="lelims">
+                <th mat-header-cell *matHeaderCellDef> ELIMS </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.killNum}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="ltotal">
+                <th mat-header-cell *matHeaderCellDef> TOTAL </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.totalPoints}} </td>
+              </ng-container>
+          
+              <tr mat-header-row class="mat-header-row" *matHeaderRowDef="displayedColumnsLeft"></tr>
+              <tr mat-row class="top5-row" *matRowDef="let row; columns: displayedColumnsLeft; let i = index" ></tr>
+            </table>
+           </div>
+    
+    
+           <div class="top16-container" >
+            <table mat-table class="top5-table" [dataSource]="dataSourceRight">
+        
+              <ng-container matColumnDef="rrank">
+                <th mat-header-cell *matHeaderCellDef> #</th>
+                <td mat-cell class="top5Cell playerNameCell" *matCellDef="let element; let i = index"> {{element.rank}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="rteamLogo">
+                <th mat-header-cell class="top5Header" *matHeaderCellDef></th>
+                <td mat-cell class="top5Cell" *matCellDef="let element">
+                    <img [src]="element.teamLogo" />
+                </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="rteamName">
+                <th mat-header-cell *matHeaderCellDef> TEAM NAME </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.teamName}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="rwins">
+                <th mat-header-cell *matHeaderCellDef> WWCD </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element; let i = index"> {{element.wins}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="rplacement">
+                <th mat-header-cell *matHeaderCellDef> PLC </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.placementPoints}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="relims">
+                <th mat-header-cell *matHeaderCellDef> ELIMS </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.killNum}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="rtotal">
+                <th mat-header-cell *matHeaderCellDef> TOTAL </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.totalPoints}} </td>
+              </ng-container>
+          
+              <tr mat-header-row class="mat-header-row" *matHeaderRowDef="displayedColumnsRight"></tr>
+              <tr mat-row class="top5-damage-row" *matRowDef="let row; columns: displayedColumnsRight"></tr>
+            </table>
+           </div>
+    </div>
+
+</div>
