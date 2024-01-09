@@ -1,9 +1,10 @@
 .mvp-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
 
     mat-list {
-        width: 33%;
+        width: auto;
     }
 
     .img-container {
@@ -16,6 +17,15 @@
             width: auto;
             height: 200px;
         }
+
+        .team-logo {
+            width: auto;
+            height: 64px;
+        }
     }
 
+
+    .test .mat-list-item {
+        font-family: 'monoReg';
+    }
 }

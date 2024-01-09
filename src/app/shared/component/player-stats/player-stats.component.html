@@ -4,8 +4,17 @@
         <mat-card-subtitle>Generate MVP player</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
+      <!-- <mat-form-field>
+        <mat-label>Select Match</mat-label>
+        <mat-select formControlName="match" (selectionChange)="onMatchSelected($event.value)">
+          <mat-option *ngFor="let match of MATCHES" [value]="match.id">
+            {{match.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      <br>
         <div class="mvp-container" *ngIf="mvpPlayer">
-            <mat-list>
+            <mat-list class="test">
                 <mat-list-item >PLAYER : {{mvpPlayer.playerName}}</mat-list-item>
                 <mat-list-item >TEAM : {{mvpPlayer.teamName}}</mat-list-item>
                 <mat-list-item >ELIMS : {{mvpPlayer.killNum}}</mat-list-item>
@@ -17,12 +26,92 @@
                 <mat-list-item >SURVIVE TIME : {{mvpPlayer.survivalTime}}</mat-list-item>
                 <mat-list-item >DAMAGE TAKEN : {{mvpPlayer.inDamage}}</mat-list-item>
               </mat-list>
-              <div class="img-container">
+              <!-- <div class="img-container">
+                <img class="team-logo" [src]="mvpPlayer.teamLogo" />
                 <img [src]="mvpPlayer.character" />
-              </div>
+              </div> -->
         </div>
     </mat-card-content>
     <mat-card-actions align="end">
-        <button mat-raised-button color="primary" (click)="getMvpPlayer()">Generate</button>
+        <button mat-raised-button color="primary" (click)="generatePlayerStats()">GENERATE</button>
+        <button mat-raised-button color="primary" *ngIf="casterDisabled" [disabled]="!(this.head2head.length > 0 && this.top4GunslingersList.length > 0 && this.mvpPlayer != null)" (click)="saveAllPlayerStats()">SAVE</button>
     </mat-card-actions>
+</mat-card>
+
+<br>
+
+<mat-card>
+  <mat-card-header>
+      <mat-card-title>HEAD 2 HEAD</mat-card-title>
+      <mat-card-subtitle>Generate head 2 head stats</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="mvp-container" *ngIf="head2head.length > 0">
+      <mat-list>
+          <mat-list-item >PLAYER : {{head2head[0].playerName}}</mat-list-item>
+          <mat-list-item >TEAM : {{head2head[0].teamName}}</mat-list-item>
+          <mat-list-item >ELIMS : {{head2head[0].killNum}}</mat-list-item>
+          <mat-list-item >DAMAGE : {{head2head[0].damage}}</mat-list-item>
+          <mat-list-item >ASSISTS : {{head2head[0].assists}}</mat-list-item>
+          <mat-list-item >KNOCKOUTS : {{head2head[0].knockouts}}</mat-list-item>
+          <mat-list-item >SURVIVE TIME : {{head2head[0].survivalTime}}</mat-list-item>
+          <mat-list-item >DAMAGE TAKEN : {{head2head[0].inDamage}}</mat-list-item>
+        </mat-list>
+        <mat-list>
+          <mat-list-item >PLAYER : {{head2head[1].playerName}}</mat-list-item>
+          <mat-list-item >TEAM : {{head2head[1].teamName}}</mat-list-item>
+          <mat-list-item >ELIMS : {{head2head[1].killNum}}</mat-list-item>
+          <mat-list-item >DAMAGE : {{head2head[1].damage}}</mat-list-item>
+          <mat-list-item >ASSISTS : {{head2head[1].assists}}</mat-list-item>
+          <mat-list-item >KNOCKOUTS : {{head2head[1].knockouts}}</mat-list-item>
+          <mat-list-item >SURVIVE TIME : {{head2head[1].survivalTime}}</mat-list-item>
+          <mat-list-item >DAMAGE TAKEN : {{head2head[1].inDamage}}</mat-list-item>
+        </mat-list>
+        <!-- <div class="img-container">
+          <img class="team-logo" [src]="head2head[0].teamLogo" />
+          <img [src]="head2head[0].character" />
+          <img class="team-logo" [src]="head2head[1].teamLogo" />
+          <img [src]="head2head[1].character" />
+        </div> -->
+  </div>
+  </mat-card-content>
+</mat-card>
+
+<br>
+
+<mat-card>
+  <mat-card-header>
+      <mat-card-title>TOP 4 GUNSLINGERS</mat-card-title>
+      <mat-card-subtitle>Generate top 4 gunslingers</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="mvp-container" *ngIf="top4GunslingersList.length > 0">
+      <mat-list>
+          <mat-list-item >PLAYER : {{top4GunslingersList[0].playerName}}</mat-list-item>
+          <mat-list-item >TEAM : {{top4GunslingersList[0].teamName}}</mat-list-item>
+          <mat-list-item >ELIMS : {{top4GunslingersList[0].killNum}}</mat-list-item>
+          <mat-list-item >DAMAGE : {{top4GunslingersList[0].damage}}</mat-list-item>
+        </mat-list>
+        <mat-list>
+          <mat-list-item >PLAYER : {{top4GunslingersList[1].playerName}}</mat-list-item>
+          <mat-list-item >TEAM : {{top4GunslingersList[1].teamName}}</mat-list-item>
+          <mat-list-item >ELIMS : {{top4GunslingersList[1].killNum}}</mat-list-item>
+          <mat-list-item >DAMAGE : {{top4GunslingersList[1].damage}}</mat-list-item>
+        </mat-list>
+        <mat-list>
+          <mat-list-item >PLAYER : {{top4GunslingersList[2].playerName}}</mat-list-item>
+          <mat-list-item >TEAM : {{top4GunslingersList[2].teamName}}</mat-list-item>
+          <mat-list-item >ELIMS : {{top4GunslingersList[2].killNum}}</mat-list-item>
+          <mat-list-item >DAMAGE : {{top4GunslingersList[2].damage}}</mat-list-item>
+        </mat-list>
+        <mat-list>
+          <mat-list-item >PLAYER : {{top4GunslingersList[3].playerName}}</mat-list-item>
+          <mat-list-item >TEAM : {{top4GunslingersList[3].teamName}}</mat-list-item>
+          <mat-list-item >ELIMS : {{top4GunslingersList[3].killNum}}</mat-list-item>
+          <mat-list-item >DAMAGE : {{top4GunslingersList[3].damage}}</mat-list-item>
+        </mat-list>
+  </div>
+  </mat-card-content>
 </mat-card>
