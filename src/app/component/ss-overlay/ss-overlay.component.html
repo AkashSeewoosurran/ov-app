@@ -3,10 +3,35 @@
 <!-- <app-obs-player ></app-obs-player> -->
 <!-- <app-survival-status-top5 [@slideUpDown]="!top5boolean ? 'down' : 'up'"></app-survival-status-top5> -->
 
-<app-survival-status></app-survival-status>
-<!-- <app-obs-player ></app-obs-player> -->
-<app-survival-status-top5></app-survival-status-top5>
-<app-player-top5></app-player-top5>
-<app-zone-progressbar class="test"></app-zone-progressbar>
-<!-- <app-announcement-bar></app-announcement-bar> -->
-<app-annoucement-elims></app-annoucement-elims>
+
+
+
+
+
+
+
+
+<div class="ss-container">
+    <div class="left-side">
+        <app-player-top5></app-player-top5>
+    </div>
+    <div class="middle-side">
+        <div class="top">
+            <app-survival-status-top5></app-survival-status-top5> 
+        </div>
+
+        <div class="mid">
+        <app-annoucement-elims></app-annoucement-elims>
+        <app-zone-progressbar></app-zone-progressbar>
+        </div>
+
+        <div class="bottom">
+            <app-obs-player ></app-obs-player>
+        </div>
+    </div>
+
+    <div class="right-side">
+            <!-- <app-announcement-bar></app-announcement-bar> -->
+            <app-survival-status></app-survival-status> 
+    </div>
+</div>

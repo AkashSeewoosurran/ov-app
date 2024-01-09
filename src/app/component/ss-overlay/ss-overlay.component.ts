@@ -6,7 +6,7 @@ import {
   trigger,
 } from '@angular/animations';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { combineLatest} from 'rxjs';
+import { combineLatest } from 'rxjs';
 import {
   PlayerInfoList,
   PlayerStatus,
@@ -80,22 +80,42 @@ export class SsOverlayComponent implements OnInit {
       this.localTeamInfo = res;
     });
 
-    // interval(2000).subscribe(() => {
-    //   this.testFilter();
-    // });
-
     combineLatest([
       this.service.getTeamInfoList(),
       this.service.getPlayerInfoList(),
     ]).subscribe(([teamInfoList, playerInfoList]) => {
-      this.filterTill5Teams(teamInfoList.teamInfoList);
-      this.assignLogoToPlayersAndSort(playerInfoList.playerInfoList, this.localTeamInfo);
-      this.AddPlayerStatusToTeamInfoList(
-        this.assignLogoToTeamsAndSort(teamInfoList.teamInfoList, this.localTeamInfo),
-        playerInfoList.playerInfoList
+      this.assignLogoToPlayersAndSort(playerInfoList, this.localTeamInfo);
+
+      this.sharedService.AddPlayerStatusToTeamInfoList(
+        this.assignLogoToTeamsAndSort(teamInfoList, this.localTeamInfo),
+        playerInfoList
       );
     });
   }
+
+  // ngOnInit(): void {
+  //   this.service.getExcelTeamInfoList().subscribe((res) => {
+  //     this.localTeamInfo = res;
+  //   });
+
+  //   combineLatest([
+  //     this.service.getTeamInfoList(),
+  //     this.service.getPlayerInfoList(),
+  //   ]).subscribe(([teamInfoList, playerInfoList]) => {
+  //     this.assignLogoToPlayersAndSort(
+  //       playerInfoList.playerInfoList,
+  //       this.localTeamInfo
+  //     );
+
+  //     this.sharedService.AddPlayerStatusToTeamInfoList(
+  //       this.assignLogoToTeamsAndSort(
+  //         teamInfoList.teamInfoList,
+  //         this.localTeamInfo
+  //       ),
+  //       playerInfoList.playerInfoList
+  //     );
+  //   });
+  // }
 
   assignLogoToPlayersAndSort(
     res: PlayerInfoList[],
@@ -105,18 +125,11 @@ export class SsOverlayComponent implements OnInit {
       this.teamInfo = localTeamInfo.find(
         (localTeam: ExcelTeamInfo) => localTeam.teamName === player.teamName
       );
-      if(this.teamInfo){
+      if (this.teamInfo) {
         player.picUrl = this.teamInfo.teamLogo64;
       }
     });
     this.sharedService.updatePlayerInfoList(res);
-  }
-
-  filterTill5Teams(teamInfoList: TeamInfoList[]): void {
-    const filteredTeamInfoList = teamInfoList.filter(
-      (teams) => teams.liveMemberNum > 0
-    );
-    this.top5boolean = filteredTeamInfoList.length > 5;
   }
 
   assignLogoToTeamsAndSort(
@@ -134,10 +147,9 @@ export class SsOverlayComponent implements OnInit {
       } else {
         team.teamTag = team.teamName.slice(0, 4);
       }
-      if(this.teamInfo){
-        team.logoPicUrl = `${this.teamInfo.teamLogo64}`;
+      if (this.teamInfo) {
+        team.logoPicUrl = `${this.teamInfo.teamLogo}`;
       }
-
     });
     return res.sort((a: any, b: any) => {
       if (a.liveMemberNum === 0 && b.liveMemberNum !== 0) {
@@ -148,30 +160,5 @@ export class SsOverlayComponent implements OnInit {
         return b.killNum - a.killNum;
       }
     });
-  }
-
-  AddPlayerStatusToTeamInfoList(
-    teamInfoList: TeamInfoList[],
-    playerInfoList: PlayerInfoList[]
-  ): void {
-    teamInfoList.forEach((team: TeamInfoList) => {
-      team.players = [];
-      playerInfoList.forEach((player: PlayerInfoList) => {
-        const playerStatus: PlayerStatus = {
-          playerName: player.playerName,
-          teamName: player.teamName,
-          uId: player.uId,
-          rank: player.rank,
-          isFiring: player.isFiring,
-          liveState: player.liveState,
-          isOutsideBlueCircle: player.isOutsideBlueCircle,
-        };
-        if (player.teamId === team.teamId) {
-          team.players.push(playerStatus);
-        }
-      });
-      team.players = team.players.slice(0, 5);
-    });
-    this.sharedService.updateTeamInfoList(teamInfoList.slice(0, 16));
   }
 }
