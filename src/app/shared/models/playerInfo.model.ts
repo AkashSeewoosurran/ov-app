@@ -63,11 +63,22 @@ export interface mvpPlayer {
   teamName: string;
   damage: number;
   assists: number;
-  survivalTime: number;
+  survivalTime: string;
   inDamage: number;
   knockouts: number;
   killNum: number;
   rank: number;
   character: string;
   teamLogo: string;
+}
+
+export interface PlayerMatchInfo {
+  playerName: string;
+  teamLogo: string;
+  damage: number;
+  assists: number;
+  inDamage: number;
+  knockouts: number;
+  killNum: number;
+  rank: number;
 }

@@ -12,7 +12,7 @@ export interface TeamInfoList {
 }
 
 export interface lstTeamInfo {
-  teamInfoList : TeamInfoList[]
+  teamInfoList: TeamInfoList[];
 }
 
 export interface LocalTeamInfo {
@@ -29,5 +29,6 @@ export interface ExcelTeamInfo {
   teamLogo128: string;
   teamLogo256: string;
   teamTag: string;
+  teamLogo: string;
   id: number;
 }
