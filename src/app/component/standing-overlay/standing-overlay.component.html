@@ -1,0 +1,86 @@
+<div class="background">
+
+    <div class="table-container">
+        <div class="top8-container" >
+            <table mat-table class="top5-table" [dataSource]="dataSourceLeft">
+        
+              <ng-container matColumnDef="rank">
+                <th mat-header-cell *matHeaderCellDef> #</th>
+                <td mat-cell class="top5Cell playerNameCell" *matCellDef="let element; let i = index"> {{i + 1}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="teamLogo">
+                <th mat-header-cell class="top5Header" *matHeaderCellDef></th>
+                <td mat-cell class="top5Cell" *matCellDef="let element">
+                    <img [src]="element.teamLogo" />
+                </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="teamName">
+                <th mat-header-cell *matHeaderCellDef> TEAM NAME </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.teamName}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="placement">
+                <th mat-header-cell *matHeaderCellDef> PLC </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.placementPoints}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="elims">
+                <th mat-header-cell *matHeaderCellDef> ELIMS </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.killNum}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="total">
+                <th mat-header-cell *matHeaderCellDef> TOTAL </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.totalPoints}} </td>
+              </ng-container>
+          
+              <tr mat-header-row class="mat-header-row" *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row class="top5-damage-row" *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+           </div>
+    
+    
+           <div class="top8-container" >
+            <table mat-table class="top5-table" [dataSource]="dataSourceRight">
+        
+              <ng-container matColumnDef="rank">
+                <th mat-header-cell *matHeaderCellDef> #</th>
+                <td mat-cell class="top5Cell playerNameCell" *matCellDef="let element; let i = index"> {{i + 9}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="teamLogo">
+                <th mat-header-cell class="top5Header" *matHeaderCellDef></th>
+                <td mat-cell class="top5Cell" *matCellDef="let element">
+                    <img [src]="element.teamLogo" (error)="handleImgError($event)" />
+                </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="teamName">
+                <th mat-header-cell *matHeaderCellDef> TEAM NAME </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.teamName}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="placement">
+                <th mat-header-cell *matHeaderCellDef> PLC </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.placementPoints}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="elims">
+                <th mat-header-cell *matHeaderCellDef> ELIMS </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.killNum}} </td>
+              </ng-container>
+    
+              <ng-container matColumnDef="total">
+                <th mat-header-cell *matHeaderCellDef> TOTAL </th>
+                <td mat-cell class="top5Cell" *matCellDef="let element"> {{element.totalPoints}} </td>
+              </ng-container>
+          
+              <tr mat-header-row class="mat-header-row" *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row class="top5-damage-row" *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+           </div>
+    </div>
+
+</div>

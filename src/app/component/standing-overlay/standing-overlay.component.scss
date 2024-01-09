@@ -1,0 +1,82 @@
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../assets/MATCH\ STANDINGS.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .table-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 50px;
+
+        .top8-container {
+            width: 45%;
+
+            img {
+                width: auto;
+                height: 30px;
+                border: 2px solid white;
+                /* Change as needed */
+                border-radius: 10px;
+                /* Change as needed */
+            }
+
+            .mat-cell,
+            td {
+                background-color: #171617;
+                color: var(--tertiary-color);
+            }
+
+            .mat-header-cell,
+            th {
+                background-color: var(--tertiary-color);
+                color: var(--primary-color);
+                font-family: 'neueCondBlackIt';
+                font-size: 24px;
+            }
+        }
+
+    }
+
+}
+
+.mat-column-placement,
+.mat-column-elims,
+.mat-column-total,
+.mat-column-rank {
+    text-align: center;
+}
+
+.mat-column-teamLogo {
+    width: 5%;
+}
+
+.mat-column-teamName {
+    width: 40%;
+    font-family: 'neueCondBI';
+    font-size: 32px;
+}
+
+.mat-column-placement,
+.mat-column-elims {
+
+    font-family: 'neueDemiBI';
+    font-size: 26px;
+}
+
+.mat-column-total {
+    font-family: 'neueDemiBI';
+    font-size: 33.5px;
+}
+
+.mat-column-rank {
+    font-family: 'neueCondDBI';
+    font-size: 33px;
+}
