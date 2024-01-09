@@ -1,0 +1,79 @@
+.toolbar {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    margin: 0;
+}
+
+
+.manage-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+
+    mat-card {
+        margin: 0 10px;
+        width: 100%;
+    }
+
+    button {
+        margin-left: 8px;
+    }
+}
+
+.row-header {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    font-weight: bold;
+}
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+
+    mat-card {
+        margin: 0 10px;
+        width: 100%;
+    }
+
+    th,
+    .mat-header-cell {
+        color: var(--tertiary-color);
+        font-family: "superBlack", Arial, Helvetica, sans-serif;
+        font-size: large;
+    }
+
+    td,
+    .mat-cell {
+        font-family: "monoReg", Arial, Helvetica, sans-serif;
+        font-size: medium;
+    }
+}
+
+
+.container {
+    width: 100%;
+}
+
+.overlay-container {
+    width: 100%;
+}
+
+img {
+
+    width: auto;
+    height: 60px;
+}
+
+.mat-column-teamLogo64 {
+    background-color: var(--primary-color);
+}
+
+.mat-column-teamName,
+.mat-column-teamId {
+    color: var(--tertiary-color);
+}
