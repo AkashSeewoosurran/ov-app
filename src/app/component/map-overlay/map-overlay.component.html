@@ -1,0 +1,64 @@
+<div class="map-container">
+    <div class="left-side">
+        <div class="team-container" *ngFor="let team of leftTeamInfoList">
+            <div class="player-container">
+                <div class="player" *ngFor="let player of team.players"
+                [ngClass]="{
+                    'dead': player.liveState === 5,
+                    'knocked': player.liveState === 4,
+                    'alive': player.liveState !== 5 && player.liveState !== 4
+                  }">{{player.playerName}}</div>
+            </div>
+            <div class="logo-container">
+                <img [src]="team.logoPicUrl" />
+            </div>
+        </div>
+    </div>
+    <div class="middle-container">
+        <div class="box-container">
+            <div class="title-container">
+                <div class="title"> TEAMS </div>
+                <div class="title"> PLAYERS </div>
+                <div class="title"> STAGE </div>
+            </div>
+            <div class="count-container">
+                <div class="count"> {{getTeamsAliveCount()}} </div>
+                <div class="count"> {{getPlayersAliveCount()}} </div>
+                <div class="count"> 0 </div>
+            </div>
+            <div class="status-container">
+                <div class="status">
+                  <div class="box alive-status"></div>
+                  <span>Alive</span>
+                </div>
+                <div class="status">
+                  <div class="box knocked-status"></div>
+                  <span>Knocked</span>
+                </div>
+                <div class="status">
+                  <div class="box eliminated-status"></div>
+                  <span>Eliminated</span>
+                </div>
+            
+              </div>
+        </div>
+
+    </div>
+    <div class="right-side">
+        <div class="team-container" *ngFor="let team of rightTeamInfoList">
+
+            <div class="logo-container">
+                <img [src]="team.logoPicUrl" />
+            </div>
+            <div class="player-container">
+                <div class="player" *ngFor="let player of team.players"                 
+                [ngClass]="{
+                    'reverse-dead': player.liveState === 5,
+                    'reverse-knocked': player.liveState === 4,
+                    'reverse-alive': player.liveState !== 5 && player.liveState !== 4
+                  }">{{player.playerName}}</div>
+            </div>
+
+        </div>
+    </div>
+</div>
