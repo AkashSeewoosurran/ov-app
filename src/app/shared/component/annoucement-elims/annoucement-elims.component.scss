@@ -1,12 +1,9 @@
 .announcement-wrapper {
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+
     height: 100%;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 8px;
 }
 
 .announcement {
