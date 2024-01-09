@@ -45,10 +45,7 @@ export class SurvivalStatusTop5Component implements OnInit {
   lstTop5Teams: TeamInfoList[] = [];
   top5boolean: boolean;
 
-  constructor(
-    private service: PubgmDataService,
-    private sharedService: SharedService
-  ) {}
+  constructor(private sharedService: SharedService) {}
 
   ngOnInit(): void {
     this.sharedService.teamInfoList$.subscribe((teamInfoList) => {
@@ -71,5 +68,20 @@ export class SurvivalStatusTop5Component implements OnInit {
       (teams) => teams.liveMemberNum > 0
     );
     this.top5boolean = filteredTeamInfoList.length > 5;
+  }
+
+  getRankCellClass(element: TeamInfoList, className: string): string {
+    const isOutsideAndAlive = element.players.some(
+      (player: { isOutsideBlueCircle: boolean; liveState: number }) =>
+        player.isOutsideBlueCircle && player.liveState == 0
+    );
+
+    if (isOutsideAndAlive && element.liveMemberNum > 1) {
+      return className == 'team-section'
+        ? 'outside-zone-top'
+        : 'outside-zone-bottom';
+    }
+
+    return 'normal';
   }
 }

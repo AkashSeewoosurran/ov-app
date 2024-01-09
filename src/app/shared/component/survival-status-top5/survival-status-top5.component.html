@@ -1,14 +1,14 @@
 <div class="container" [@slideUpDown] = "top5boolean ? 'up' : 'down'">
     <div class="top5-team">
             <div class="team-container" *ngFor="let teams of lstTop5Teams; trackBy: trackByFn" [@fadeOut]>
-                <div class="team-section">
+                <div class="team-section" [ngClass]="getRankCellClass(teams , 'team-section')">
                     <img class="team-logo" [src]="teams.logoPicUrl" >
                     <div class="team-name">{{teams.teamTag}}</div>
                 </div>
-                <div class="player-section">
+                <div class="player-section" [ngClass]="getRankCellClass(teams, 'player-section')">
                     <div class="player" *ngFor="let player of teams.players"             
                     [style.background-color]=" player.liveState === 5 ? 'grey'
-                      : player.liveState === 4 ? '#b66a06' : '#e42236'"></div>
+                      : player.liveState === 4 ? '#e42236' : '#2a5bd8'"></div>
                 </div>
             </div>
     </div>
