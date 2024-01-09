@@ -1,21 +1,34 @@
+<div class="body">
+
+
 <mat-card>
     <form [formGroup]="matchForm" *ngIf="matchForm">
     <mat-card-header>
-        <mat-card-subtitle>Calculate the specific match standing</mat-card-subtitle>
+        <mat-card-subtitle *ngIf="casterDisabled">Calculate the specific match standing</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
         <mat-form-field>
             <mat-label>Select Match</mat-label>
-            <mat-select formControlName="match" (selectionChange)="onMatchSelected($event.value)">
+            <mat-select formControlName="match" [(value)]="selectedMatch" (selectionChange)="onMatchSelected($event.value)">
               <mat-option *ngFor="let match of MATCHES" [value]="match.id">
                 {{match.name}}
               </mat-option>
             </mat-select>
           </mat-form-field>
           
+          <br>
+          <span *ngIf="casterDisabled">Teams ranking generated : {{this.matchTeamsLength}}</span>
+          <br>
+          <div class="stats-container">
+              <span  *ngFor="let player of matchLengths; let i = index" [matBadge]="player" 
+              [ngStyle]="{'background-color' : player > 0 ? 'green' : 'red'}" > {{ i + 1 }} MATCH </span>     
+          </div>
+          
+
+
     </mat-card-content>
     <mat-card-actions align="end">
-        <button mat-raised-button color="primary" [disabled]="!matchForm.valid" (click)="getMatchStanding()">Upload</button>
+        <button mat-raised-button color="primary" *ngIf="casterDisabled" [disabled]="(!matchForm.valid && canUpload())" (click)="getMatchStanding()">Upload</button>
     </mat-card-actions>
     </form>
 </mat-card>
@@ -26,6 +39,11 @@
         <ng-container matColumnDef="rank">
           <th mat-header-cell *matHeaderCellDef> RANK </th>
           <td mat-cell *matCellDef="let element"> {{element.rank}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="teamId">
+          <th mat-header-cell *matHeaderCellDef> ID </th>
+          <td mat-cell *matCellDef="let element"> {{element.teamId}} </td>
         </ng-container>
        
         <ng-container matColumnDef="teamLogo">
@@ -59,3 +77,4 @@
     </mat-card>
 </div>
 
+</div>
