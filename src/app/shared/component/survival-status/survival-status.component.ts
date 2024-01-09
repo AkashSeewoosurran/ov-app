@@ -63,13 +63,32 @@ export class SurvivalStatusComponent implements OnInit {
   top5Columns: string[] = ['playerName', 'rank', 'damage'];
   dataSource: MatTableDataSource<TeamInfoList>;
   top5boolean: boolean;
+  showSurvivalStatus: boolean;
 
-  constructor(private sharedService: SharedService) {}
+  constructor(
+    private service: PubgmDataService,
+    private sharedService: SharedService
+  ) {}
 
   ngOnInit(): void {
+    this.service.getDashboardData().subscribe((data) => {
+      this.showSurvivalStatus = data[1].toggleValue;
+    });
     this.sharedService.teamInfoList$.subscribe({
       next: (teamInfoList: TeamInfoList[]) => {
+        console.log('teams', teamInfoList);
+        teamInfoList.sort((a: any, b: any) => {
+          if (a.liveMemberNum === 0 && b.liveMemberNum !== 0) {
+            return 1;
+          }
+          if (a.liveMemberNum !== 0 && b.liveMemberNum === 0) {
+            return -1;
+          }
+          // If both teams have liveMemberNum > 0 or both have liveMemberNum = 0, sort by killNum
+          return b.killNum - a.killNum;
+        });
         this.dataSource = new MatTableDataSource(teamInfoList.slice(0, 16));
+
         this.filterTill5Teams(teamInfoList);
       },
     });
@@ -82,13 +101,30 @@ export class SurvivalStatusComponent implements OnInit {
     this.top5boolean = filteredTeamInfoList.length > 5;
   }
 
-  getRankCellBackgroundColor(element: any): string {
-    return element.liveMemberNum < 1
-      ? '#484849'
-      : element.players.some(
-          (player: { isOutsideBlueCircle: any }) => player.isOutsideBlueCircle
-        ) && element.liveMemberNum > 1
-      ? '#44bae9'
-      : '#131213';
+  // getRankCellBackgroundColor(element: TeamInfoList): string {
+  //   return element.liveMemberNum < 1
+  //     ? '#484849'
+  //     : element.players.some(
+  //         (player: { isOutsideBlueCircle: boolean }) =>
+  //           player.isOutsideBlueCircle
+  //       ) && element.liveMemberNum > 1
+  //     ? '#44bae9'
+  //     : '#0a0c12';
+  // }
+
+  getRankCellClass(element: TeamInfoList): string {
+    if (element.liveMemberNum < 1) {
+      return 'eliminated';
+    } else if (
+      element.players.some(
+        (player: { isOutsideBlueCircle: boolean; liveState: number }) =>
+          player.isOutsideBlueCircle && player.liveState == 0
+      ) &&
+      element.liveMemberNum > 1
+    ) {
+      return 'outside-zone';
+    } else {
+      return 'normal';
+    }
   }
 }

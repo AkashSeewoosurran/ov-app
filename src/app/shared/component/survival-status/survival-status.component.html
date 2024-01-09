@@ -1,18 +1,9 @@
-<div class="container-box" [@slideInOutAnimationRight] = "top5boolean ? 'in' : 'out'">
-  <table mat-table [dataSource]="dataSource" *ngIf="dataSource">
+<div class="container-box" >
+  <table mat-table [dataSource]="dataSource" *ngIf="dataSource" [@slideInOutAnimationRight] = "showSurvivalStatus ? 'in' : 'out'">
     <ng-container matColumnDef="logoPicUrl">
       <th mat-header-cell *matHeaderCellDef></th>
-      <td
-        mat-cell
-        class="logo-container"
-        *matCellDef="let element"
-        [style.background-color]="getRankCellBackgroundColor(element)"
-      >
+      <td mat-cell class="logo-container" *matCellDef="let element" [ngClass]="getRankCellClass(element)">
         <img  [src]="element.logoPicUrl" />
-        <!-- <img
-          *ngIf="element.liveMemberNum < 1"
-          src="../../assets/Logo/skull.png"
-        /> -->
       </td>
     </ng-container>
 
@@ -22,9 +13,7 @@
         mat-cell
         class="teamNameCell"
         *matCellDef="let element"
-        [style.background-color]="
-          element.liveMemberNum < 1 ? '#484849' : '#131213'
-        "
+        [ngClass]="getRankCellClass(element)"
       >
         {{ element.teamTag }}
       </td>
@@ -36,24 +25,15 @@
         mat-cell
         class="killCell"
         *matCellDef="let element"
-        [style.background-color]="
-          element.liveMemberNum < 1 ? '#484849' : '#131213'
-        "
+        [ngClass]="getRankCellClass(element)"
       >
         {{ element.killNum }}
       </td>
     </ng-container>
 
     <ng-container matColumnDef="liveMemberNum">
-      <th mat-header-cell class="aliveHeaderCell" *matHeaderCellDef>ALIVE</th>
-      <td
-        mat-cell
-        class="aliveCell"
-        *matCellDef="let element"
-        [style.background-color]="
-          element.liveMemberNum < 1 ? '#484849' : '#131213'
-        "
-      >
+      <th mat-header-cell class="aliveHeaderCell" *matHeaderCellDef><img class="header-logo" src="assets/HealthIcon2x.png"/></th>
+      <td mat-cell class="aliveCell" *matCellDef="let element" [ngClass]="getRankCellClass(element)">
         <div class="alive-container">
           <div
             *ngFor="let player of element.players"
@@ -62,32 +42,31 @@
               player.liveState === 5
                 ? 'grey'
                 : player.liveState === 4
-                ? '#b66a06'
-                : '#e42236'
+                ? '#e42236'
+                : '#2a5bd8'
             "
           ></div>
         </div>
       </td>
     </ng-container>
 
-    <tr
-      #test
-      mat-header-row
-      class="mat-header-row"
-      *matHeaderRowDef="displayedColumns"
-    ></tr>
-    <tr
-      mat-row
-      [ngClass]="{
-        imageDead: element.liveMemberNum < 1,
-        aliveRowbackground: element.liveMemberNum >= 1
-      }"
-      *matRowDef="
-        let row;
-        let element;
-        let i = index;
-        columns: displayedColumns
-      "
-    ></tr>
+    <tr #test mat-header-row class="mat-header-row" *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row [ngClass]="{ imageDead: element.liveMemberNum < 1, aliveRowbackground: element.liveMemberNum >= 1 }"
+      *matRowDef=" let row; let element; let i = index; columns: displayedColumns "></tr>
   </table>
+  <div class="status-container">
+    <div class="status">
+      <div class="box alive-status"></div>
+      <span>Alive</span>
+    </div>
+    <div class="status">
+      <div class="box knocked-status"></div>
+      <span>Knocked</span>
+    </div>
+    <div class="status">
+      <div class="box eliminated-status"></div>
+      <span>Eliminated</span>
+    </div>
+
+  </div>
 </div>
