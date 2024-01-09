@@ -1,14 +1,14 @@
 .container {
     width: 10%;
     height: 23%;
-    background-color: red;
+    background-image: url("../../../../assets/annoncebackground.png");
     position: absolute;
     right: 205px;
     top: 2px;
 }
 
 .logo-container {
-    width: 100%;
+    width: auto;
     height: 100%;
 
     display: flex;
@@ -16,7 +16,7 @@
     align-items: center;
 
     img {
-        width: 100%;
+        width: auto;
         height: 100%;
         object-fit: cover;
     }

@@ -39,7 +39,6 @@ import {
 })
 export class AnnouncementBarComponent implements OnInit {
   announcementMessage: string = '';
-  player: PlayerInfoList;
   killNumAnnouncementMade: boolean = false;
   killNumByGrenadeAnnouncementMade: boolean = false;
   killNumInVehicleAnnouncementMade: boolean = false;
@@ -84,6 +83,8 @@ export class AnnouncementBarComponent implements OnInit {
     useBurnGrenadeNum: 0,
     useFlashGrenadeNum: 0,
   };
+
+  player: PlayerInfoList = this.emptyPlayer;
 
   constructor(private sharedService: SharedService) {}
 
