@@ -1,26 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100vh; }
-body { background-color: transparent; }
+html,
+body {
+  width: auto;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+}
+
+body {
+  background-color: transparent;
+}
+
+@import url("./assets/fonts/font.scss");
 
 
-@font-face {
-    font-family: 'Vermin Vibes 1989';
-    src: url('^/assets/fonts/VerminVibes1989.ttf') format('truetype');
-  }
+:root {
+  --primary-color: #0a0c12;
+  --secondary-color: #ff002a;
+  --tertiary-color: #ffffff;
+}
 
-  @font-face {
-    font-family: 'monoBold';
-    src: url('^/assets/fonts/Disket-Mono-Bold.ttf') format('truetype');
-  }
+button {
+  margin-left: 8px;
+}
 
-  @font-face {
-    font-family: 'monoReg';
-    src: url('^/assets/fonts/Disket-Mono-Regular.ttf') format('truetype');
-  }
+span {
+  font-family: 'monoReg';
+}
 
-  :root{
-    --primary-color: #131213;
-    --secondary-color: #ff002a;
-    --tertiary-color: #ffffff;
-  }
+:host ::ng-deep .mat-list-item-content {
+  font-family: 'monoReg';
+}
