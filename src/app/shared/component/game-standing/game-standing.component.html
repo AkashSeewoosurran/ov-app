@@ -1,9 +1,15 @@
 <mat-card class="header-card">
     <mat-card-header>
-        <mat-card-subtitle>Calculate the game standing</mat-card-subtitle>
+        <mat-card-subtitle *ngIf="casterDisabled" >Calculate the game standing</mat-card-subtitle>
     </mat-card-header>
+    <mat-card-content>
+      <div class="stats-container">
+          <span  *ngFor="let player of matchLengths; let i = index" [matBadge]="player" 
+          [ngStyle]="{'background-color' : player > 0 ? 'green' : 'red'}" > {{ i + 1 }} MATCH </span>     
+      </div>
+    </mat-card-content>
     <mat-card-actions align="end">
-        <button mat-raised-button color="primary" (click)="generateGameStanding()">Upload</button>
+<button mat-raised-button color="primary" *ngIf="casterDisabled" [disabled]="!isGameValid" (click)="saveOverallStanding()">Upload</button>
     </mat-card-actions>
 
 </mat-card>
@@ -26,6 +32,11 @@
     <ng-container matColumnDef="teamName">
       <th mat-header-cell *matHeaderCellDef> NAME </th>
       <td mat-cell *matCellDef="let element"> {{element.teamName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="wwcd">
+      <th mat-header-cell *matHeaderCellDef> WINS </th>
+      <td mat-cell *matCellDef="let element"> {{element.wins}} </td>
     </ng-container>
     
     <ng-container matColumnDef="killNum">

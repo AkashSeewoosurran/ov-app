@@ -25,3 +25,33 @@ img {
     height: auto;
     overflow: hidden;
 }
+
+.stats-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    span {
+        font-size: 12px;
+        font-family: 'monoReg';
+        font-weight: bold;
+    }
+}
+
+th,
+.mat-header-cell {
+    color: var(--tertiary-color);
+    font-family: "monoBold", Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+td,
+.mat-cell {
+    font-family: "monoReg", Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.mat-column-teamLogo {
+    background-color: var(--primary-color);
+}
