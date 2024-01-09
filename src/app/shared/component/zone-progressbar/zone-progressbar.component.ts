@@ -42,7 +42,7 @@ import { CircleInfo, CircleZone } from '../../models/circleInfo.model';
           transform: 'translateY(0)',
         })
       ),
-      transition('up <=> down', [animate('0.3s ease-in-out')]),
+      transition('up <=> down', [animate('200ms ease-in-out')]),
     ]),
   ],
 })
@@ -65,21 +65,28 @@ export class ZoneProgressbarComponent implements OnInit, OnDestroy {
   timerStarted: boolean = false;
   private alive: boolean = true;
 
-  triggerTime : number = 0;
+  triggerTime: number = 0;
 
   constructor(private service: PubgmDataService) {}
 
   ngOnInit(): void {
     this.service.getCircleInfo().subscribe({
       next: (circleInfo: CircleZone) => {
-        console.log("circleInfo", circleInfo);
+        console.log('circleInfo', circleInfo);
         this.circleInfo = circleInfo;
-        if(circleInfo.circleInfo.CircleStatus == 0){
-          console.log(this.circleInfo.circleInfo.MaxTime - this.circleInfo.circleInfo.Counter);
-            if(this.circleInfo.circleInfo.MaxTime - this.circleInfo.circleInfo.Counter == 15){
-              console.log("NEED TO START PROGRESS BAR");
-              this.progressBoolean.next(true);
-            }
+        if (circleInfo.circleInfo.CircleStatus == 0) {
+          console.log(
+            this.circleInfo.circleInfo.MaxTime -
+              this.circleInfo.circleInfo.Counter
+          );
+          if (
+            this.circleInfo.circleInfo.MaxTime -
+              this.circleInfo.circleInfo.Counter ==
+            15
+          ) {
+            console.log('NEED TO START PROGRESS BAR');
+            this.progressBoolean.next(true);
+          }
         }
       },
     });

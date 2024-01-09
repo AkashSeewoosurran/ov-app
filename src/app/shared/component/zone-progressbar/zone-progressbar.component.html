@@ -1,4 +1,6 @@
-<div class="bar-container" [@slideUpDown]="(progressBoolean | async) ? 'down' : 'up'">
+<div class="bar-container" 
+[@slideUpDown]="(progressBoolean | async) ? 'down' : 'up'"
+>
     <div class="timer-container"><span class="timer-text"> {{this.timeLeft }}</span></div>
     <div class="close-container">
         <span class="close-text"> CIRCLE CLOSING IN </span>
