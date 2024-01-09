@@ -8,6 +8,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 // Import other Angular Material modules here
 
 const materialModules = [
@@ -20,6 +24,10 @@ const materialModules = [
   MatToolbarModule,
   MatSelectModule,
   MatListModule,
+  MatSlideToggleModule,
+  MatBadgeModule,
+  MatPaginatorModule,
+  MatSortModule,
 ];
 
 @NgModule({
