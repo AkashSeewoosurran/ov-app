@@ -42,10 +42,11 @@ import {
 export class PlayerTop5Component implements OnInit {
   top5Columns: string[] = ['playerName', 'rank', 'damage'];
   top5playersDamage: MatTableDataSource<PlayerInfoList>;
-  showTop5: boolean = false;
+  showTop5: boolean = true;
   circleIndex = 0;
   maxTime = 30;
   counter = 0;
+  showTop5Kills: boolean;
 
   constructor(
     private sharedService: SharedService,
@@ -53,6 +54,9 @@ export class PlayerTop5Component implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.service.getDashboardData().subscribe((data) => {
+      this.showTop5Kills = data[0].toggleValue;
+    });
     this.service.getCircleInfo().subscribe((circleInfo) => {
       if (
         circleInfo.circleInfo.CircleIndex > 5 &&
@@ -69,6 +73,7 @@ export class PlayerTop5Component implements OnInit {
 
     this.sharedService.playerInfoList$.subscribe({
       next: (playerInfoList: PlayerInfoList[]) => {
+        console.log('playerinfo', playerInfoList);
         this.top5playersDamage = new MatTableDataSource(
           playerInfoList.sort((a, b) => b.damage - a.damage).slice(0, 5)
         );

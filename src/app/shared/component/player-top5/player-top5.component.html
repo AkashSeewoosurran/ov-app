@@ -1,5 +1,5 @@
-<div class="top5-container" [@slideInOutAnimationLeft]="showTop5 ? 'in' : 'out'">
-    <table mat-table class="top5-table" [dataSource]="top5playersDamage">
+<div class="top5-container" [@slideInOutAnimationLeft]="showTop5Kills ? 'in' : 'out'">
+    <table mat-table class="top5-table" [dataSource]="top5playersDamage"  [@slideInOutAnimationLeft]="showTop5 ? 'in' : 'out'">
 
       <ng-container matColumnDef="playerName">
         <th mat-header-cell *matHeaderCellDef> PLAYER</th>
@@ -11,9 +11,7 @@
           ELIMS
         </th>
         <td mat-cell class="top5Cell" *matCellDef="let element">
-          <ng-container >
             {{element.killNum}}
-          </ng-container>
         </td>
       </ng-container>
   
