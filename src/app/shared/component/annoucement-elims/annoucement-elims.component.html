@@ -1,4 +1,4 @@
-<div class="announcement-wrapper">  
+<!-- <div class="announcement-wrapper">  
     <div class="announcement" *ngIf="announcement" [@fadeInOut]>
             <div class="left">
                 <img class="left-logo" [src]="announcement.logoPicUrl"/>
@@ -13,4 +13,44 @@
             </div>
         </div>
         <ng-template #empty></ng-template>
-    </div>
+    </div> -->
+
+
+    <div class="announcement-wrapper">  
+        <div class="announcement" *ngIf="announcement" [@slideInOut] (@slideInOut.start)="onAnimationDone($event)">
+            <div class="top-bar"> #{{announcement.rank}} TEAM ELIMINATED</div>
+            <div class="bottom-bar">
+                <div class="left">
+                    <img class="left-logo" [src]="announcement.logoPicUrl"/>
+                </div>
+                <div class="middle">
+                    <div class="top-text">{{announcement.teamName}}</div>
+                </div>
+                <div class="right">
+                    <div class="right-top-text">ELIMS</div>
+                    <div class="right-bottom-text">{{announcement.killNum}}</div> 
+                </div>
+            </div>
+            </div>
+            <ng-template #empty></ng-template>
+        </div>
+
+
+    <!-- <div class="announcement-wrapper">
+        <div class="announcement" *ngIf="announcement" [@fadeInOut]>
+            <div class="rhombus">
+                <div class="left">
+                    <img class="left-logo" [src]="announcement.logoPicUrl"/>
+                </div>
+                <div class="middle top-text">
+                    {{announcement.teamName}}
+                </div>
+                <div class="right">
+                    <div class="right-top-text">#{{announcement.rank}}</div>
+                    <div class="right-bottom-text">ELIMS   {{announcement.killNum}}</div>
+                </div>
+            </div>
+        </div>
+        <ng-template #empty></ng-template>
+    </div> -->
+    

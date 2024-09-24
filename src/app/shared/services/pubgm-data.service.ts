@@ -19,6 +19,7 @@ import {
   TeamInfoList,
   ExcelTeamInfo,
   lstTeamInfo,
+  TeamBackPackInfo,
 } from '../models/teamInfo.model';
 import {
   ObsPlayer,
@@ -26,7 +27,11 @@ import {
   lstPlayerInfo,
   mvpPlayer,
 } from '../models/playerInfo.model';
-import { CircleZone } from '../models/circleInfo.model';
+import {
+  CircleZone,
+  GameGlobalInfo,
+  GameGlobalSizeInfo,
+} from '../models/circleInfo.model';
 import {
   MatchStandingInfo,
   OverallStandingInfo,
@@ -38,43 +43,42 @@ import {
 export class PubgmDataService {
   private service = environment.apiUrl;
   private localService = environment.localUrl;
+  private obs1Service = environment.obs1Url;
+  private obs2Service = environment.obs2Url;
   private matchService = environment.matchUrl;
   private playerService = environment.playerUrl;
 
   constructor(public http: HttpClient) {}
 
   //use with dummy data
-  getTeamInfoList(): Observable<TeamInfoList[]> {
+  getTeamInfoList(): Observable<any[]> {
     return interval(1000).pipe(
       switchMap(() => {
         return forkJoin({
-          teamInfoListArray: this.http.get<TeamInfoList[]>(
+          teamInfoListArray: this.http.get<any[]>(
             `${this.localService}/getteaminfolist`
           ),
           localTeamInfo: this.http.get<LocalTeamInfo[]>(
-            `${this.localService}/getteaminfo`
+            `${this.localService}/localteaminfo`
           ),
         });
       }),
+
       map(({ teamInfoListArray, localTeamInfo }) => {
         return teamInfoListArray.map((teamInfoList) => {
           const matchingTeam = localTeamInfo.find(
-            (team) =>
-              team.teamId === teamInfoList.teamId ||
-              team.teamName === teamInfoList.teamName
+            (team) => team.teamId == teamInfoList.teamId
           );
 
           if (matchingTeam) {
             teamInfoList.logoPicUrl = matchingTeam.teamLogo;
           }
-
           return teamInfoList;
         });
       })
     );
   }
 
-  //use with live data from api
   // getTeamInfoList(): Observable<lstTeamInfo> {
   //   return interval(1000).pipe(
   //     switchMap(() => {
@@ -83,22 +87,22 @@ export class PubgmDataService {
   //           `${this.service}/getteaminfolist`
   //         ),
   //         localTeamInfo: this.http.get<LocalTeamInfo[]>(
-  //           `${this.localService}/getteaminfo`
+  //           `${this.localService}/localTeamInfo`
   //         ),
   //       });
   //     }),
   //     map(({ teamInfoListArray, localTeamInfo }) => {
   //       return {
   //         teamInfoList: teamInfoListArray.teamInfoList.map((teamInfoList) => {
-  //           const matchingTeam = localTeamInfo.find(
-  //             (team) =>
-  //               team.teamId === teamInfoList.teamId ||
-  //               team.teamName === teamInfoList.teamName
-  //           );
+  //           // const matchingTeam = localTeamInfo.find(
+  //           //   (team) =>
+  //           //     team.teamId === teamInfoList.teamId ||
+  //           //     team.teamName === teamInfoList.teamName
+  //           // );
 
-  //           if (matchingTeam) {
-  //             teamInfoList.logoPicUrl = matchingTeam.teamLogo;
-  //           }
+  //           // if (matchingTeam) {
+  //           //   teamInfoList.logoPicUrl = matchingTeam.teamLogo;
+  //           // }
 
   //           return teamInfoList;
   //         }),
@@ -117,14 +121,14 @@ export class PubgmDataService {
             `${this.localService}/gettotalplayerlist`
           ),
           localTeamInfo: this.http.get<LocalTeamInfo[]>(
-            `${this.localService}/getteaminfo`
+            `${this.localService}/localteaminfo`
           ),
         });
       }),
       map(({ playerInfoListArray, localTeamInfo }) => {
         const playerInfoList = playerInfoListArray.map((playerInfoList) => {
           // Assign a default value to an attribute
-          //playerInfoList.character = 'assets/players/default.png';
+          playerInfoList.character = 'assets/players/default.png';
           // const playerPath = `assets/players/${playerInfoList.uId}.png`;
 
           // this.checkImageExists(playerPath)
@@ -137,7 +141,7 @@ export class PubgmDataService {
 
           // Add the localteamInfo.teamLogo to the playerInfoList.picUrl
           const matchingTeam = localTeamInfo.find(
-            (team) => team.teamId === playerInfoList.teamId
+            (team) => team.teamId == playerInfoList.teamId
           );
 
           if (matchingTeam) {
@@ -152,41 +156,41 @@ export class PubgmDataService {
     );
   }
 
+  testPlayerList(): Observable<lstPlayerInfo> {
+    return this.http.get<lstPlayerInfo>(
+      `${this.localService}/gettotalplayerlist`
+    );
+  }
+
   // getPlayerInfoList(): Observable<lstPlayerInfo> {
   //   return interval(1000).pipe(
   //     switchMap(() => {
   //       return forkJoin({
   //         playerInfoListArray: this.http.get<lstPlayerInfo>(
-  //           `${this.localService}/gettotalplayerlist`
+  //           `${this.service}/gettotalplayerlist`
   //         ),
   //         localTeamInfo: this.http.get<LocalTeamInfo[]>(
-  //           `${this.localService}/getteaminfo`
+  //           `${this.localService}/localTeamInfo`
   //         ),
   //       });
   //     }),
   //     map(({ playerInfoListArray, localTeamInfo }) => {
+  //       console.log('playerInfoListArray:', playerInfoListArray);
+  //       console.log('localTeamInfo:', localTeamInfo);
   //       return {
   //         playerInfoList: playerInfoListArray.playerInfoList.map(
-  //           (playerInfoList) => {
+  //           (playerInfoList: PlayerInfoList) => {
   //             // Assign a default value to an attribute
-  //             //playerInfoList.character = 'assets/players/default.png';
-  //             const playerPath = `assets/players/${playerInfoList.uId}.png`;
-
-  //             this.checkImageExists(playerPath)
-  //               .then(() => {
-  //                 playerInfoList.character = playerPath; // Remove optional chaining and nullish coalescing operator
-  //               })
-  //               .catch(() => {
-  //                 playerInfoList.character = 'assets/players/default.png'; // Update the property assignment
-  //               });
+  //             playerInfoList.character = 'assets/players/default.png';
 
   //             // Add the localteamInfo.teamLogo to the playerInfoList.picUrl
   //             const matchingTeam = localTeamInfo.find(
-  //               (team) => team.teamId === playerInfoList.teamId
+  //               (team) => team.teamId == playerInfoList.teamId
   //             );
 
   //             if (matchingTeam) {
   //               playerInfoList.picUrl = matchingTeam.teamLogo;
+  //               playerInfoList.teamName = matchingTeam.teamName;
   //             }
 
   //             return playerInfoList;
@@ -207,21 +211,97 @@ export class PubgmDataService {
   }
 
   getLocalTeamInfo(): Observable<LocalTeamInfo[]> {
-    return this.http.get<LocalTeamInfo[]>(`${this.localService}/getteaminfo`);
+    return this.http.get<LocalTeamInfo[]>(`${this.localService}/localteaminfo`);
   }
 
   getObservingPlayer(): Observable<ObsPlayer> {
     return interval(1000).pipe(
       switchMap(() => {
-        return this.http.get<ObsPlayer>(`${this.service}/getobservingplayer`);
+        return this.http.get<ObsPlayer>(
+          `${this.localService}/getobservingplayer`
+        );
       })
     );
   }
 
+  getObs1(): Observable<ObsPlayer> {
+    return interval(1000).pipe(
+      switchMap(() => {
+        return this.http.get<ObsPlayer>(
+          `${this.obs1Service}/getobservingplayer`
+        );
+      })
+    );
+  }
+
+  getObs2(): Observable<ObsPlayer> {
+    return interval(1000).pipe(
+      switchMap(() => {
+        return this.http.get<ObsPlayer>(
+          `${this.obs2Service}/getobservingplayer`
+        );
+      })
+    );
+  }
+
+  // getObservingPlayer(): Observable<ObsPlayer> {
+  //   return interval(1000).pipe(
+  //     switchMap(() => {
+  //       return this.http.get<ObsPlayer>(`${this.service}/getobservingplayer`);
+  //     })
+  //   );
+  // }
+
   getCircleInfo(): Observable<CircleZone> {
     return interval(1000).pipe(
       switchMap(() => {
-        return this.http.get<CircleZone>(`${this.service}/getcircleinfo`);
+        return this.http.get<CircleZone>(`${this.localService}/getcircleinfo`);
+      })
+    );
+  }
+
+  // getCircleInfo(): Observable<CircleZone> {
+  //   return interval(1000).pipe(
+  //     switchMap(() => {
+  //       return this.http.get<CircleZone>(`${this.service}/getcircleinfo`);
+  //     })
+  //   );
+  // }
+
+  getCircleSizeInfo(): Observable<GameGlobalSizeInfo> {
+    return interval(1000).pipe(
+      switchMap(() => {
+        return this.http.get<GameGlobalSizeInfo>(
+          `${this.localService}/getgameglobalinfo`
+        );
+      })
+    );
+  }
+
+  // getCircleSizeInfo(): Observable<GameGlobalSizeInfo> {
+  //   return interval(1000).pipe(
+  //     switchMap(() => {
+  //       return this.http.get<GameGlobalSizeInfo>(
+  //         `${this.service}/getgameglobalinfo`
+  //       );
+  //     })
+  //   );
+  // }
+
+  // getTeamBackPackInfo(): Observable<TeamBackPackInfo> {
+  //   return interval(1000).pipe(
+  //     switchMap(() => {
+  //       return this.http.get<TeamBackPackInfo>(
+  //         `${this.localService}/teambackpackinfo`
+  //       );
+  //     })
+  //   );
+  // }
+
+  getTeamBackPackInfo(): Observable<any> {
+    return interval(1000).pipe(
+      switchMap(() => {
+        return this.http.get<any>(`${this.service}/getteambackpackinfo`);
       })
     );
   }

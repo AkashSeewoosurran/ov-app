@@ -1,0 +1,24 @@
+<div class="overlay-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-subtitle>GAME DETAILS</mat-card-subtitle>
+    </mat-card-header>
+      <mat-card-content *ngIf="this.teamInfoList">
+          <span></span>
+      </mat-card-content>
+  </mat-card>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-subtitle>Overlay Controls</mat-card-subtitle>
+      </mat-card-header>
+        <mat-card-content>
+            <div class="slide-container">
+              <mat-list>
+                <mat-list-item> show Top 5 players : <mat-slide-toggle [checked]="showTop5Kills" (change)="onToggleChange($event, 1 , 'showTop5Kills')"></mat-slide-toggle></mat-list-item>
+                <mat-list-item> Survival Status : <mat-slide-toggle [checked]="showSurvivalStatus" (change)="onToggleChange($event, 2 , 'showSurvivalStatus')"></mat-slide-toggle></mat-list-item>
+                <mat-list-item> Player Details : <mat-slide-toggle  [checked]="showPlayerDetails" (change)="onToggleChange($event, 3 , 'showPlayerDetails')"></mat-slide-toggle></mat-list-item>
+              </mat-list>
+            </div>
+        </mat-card-content>
+    </mat-card>
+  </div>

@@ -24,7 +24,7 @@
             <div class="count-container">
                 <div class="count"> {{getTeamsAliveCount()}} </div>
                 <div class="count"> {{getPlayersAliveCount()}} </div>
-                <div class="count"> 0 </div>
+                <div class="count" *ngIf="circleInfo"> {{circleInfo.circleInfo.CircleIndex}}</div>
             </div>
             <div class="status-container">
                 <div class="status">

@@ -1,7 +1,7 @@
 .top5-container {
   position: absolute;
   height: 20%;
-  width: auto;
+  width: 100%;
   top: 33%;
 }
 
@@ -11,12 +11,12 @@
 }
 
 .top5Cell {
-  font-family: "monoBold", Arial, Helvetica, sans-serif;
+  font-family: "oswald-bold", Arial, Helvetica, sans-serif;
   font-size: medium;
   color: white;
   text-align: center;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
 
 }
 
@@ -36,15 +36,17 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: "monoBold", Arial, Helvetica, sans-serif;
+  font-family: "oswald-bold", Arial, Helvetica, sans-serif;
   font-size: small;
   color: white;
   text-align: left;
-  padding-left: 5px;
+  padding-left: 2px;
 }
 
 .mat-header-row {
-  background-color: #ff002a;
+  background-color: var(--secondary-color);
+  font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+  font-size: large;
   color: #ffffff;
 }
 

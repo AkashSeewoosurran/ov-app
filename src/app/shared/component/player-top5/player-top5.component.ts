@@ -73,7 +73,7 @@ export class PlayerTop5Component implements OnInit {
 
     this.sharedService.playerInfoList$.subscribe({
       next: (playerInfoList: PlayerInfoList[]) => {
-        console.log('playerinfo', playerInfoList);
+        // console.log('playerinfo', playerInfoList);
         this.top5playersDamage = new MatTableDataSource(
           playerInfoList.sort((a, b) => b.damage - a.damage).slice(0, 5)
         );

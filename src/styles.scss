@@ -16,8 +16,8 @@ body {
 
 
 :root {
-  --primary-color: #0a0c12;
-  --secondary-color: #ff002a;
+  --primary-color: #090d40;
+  --secondary-color: rgb(195, 48, 148);
   --tertiary-color: #ffffff;
 }
 
@@ -31,4 +31,9 @@ span {
 
 :host ::ng-deep .mat-list-item-content {
   font-family: 'monoReg';
+}
+
+.mat-table {
+  border-collapse: separate !important;
+  border-spacing: 0 4px !important;
 }

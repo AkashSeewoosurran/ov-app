@@ -23,14 +23,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-top: 50px;
+        margin-top: 80px;
 
         .top8-container {
             width: 45%;
 
             img {
                 width: auto;
-                height: 60px;
+                height: 40px;
+                border: 1px solid white;
+                border-radius: 1px;
+                margin-right: 8px;
             }
 
             .mat-cell,
@@ -63,103 +66,170 @@
 
 }
 
-.mat-column-lplacement,
-.mat-column-lelims,
-.mat-column-lwins,
-.mat-column-ltotal,
-.mat-column-lrank {
-    text-align: center;
+// .mat-column-lplacement,
+// .mat-column-lelims,
+// .mat-column-lwins,
+// .mat-column-ltotal,
+// .mat-column-lrank {
+//     text-align: center;
+// }
+
+// .mat-column-lteamLogo {
+//     width: 5%;
+// }
+
+// .mat-column-lteamName {
+//     min-width: 40%;
+
+//     font-family: 'neueCondBI';
+//     font-size: 32px;
+// }
+
+// .mat-column-lplacement,
+// .mat-column-lwins,
+// .mat-column-lelims {
+
+//     font-family: 'neueDemiBI';
+//     font-size: 26px;
+// }
+
+// .mat-column-ltotal {
+//     font-family: 'neueDemiBI';
+//     font-size: 33.5px;
+// }
+
+// .mat-column-lrank {
+//     font-family: 'neueCondDBI';
+//     font-size: 33px;
+// }
+
+
+
+// .first {
+//     border: 2px solid rgb(250, 165, 55);
+//     border-radius: 10px;
+//     box-shadow: 0px 0px 10px 0px rgba(250, 165, 55, 0.75);
+// }
+
+
+// .second {
+//     border: 2px solid rgb(219, 219, 219);
+//     border-radius: 10px;
+//     box-shadow: 0px 0px 10px 0px rgba(219, 219, 219, 0.75);
+// }
+
+// .third {
+//     border: 2px solid rgb(124, 81, 53);
+//     border-radius: 10px;
+//     box-shadow: 0px 0px 10px 0px rgba(124, 81, 53, 0.75);
+// }
+
+// .remaining {
+//     border: 2px solid rgb(129, 5, 25);
+//     border-radius: 10px;
+//     box-shadow: 0px 0px 10px 0px rgba(129, 5, 25, 0.75);
+// }
+
+// tr,
+// mat-row {
+//     border: 2px solid rgb(129, 5, 25);
+//     border-radius: 10px;
+// }
+
+// .mat-column-rplacement,
+// .mat-column-relims,
+// .mat-column-rtotal,
+// .mat-column-rrank {
+//     text-align: center;
+// }
+
+// .mat-column-rteamName {
+//     width: auto;
+
+//     font-family: 'neueCondBI';
+//     font-size: 30px;
+// }
+
+// .mat-column-rplacement,
+// .mat-column-relims {
+
+//     font-family: 'neueDemiBI';
+//     font-size: 25.4px;
+// }
+
+// .mat-column-rtotal {
+//     font-family: 'neueDemiBI';
+//     font-size: 32.3px;
+// }
+
+// .mat-column-rrank {
+//     font-family: 'neueCondMedIta';
+//     font-size: 32px;
+// }
+
+.custom-row {
+    background: #090d40;
+    border-radius: 5px;
+    position: relative;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    overflow: hidden;
+    height: 60px;
+    margin-bottom: 21px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(90deg, #ff00ff, #00ffff);
+        border-radius: inherit;
+        z-index: -1;
+    }
 }
 
-.mat-column-lteamLogo {
-    width: 5%;
+.rank {
+    font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.mat-column-lteamName {
-    min-width: 40%;
-
-    font-family: 'neueCondBI';
-    font-size: 32px;
+.teamName {
+    font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-.mat-column-lplacement,
-.mat-column-lwins,
-.mat-column-lelims {
-
-    font-family: 'neueDemiBI';
-    font-size: 26px;
-}
-
-.mat-column-ltotal {
-    font-family: 'neueDemiBI';
-    font-size: 33.5px;
-}
-
-.mat-column-lrank {
-    font-family: 'neueCondDBI';
-    font-size: 33px;
-}
-
-
-
-.first {
-    border: 2px solid rgb(250, 165, 55);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(250, 165, 55, 0.75);
-}
-
-
-.second {
-    border: 2px solid rgb(219, 219, 219);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(219, 219, 219, 0.75);
-}
-
-.third {
-    border: 2px solid rgb(124, 81, 53);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(124, 81, 53, 0.75);
-}
-
-.remaining {
-    border: 2px solid rgb(129, 5, 25);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(129, 5, 25, 0.75);
-}
-
-tr,
-mat-row {
-    border: 2px solid rgb(129, 5, 25);
-    border-radius: 10px;
-}
-
-.mat-column-rplacement,
-.mat-column-relims,
-.mat-column-rtotal,
-.mat-column-rrank {
-    text-align: center;
-}
-
-.mat-column-rteamName {
-    width: auto;
-
-    font-family: 'neueCondBI';
-    font-size: 30px;
-}
-
-.mat-column-rplacement,
-.mat-column-relims {
-
-    font-family: 'neueDemiBI';
-    font-size: 25.4px;
-}
-
-.mat-column-rtotal {
-    font-family: 'neueDemiBI';
-    font-size: 32.3px;
-}
-
-.mat-column-rrank {
-    font-family: 'neueCondMedIta';
-    font-size: 32px;
+.placementPoints,
+.wins,
+.killNum,
+.totalPoints {
+    font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    width: 12.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

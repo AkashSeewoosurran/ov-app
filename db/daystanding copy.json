@@ -1,0 +1,2114 @@
+{
+  "matchstanding1": [
+    {
+      "teamName": "XPACE",
+      "rank": 1,
+      "killNum": 11,
+      "placementPoints": 10,
+      "totalPoints": 21,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 1
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 3,
+      "killNum": 10,
+      "placementPoints": 5,
+      "totalPoints": 15,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 2
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 2,
+      "killNum": 8,
+      "placementPoints": 6,
+      "totalPoints": 14,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 3
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 4,
+      "killNum": 6,
+      "placementPoints": 4,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 4
+    },
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 9,
+      "killNum": 6,
+      "placementPoints": 0,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 5
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 5,
+      "killNum": 2,
+      "placementPoints": 3,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 6
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 6,
+      "killNum": 3,
+      "placementPoints": 2,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 7
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 12,
+      "killNum": 5,
+      "placementPoints": 0,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 8
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 7,
+      "killNum": 3,
+      "placementPoints": 1,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 9
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 8,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 10
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 10,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 11
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 11,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 12
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 13,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 13
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 14,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 14
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 15,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 15
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 16,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 16
+    }
+  ],
+  "matchstanding2": [
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 1,
+      "killNum": 14,
+      "placementPoints": 10,
+      "totalPoints": 24,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 1
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 3,
+      "killNum": 9,
+      "placementPoints": 5,
+      "totalPoints": 14,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 2
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 2,
+      "killNum": 5,
+      "placementPoints": 6,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 3
+    },
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 4,
+      "killNum": 6,
+      "placementPoints": 4,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 4
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 5,
+      "killNum": 7,
+      "placementPoints": 3,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 5
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 9,
+      "killNum": 6,
+      "placementPoints": 0,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 6
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 7,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 7
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 13,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 8
+    },
+    {
+      "teamName": "PRODIGY ESPORTS",
+      "rank": 6,
+      "killNum": 0,
+      "placementPoints": 2,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 9
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 8,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 10
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 11,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 11
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 12,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 12
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 10,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 13
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 14,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 14
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 15,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 15
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 16,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 16
+    }
+  ],
+  "matchstanding3": [
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 1,
+      "killNum": 16,
+      "placementPoints": 10,
+      "totalPoints": 26,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 1
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 2,
+      "killNum": 5,
+      "placementPoints": 6,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 2
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 3,
+      "killNum": 6,
+      "placementPoints": 5,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 3
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 4,
+      "killNum": 3,
+      "placementPoints": 4,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 4
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 6,
+      "killNum": 5,
+      "placementPoints": 2,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 5
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 5,
+      "killNum": 3,
+      "placementPoints": 3,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 6
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 15,
+      "killNum": 6,
+      "placementPoints": 0,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 7
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 7,
+      "killNum": 4,
+      "placementPoints": 1,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 8
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 8,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 9
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 9,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 10
+    },
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 16,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 11
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 14,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 12
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 12,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 13
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 13,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 14
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 10,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 15
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 11,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 16
+    }
+  ],
+  "matchstanding4": [
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 1,
+      "killNum": 13,
+      "placementPoints": 10,
+      "totalPoints": 23,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 1
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 2,
+      "killNum": 8,
+      "placementPoints": 6,
+      "totalPoints": 14,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 2
+    },
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 5,
+      "killNum": 7,
+      "placementPoints": 3,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 3
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 4,
+      "killNum": 4,
+      "placementPoints": 4,
+      "totalPoints": 8,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 4
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 3,
+      "killNum": 2,
+      "placementPoints": 5,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 5
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 8,
+      "killNum": 6,
+      "placementPoints": 1,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 6
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 6,
+      "killNum": 3,
+      "placementPoints": 2,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 7
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 12,
+      "killNum": 5,
+      "placementPoints": 0,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 8
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 7,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 9
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 9,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 10
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 15,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 11
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 16,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 12
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 11,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 13
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 10,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 14
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 13,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 15
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 14,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 16
+    }
+  ],
+  "matchstanding5": [
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 1,
+      "killNum": 18,
+      "placementPoints": 10,
+      "totalPoints": 28,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 1
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 3,
+      "killNum": 7,
+      "placementPoints": 5,
+      "totalPoints": 12,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 2
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 6,
+      "killNum": 8,
+      "placementPoints": 2,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 3
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 2,
+      "killNum": 3,
+      "placementPoints": 6,
+      "totalPoints": 9,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 4
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 10,
+      "killNum": 6,
+      "placementPoints": 0,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 5
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 5,
+      "killNum": 2,
+      "placementPoints": 3,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 6
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 4,
+      "killNum": 0,
+      "placementPoints": 4,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 7
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 7,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 8
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 8,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 9
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 11,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 10
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 12,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 11
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 13,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 12
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 14,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 13
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 9,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 14
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 15,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 15
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 16,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 16
+    }
+  ],
+  "matchstanding6": [
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 1,
+      "killNum": 13,
+      "placementPoints": 10,
+      "totalPoints": 23,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 1
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 2,
+      "killNum": 11,
+      "placementPoints": 6,
+      "totalPoints": 17,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 2
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 3,
+      "killNum": 6,
+      "placementPoints": 5,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 3
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 5,
+      "killNum": 7,
+      "placementPoints": 3,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 4
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 4,
+      "killNum": 2,
+      "placementPoints": 4,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 5
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 6,
+      "killNum": 4,
+      "placementPoints": 2,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 6
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 7,
+      "killNum": 4,
+      "placementPoints": 1,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 7
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 13,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 8
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 8,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 9
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 15,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 10
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 10,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 11
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 11,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 12
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 14,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 13
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 9,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 14
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 12,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 15
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 16,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 16
+    }
+  ],
+  "matchstanding7": [
+    {
+      "teamName": "FOR YOU",
+      "rank": 1,
+      "killNum": 16,
+      "placementPoints": 10,
+      "totalPoints": 26,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 1
+    },
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 3,
+      "killNum": 7,
+      "placementPoints": 5,
+      "totalPoints": 12,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 2
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 2,
+      "killNum": 3,
+      "placementPoints": 6,
+      "totalPoints": 9,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 3
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 5,
+      "killNum": 6,
+      "placementPoints": 3,
+      "totalPoints": 9,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 4
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 6,
+      "killNum": 4,
+      "placementPoints": 2,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 5
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 9,
+      "killNum": 5,
+      "placementPoints": 0,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 6
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 13,
+      "killNum": 5,
+      "placementPoints": 0,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 7
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 4,
+      "killNum": 0,
+      "placementPoints": 4,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 8
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 7,
+      "killNum": 3,
+      "placementPoints": 1,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 9
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 8,
+      "killNum": 3,
+      "placementPoints": 1,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 10
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 16,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 11
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 11,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 12
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 14,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 13
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 10,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 14
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 12,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 15
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 15,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 16
+    }
+  ],
+  "matchstanding8": [
+    {
+      "teamName": "FOR YOU",
+      "rank": 1,
+      "killNum": 13,
+      "placementPoints": 10,
+      "totalPoints": 23,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 1
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 3,
+      "killNum": 7,
+      "placementPoints": 5,
+      "totalPoints": 12,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 2
+    },
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 2,
+      "killNum": 5,
+      "placementPoints": 6,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 3
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 5,
+      "killNum": 7,
+      "placementPoints": 3,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 4
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 6,
+      "killNum": 6,
+      "placementPoints": 2,
+      "totalPoints": 8,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 5
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 4,
+      "killNum": 1,
+      "placementPoints": 4,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 6
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 7,
+      "killNum": 3,
+      "placementPoints": 1,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 7
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 9,
+      "killNum": 4,
+      "placementPoints": 0,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 8
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 13,
+      "killNum": 4,
+      "placementPoints": 0,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 9
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 10,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 10
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 8,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 11
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 16,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 12
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 12,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 13
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 14,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 14
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 15,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 15
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 11,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 16
+    }
+  ],
+  "matchstanding9": [
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 2,
+      "killNum": 13,
+      "placementPoints": 6,
+      "totalPoints": 19,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 1
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 1,
+      "killNum": 5,
+      "placementPoints": 10,
+      "totalPoints": 15,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 2
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 5,
+      "killNum": 9,
+      "placementPoints": 3,
+      "totalPoints": 12,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 3
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 4,
+      "killNum": 7,
+      "placementPoints": 4,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 4
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 3,
+      "killNum": 1,
+      "placementPoints": 5,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 5
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 6,
+      "killNum": 4,
+      "placementPoints": 2,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 6
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 10,
+      "killNum": 6,
+      "placementPoints": 0,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 7
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 12,
+      "killNum": 4,
+      "placementPoints": 0,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 8
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 7,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 9
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 8,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 10
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 11,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 11
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 15,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 12
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 9,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 13
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 14,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 14
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 16,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 15
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 13,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 16
+    }
+  ],
+  "matchstanding10": [
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 1,
+      "killNum": 14,
+      "placementPoints": 10,
+      "totalPoints": 24,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 1
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 2,
+      "killNum": 7,
+      "placementPoints": 6,
+      "totalPoints": 13,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 2
+    },
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 3,
+      "killNum": 7,
+      "placementPoints": 5,
+      "totalPoints": 12,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 3
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 4,
+      "killNum": 6,
+      "placementPoints": 4,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 4
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 6,
+      "killNum": 7,
+      "placementPoints": 2,
+      "totalPoints": 9,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 5
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 11,
+      "killNum": 7,
+      "placementPoints": 0,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 6
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 5,
+      "killNum": 1,
+      "placementPoints": 3,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 7
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 7,
+      "killNum": 3,
+      "placementPoints": 1,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 8
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 8,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 9
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 14,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 10
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 15,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 11
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 9,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 12
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 10,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 13
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 12,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 14
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 13,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 15
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 16,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 16
+    }
+  ],
+  "matchstanding11": [
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 1,
+      "killNum": 16,
+      "placementPoints": 10,
+      "totalPoints": 26,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 1
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 2,
+      "killNum": 9,
+      "placementPoints": 6,
+      "totalPoints": 15,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 2
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 3,
+      "killNum": 7,
+      "placementPoints": 5,
+      "totalPoints": 12,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 3
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 4,
+      "killNum": 4,
+      "placementPoints": 4,
+      "totalPoints": 8,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 4
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 5,
+      "killNum": 5,
+      "placementPoints": 3,
+      "totalPoints": 8,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 5
+    },
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 7,
+      "killNum": 6,
+      "placementPoints": 1,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 6
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 9,
+      "killNum": 5,
+      "placementPoints": 0,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 7
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 6,
+      "killNum": 1,
+      "placementPoints": 2,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 8
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 8,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 9
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 11,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 10
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 10,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 11
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 13,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 12
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 12,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 13
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 14,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 14
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 15,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 15
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 16,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 16
+    }
+  ],
+  "matchstanding12": [
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 1,
+      "killNum": 8,
+      "placementPoints": 10,
+      "totalPoints": 18,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 1
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 3,
+      "killNum": 7,
+      "placementPoints": 5,
+      "totalPoints": 12,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 2
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 4,
+      "killNum": 7,
+      "placementPoints": 4,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 3
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 2,
+      "killNum": 4,
+      "placementPoints": 6,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 4
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 6,
+      "killNum": 4,
+      "placementPoints": 2,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 5
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 14,
+      "killNum": 6,
+      "placementPoints": 0,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 6
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 7,
+      "killNum": 4,
+      "placementPoints": 1,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 7
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 5,
+      "killNum": 0,
+      "placementPoints": 3,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 8
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 8,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 9
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 9,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 10
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 10,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 11
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 11,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 12
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 13,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 13
+    },
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 12,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 14
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 15,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 15
+    }
+  ],
+  "overallstanding": [
+    {
+      "teamName": "TEAM UNIQUE",
+      "rank": 1,
+      "killNum": 92,
+      "placementPoints": 50,
+      "totalPoints": 142,
+      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
+      "teamId": 21,
+      "id": 5,
+      "wins": 2
+    },
+    {
+      "teamName": "MAU ESPORTS",
+      "rank": 2,
+      "killNum": 77,
+      "placementPoints": 48,
+      "totalPoints": 125,
+      "teamLogo": "assets/Logo/MAU ESPORTS.png",
+      "teamId": 11,
+      "id": 4,
+      "wins": 1
+    },
+    {
+      "teamName": "MAZOR GAMING",
+      "rank": 3,
+      "killNum": 68,
+      "placementPoints": 39,
+      "totalPoints": 107,
+      "teamLogo": "assets/Logo/MAZOR GAMING.png",
+      "teamId": 12,
+      "id": 2,
+      "wins": 1
+    },
+    {
+      "teamName": "MN1 ESPORTS",
+      "rank": 4,
+      "killNum": 55,
+      "placementPoints": 41,
+      "totalPoints": 96,
+      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
+      "teamId": 13,
+      "id": 8,
+      "wins": 0
+    },
+    {
+      "teamName": "FOR YOU",
+      "rank": 5,
+      "killNum": 55,
+      "placementPoints": 28,
+      "totalPoints": 83,
+      "teamLogo": "assets/Logo/FOR YOU.png",
+      "teamId": 10,
+      "id": 11,
+      "wins": 2
+    },
+    {
+      "teamName": "ROGUE ESPORTS",
+      "rank": 6,
+      "killNum": 49,
+      "placementPoints": 31,
+      "totalPoints": 80,
+      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
+      "teamId": 17,
+      "id": 15,
+      "wins": 1
+    },
+    {
+      "teamName": "TEAM 4MV",
+      "rank": 7,
+      "killNum": 57,
+      "placementPoints": 17,
+      "totalPoints": 74,
+      "teamLogo": "assets/Logo/TEAM 4MV.png",
+      "teamId": 19,
+      "id": 7,
+      "wins": 1
+    },
+    {
+      "teamName": "THE FINAL QUEST",
+      "rank": 8,
+      "killNum": 43,
+      "placementPoints": 25,
+      "totalPoints": 68,
+      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
+      "teamId": 22,
+      "id": 13,
+      "wins": 2
+    },
+    {
+      "teamName": "XPACE",
+      "rank": 9,
+      "killNum": 31,
+      "placementPoints": 29,
+      "totalPoints": 60,
+      "teamLogo": "assets/Logo/XPACE.png",
+      "teamId": 25,
+      "id": 1,
+      "wins": 1
+    },
+    {
+      "teamName": "NOS ESPORTS",
+      "rank": 10,
+      "killNum": 39,
+      "placementPoints": 17,
+      "totalPoints": 56,
+      "teamLogo": "assets/Logo/NOS ESPORTS.png",
+      "teamId": 15,
+      "id": 3,
+      "wins": 0
+    },
+    {
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 11,
+      "killNum": 35,
+      "placementPoints": 21,
+      "totalPoints": 56,
+      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
+      "teamId": 16,
+      "id": 6,
+      "wins": 0
+    },
+    {
+      "teamName": "TEAM ATOM",
+      "rank": 12,
+      "killNum": 34,
+      "placementPoints": 19,
+      "totalPoints": 53,
+      "teamLogo": "assets/Logo/TEAM ATOM.png",
+      "teamId": 20,
+      "id": 9,
+      "wins": 1
+    },
+    {
+      "teamName": "MZR ES AF",
+      "rank": 13,
+      "killNum": 19,
+      "placementPoints": 5,
+      "totalPoints": 24,
+      "teamLogo": "assets/Logo/MZR ES AF.png",
+      "teamId": 14,
+      "id": 10,
+      "wins": 0
+    },
+    {
+      "teamName": "UNIQUE GIRLS",
+      "rank": 14,
+      "killNum": 20,
+      "placementPoints": 4,
+      "totalPoints": 24,
+      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
+      "teamId": 23,
+      "id": 16,
+      "wins": 0
+    },
+    {
+      "teamName": "UNTOLD",
+      "rank": 15,
+      "killNum": 20,
+      "placementPoints": 3,
+      "totalPoints": 23,
+      "teamLogo": "assets/Logo/UNTOLD.png",
+      "teamId": 24,
+      "id": 12,
+      "wins": 0
+    },
+    {
+      "teamName": "SMFXESPORTS",
+      "rank": 16,
+      "killNum": 9,
+      "placementPoints": 7,
+      "totalPoints": 16,
+      "teamLogo": "assets/Logo/SMFXESPORTS.png",
+      "teamId": 18,
+      "id": 14,
+      "wins": 0
+    }
+  ]
+}

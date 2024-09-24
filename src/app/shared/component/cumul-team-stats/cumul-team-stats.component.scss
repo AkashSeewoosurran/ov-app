@@ -1,0 +1,24 @@
+img {
+    width: auto;
+    height: 30px;
+    border: 2px solid white;
+    /* Change as needed */
+    border-radius: 10px;
+    /* Change as needed */
+}
+
+.mat-cell,
+td {
+    background-color: #171617;
+    color: var(--tertiary-color);
+    font-size: 24px;
+    font-family: 'neueCondBI';
+}
+
+.mat-header-cell,
+th {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    font-family: 'neueCondBlackIt';
+    font-size: 24px;
+}

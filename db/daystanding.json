@@ -1,141 +1,1459 @@
 {
   "matchstanding1": [
     {
-      "teamName": "Team10",
+      "id": "e559",
+      "teamName": "GOALDIGGERS ESPORTS",
       "rank": 1,
-      "killNum": 8,
+      "killNum": 10,
       "placementPoints": 10,
-      "teamId": 10,
-      "totalPoints": 18,
-      "teamLogo": "assets/Logo/SMFXESPORTS.png",
-      "id": 1
+      "totalPoints": 20,
+      "teamLogo": "assets/Logo/23.png",
+      "teamId": 23
     },
     {
-      "teamName": "Team13",
-      "rank": 2,
-      "killNum": 5,
-      "placementPoints": 6,
-      "teamId": 13,
-      "totalPoints": 11,
-      "teamLogo": "assets/Logo/MAU ESPORTS.png",
-      "id": 2
-    },
-    {
-      "teamName": "Team11",
+      "id": "6a00",
+      "teamName": "AESTHETIC ESPORTS",
       "rank": 3,
-      "killNum": 5,
+      "killNum": 12,
       "placementPoints": 5,
-      "teamId": 11,
-      "totalPoints": 10,
-      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
-      "id": 3
+      "totalPoints": 17,
+      "teamLogo": "assets/Logo/13.png",
+      "teamId": 13
+    },
+    {
+      "id": "1937",
+      "teamName": "OVERKILL",
+      "rank": 2,
+      "killNum": 9,
+      "placementPoints": 6,
+      "totalPoints": 15,
+      "teamLogo": "assets/Logo/19.png",
+      "teamId": 19
+    },
+    {
+      "id": "d7c8",
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 5,
+      "killNum": 11,
+      "placementPoints": 3,
+      "totalPoints": 14,
+      "teamLogo": "assets/Logo/24.png",
+      "teamId": 24
+    },
+    {
+      "id": "b828",
+      "teamName": "FAKE DREAM",
+      "rank": 4,
+      "killNum": 2,
+      "placementPoints": 4,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/14.png",
+      "teamId": 14
+    },
+    {
+      "id": "fee8",
+      "teamName": "ZODIAC ESPORTS",
+      "rank": 6,
+      "killNum": 3,
+      "placementPoints": 2,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/15.png",
+      "teamId": 15
+    },
+    {
+      "id": "8696",
+      "teamName": "EVOLUTION MRU",
+      "rank": 8,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/11.png",
+      "teamId": 11
+    },
+    {
+      "id": "1248",
+      "teamName": "VOID GAMING",
+      "rank": 11,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/22.png",
+      "teamId": 22
+    },
+    {
+      "id": "1a85",
+      "teamName": "MAURITIUS 1992 ESPORTS",
+      "rank": 7,
+      "killNum": 0,
+      "placementPoints": 1,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/16.png",
+      "teamId": 16
+    },
+    {
+      "id": "fa07",
+      "teamName": "READY 2 CONQUER",
+      "rank": 9,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/25.png",
+      "teamId": 25
+    },
+    {
+      "id": "c417",
+      "teamName": "TEAM ATOM",
+      "rank": 10,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/12.png",
+      "teamId": 12
+    },
+    {
+      "id": "85f9",
+      "teamName": "RAGEFURY ESPORTS",
+      "rank": 12,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/20.png",
+      "teamId": 20
+    },
+    {
+      "id": "0809",
+      "teamName": "LAST SURVIVOR",
+      "rank": 13,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/18.png",
+      "teamId": 18
+    },
+    {
+      "id": "dab1",
+      "teamName": "NOS ESPORTS",
+      "rank": 14,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/21.png",
+      "teamId": 21
+    },
+    {
+      "id": "ba50",
+      "teamName": "MAU ESPORTS",
+      "rank": 15,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/17.png",
+      "teamId": 17
     }
   ],
   "matchstanding2": [
     {
-      "teamName": "Team13",
+      "id": "906f",
+      "teamName": "EVOLUTION MRU",
       "rank": 1,
-      "killNum": 4,
+      "killNum": 16,
       "placementPoints": 10,
-      "teamId": 13,
-      "totalPoints": 14,
-      "teamLogo": "assets/Logo/MAU ESPORTS.png",
-      "id": 1
+      "totalPoints": 26,
+      "teamLogo": "assets/Logo/11.png",
+      "teamId": 11
     },
     {
-      "teamName": "Team11",
+      "id": "07c5",
+      "teamName": "TEAM ATOM",
       "rank": 3,
-      "killNum": 8,
+      "killNum": 6,
       "placementPoints": 5,
-      "teamId": 11,
-      "totalPoints": 13,
-      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
-      "id": 2
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/12.png",
+      "teamId": 12
     },
     {
-      "teamName": "Team10",
+      "id": "b210",
+      "teamName": "RAGEFURY ESPORTS",
       "rank": 2,
-      "killNum": 6,
+      "killNum": 3,
       "placementPoints": 6,
-      "teamId": 10,
-      "totalPoints": 12,
-      "teamLogo": "assets/Logo/SMFXESPORTS.png",
-      "id": 3
+      "totalPoints": 9,
+      "teamLogo": "assets/Logo/20.png",
+      "teamId": 20
+    },
+    {
+      "id": "f4bd",
+      "teamName": "LAST SURVIVOR",
+      "rank": 5,
+      "killNum": 6,
+      "placementPoints": 3,
+      "totalPoints": 9,
+      "teamLogo": "assets/Logo/18.png",
+      "teamId": 18
+    },
+    {
+      "id": "7b9e",
+      "teamName": "THE FINAL QUEST",
+      "rank": 11,
+      "killNum": 9,
+      "placementPoints": 0,
+      "totalPoints": 9,
+      "teamLogo": "assets/Logo/10.png",
+      "teamId": 10
+    },
+    {
+      "id": "c06d",
+      "teamName": "VOID GAMING",
+      "rank": 4,
+      "killNum": 3,
+      "placementPoints": 4,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/22.png",
+      "teamId": 22
+    },
+    {
+      "id": "244d",
+      "teamName": "AESTHETIC ESPORTS",
+      "rank": 6,
+      "killNum": 5,
+      "placementPoints": 2,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/13.png",
+      "teamId": 13
+    },
+    {
+      "id": "ac12",
+      "teamName": "MAU ESPORTS",
+      "rank": 10,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/17.png",
+      "teamId": 17
+    },
+    {
+      "id": "95c2",
+      "teamName": "READY 2 CONQUER",
+      "rank": 7,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/25.png",
+      "teamId": 25
+    },
+    {
+      "id": "9cf9",
+      "teamName": "ZODIAC ESPORTS",
+      "rank": 8,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/15.png",
+      "teamId": 15
+    },
+    {
+      "id": "497c",
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 12,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/24.png",
+      "teamId": 24
+    },
+    {
+      "id": "640c",
+      "teamName": "FAKE DREAM",
+      "rank": 13,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/14.png",
+      "teamId": 14
+    },
+    {
+      "id": "22c8",
+      "teamName": "GOALDIGGERS ESPORTS",
+      "rank": 9,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/23.png",
+      "teamId": 23
+    },
+    {
+      "id": "1235",
+      "teamName": "OVERKILL",
+      "rank": 16,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/19.png",
+      "teamId": 19
+    },
+    {
+      "id": "9eeb",
+      "teamName": "NOS ESPORTS",
+      "rank": 14,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/21.png",
+      "teamId": 21
+    },
+    {
+      "id": "5fb3",
+      "teamName": "MAURITIUS 1992 ESPORTS",
+      "rank": 15,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/16.png",
+      "teamId": 16
     }
   ],
   "matchstanding3": [
     {
-      "teamName": "Team13",
+      "id": "be4f",
+      "teamName": "AESTHETIC ESPORTS",
+      "rank": 1,
+      "killNum": 9,
+      "placementPoints": 10,
+      "totalPoints": 19,
+      "teamLogo": "assets/Logo/13.png",
+      "teamId": 13
+    },
+    {
+      "id": "6284",
+      "teamName": "TEAM ATOM",
+      "rank": 6,
+      "killNum": 11,
+      "placementPoints": 2,
+      "totalPoints": 13,
+      "teamLogo": "assets/Logo/12.png",
+      "teamId": 12
+    },
+    {
+      "id": "f3c2",
+      "teamName": "RAGEFURY ESPORTS",
+      "rank": 3,
+      "killNum": 6,
+      "placementPoints": 5,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/20.png",
+      "teamId": 20
+    },
+    {
+      "id": "734e",
+      "teamName": "ZODIAC ESPORTS",
+      "rank": 2,
+      "killNum": 3,
+      "placementPoints": 6,
+      "totalPoints": 9,
+      "teamLogo": "assets/Logo/15.png",
+      "teamId": 15
+    },
+    {
+      "id": "eb9a",
+      "teamName": "MAU ESPORTS",
+      "rank": 5,
+      "killNum": 4,
+      "placementPoints": 3,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/17.png",
+      "teamId": 17
+    },
+    {
+      "id": "339c",
+      "teamName": "THE FINAL QUEST",
+      "rank": 9,
+      "killNum": 7,
+      "placementPoints": 0,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/10.png",
+      "teamId": 10
+    },
+    {
+      "id": "8130",
+      "teamName": "LAST SURVIVOR",
+      "rank": 4,
+      "killNum": 1,
+      "placementPoints": 4,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/18.png",
+      "teamId": 18
+    },
+    {
+      "id": "d185",
+      "teamName": "MAURITIUS 1992 ESPORTS",
+      "rank": 10,
+      "killNum": 4,
+      "placementPoints": 0,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/16.png",
+      "teamId": 16
+    },
+    {
+      "id": "2216",
+      "teamName": "GOALDIGGERS ESPORTS",
+      "rank": 12,
+      "killNum": 4,
+      "placementPoints": 0,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/23.png",
+      "teamId": 23
+    },
+    {
+      "id": "4059",
+      "teamName": "READY 2 CONQUER",
+      "rank": 8,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/25.png",
+      "teamId": 25
+    },
+    {
+      "id": "f9c9",
+      "teamName": "VOID GAMING",
+      "rank": 7,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/22.png",
+      "teamId": 22
+    },
+    {
+      "id": "d728",
+      "teamName": "FAKE DREAM",
+      "rank": 11,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/14.png",
+      "teamId": 14
+    },
+    {
+      "id": "e641",
+      "teamName": "EVOLUTION MRU",
+      "rank": 14,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/11.png",
+      "teamId": 11
+    },
+    {
+      "id": "472c",
+      "teamName": "NOS ESPORTS",
+      "rank": 15,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/21.png",
+      "teamId": 21
+    },
+    {
+      "id": "9cd9",
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 13,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/24.png",
+      "teamId": 24
+    },
+    {
+      "id": "82ad",
+      "teamName": "OVERKILL",
+      "rank": 16,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/19.png",
+      "teamId": 19
+    }
+  ],
+  "matchstanding4": [
+    {
+      "id": "f61d",
+      "teamName": "EVOLUTION MRU",
       "rank": 1,
       "killNum": 10,
       "placementPoints": 10,
-      "teamId": 13,
       "totalPoints": 20,
-      "teamLogo": "assets/Logo/MAU ESPORTS.png",
-      "id": 2
+      "teamLogo": "assets/Logo/11.png",
+      "teamId": 11
     },
     {
-      "teamName": "Team11",
-      "rank": 1,
-      "killNum": 10,
-      "placementPoints": 6,
-      "teamId": 11,
-      "totalPoints": 16,
-      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
-      "id": 1
-    },
-    {
-      "teamName": "Team10",
+      "id": "4ca7",
+      "teamName": "MAURITIUS 1992 ESPORTS",
       "rank": 2,
-      "killNum": 6,
+      "killNum": 8,
       "placementPoints": 6,
-      "teamId": 10,
+      "totalPoints": 14,
+      "teamLogo": "assets/Logo/16.png",
+      "teamId": 16
+    },
+    {
+      "id": "123b",
+      "teamName": "MAU ESPORTS",
+      "rank": 3,
+      "killNum": 7,
+      "placementPoints": 5,
       "totalPoints": 12,
-      "teamLogo": "assets/Logo/SMFXESPORTS.png",
-      "id": 3
+      "teamLogo": "assets/Logo/17.png",
+      "teamId": 17
+    },
+    {
+      "id": "c147",
+      "teamName": "ZODIAC ESPORTS",
+      "rank": 11,
+      "killNum": 10,
+      "placementPoints": 0,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/15.png",
+      "teamId": 15
+    },
+    {
+      "id": "7b6e",
+      "teamName": "NOS ESPORTS",
+      "rank": 4,
+      "killNum": 2,
+      "placementPoints": 4,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/21.png",
+      "teamId": 21
+    },
+    {
+      "id": "acc2",
+      "teamName": "READY 2 CONQUER",
+      "rank": 5,
+      "killNum": 2,
+      "placementPoints": 3,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/25.png",
+      "teamId": 25
+    },
+    {
+      "id": "dd85",
+      "teamName": "GOALDIGGERS ESPORTS",
+      "rank": 6,
+      "killNum": 2,
+      "placementPoints": 2,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/23.png",
+      "teamId": 23
+    },
+    {
+      "id": "502e",
+      "teamName": "TEAM ATOM",
+      "rank": 8,
+      "killNum": 3,
+      "placementPoints": 1,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/12.png",
+      "teamId": 12
+    },
+    {
+      "id": "4135",
+      "teamName": "OVERKILL",
+      "rank": 7,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/19.png",
+      "teamId": 19
+    },
+    {
+      "id": "ba17",
+      "teamName": "RAGEFURY ESPORTS",
+      "rank": 9,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/20.png",
+      "teamId": 20
+    },
+    {
+      "id": "0bb0",
+      "teamName": "THE FINAL QUEST",
+      "rank": 14,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/10.png",
+      "teamId": 10
+    },
+    {
+      "id": "a775",
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 10,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/24.png",
+      "teamId": 24
+    },
+    {
+      "id": "2093",
+      "teamName": "AESTHETIC ESPORTS",
+      "rank": 13,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/13.png",
+      "teamId": 13
+    },
+    {
+      "id": "0fc8",
+      "teamName": "FAKE DREAM",
+      "rank": 16,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/14.png",
+      "teamId": 14
+    },
+    {
+      "id": "efe9",
+      "teamName": "LAST SURVIVOR",
+      "rank": 12,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/18.png",
+      "teamId": 18
+    },
+    {
+      "id": "4bde",
+      "teamName": "VOID GAMING",
+      "rank": 15,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/22.png",
+      "teamId": 22
     }
   ],
-  "matchstanding4": [],
-  "matchstanding5": [],
-  "matchstanding6": [],
-  "matchstanding7": [],
-  "matchstanding8": [],
+  "matchstanding5": [
+    {
+      "id": "d95d",
+      "teamName": "FAKE DREAM",
+      "rank": 1,
+      "killNum": 6,
+      "placementPoints": 10,
+      "totalPoints": 16,
+      "teamLogo": "assets/Logo/14.png",
+      "teamId": 14
+    },
+    {
+      "id": "8b08",
+      "teamName": "MAU ESPORTS",
+      "rank": 2,
+      "killNum": 10,
+      "placementPoints": 6,
+      "totalPoints": 16,
+      "teamLogo": "assets/Logo/17.png",
+      "teamId": 17
+    },
+    {
+      "id": "88e6",
+      "teamName": "THE FINAL QUEST",
+      "rank": 3,
+      "killNum": 6,
+      "placementPoints": 5,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/10.png",
+      "teamId": 10
+    },
+    {
+      "id": "971f",
+      "teamName": "OVERKILL",
+      "rank": 5,
+      "killNum": 8,
+      "placementPoints": 3,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/19.png",
+      "teamId": 19
+    },
+    {
+      "id": "4002",
+      "teamName": "GOALDIGGERS ESPORTS",
+      "rank": 7,
+      "killNum": 8,
+      "placementPoints": 1,
+      "totalPoints": 9,
+      "teamLogo": "assets/Logo/23.png",
+      "teamId": 23
+    },
+    {
+      "id": "a1cd",
+      "teamName": "AESTHETIC ESPORTS",
+      "rank": 4,
+      "killNum": 3,
+      "placementPoints": 4,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/13.png",
+      "teamId": 13
+    },
+    {
+      "id": "5e5a",
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 6,
+      "killNum": 5,
+      "placementPoints": 2,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/24.png",
+      "teamId": 24
+    },
+    {
+      "id": "2215",
+      "teamName": "EVOLUTION MRU",
+      "rank": 8,
+      "killNum": 3,
+      "placementPoints": 1,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/11.png",
+      "teamId": 11
+    },
+    {
+      "id": "b84b",
+      "teamName": "NOS ESPORTS",
+      "rank": 9,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/21.png",
+      "teamId": 21
+    },
+    {
+      "id": "dc0d",
+      "teamName": "LAST SURVIVOR",
+      "rank": 10,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/18.png",
+      "teamId": 18
+    },
+    {
+      "id": "4bb9",
+      "teamName": "ZODIAC ESPORTS",
+      "rank": 13,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/15.png",
+      "teamId": 15
+    },
+    {
+      "id": "65be",
+      "teamName": "VOID GAMING",
+      "rank": 11,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/22.png",
+      "teamId": 22
+    },
+    {
+      "id": "a9ae",
+      "teamName": "READY 2 CONQUER",
+      "rank": 14,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/25.png",
+      "teamId": 25
+    },
+    {
+      "id": "7e20",
+      "teamName": "RAGEFURY ESPORTS",
+      "rank": 12,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/20.png",
+      "teamId": 20
+    },
+    {
+      "id": "d0ee",
+      "teamName": "MAURITIUS 1992 ESPORTS",
+      "rank": 15,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/16.png",
+      "teamId": 16
+    },
+    {
+      "id": "8f34",
+      "teamName": "TEAM ATOM",
+      "rank": 16,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/12.png",
+      "teamId": 12
+    }
+  ],
+  "matchstanding6": [
+    {
+      "id": "8e1f",
+      "teamName": "AESTHETIC ESPORTS",
+      "rank": 1,
+      "killNum": 8,
+      "placementPoints": 10,
+      "totalPoints": 18,
+      "teamLogo": "assets/Logo/13.png",
+      "teamId": 13
+    },
+    {
+      "id": "6281",
+      "teamName": "GOALDIGGERS ESPORTS",
+      "rank": 4,
+      "killNum": 11,
+      "placementPoints": 4,
+      "totalPoints": 15,
+      "teamLogo": "assets/Logo/23.png",
+      "teamId": 23
+    },
+    {
+      "id": "eb35",
+      "teamName": "OVERKILL",
+      "rank": 2,
+      "killNum": 8,
+      "placementPoints": 6,
+      "totalPoints": 14,
+      "teamLogo": "assets/Logo/19.png",
+      "teamId": 19
+    },
+    {
+      "id": "4997",
+      "teamName": "THE FINAL QUEST",
+      "rank": 3,
+      "killNum": 5,
+      "placementPoints": 5,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/10.png",
+      "teamId": 10
+    },
+    {
+      "id": "63ae",
+      "teamName": "MAU ESPORTS",
+      "rank": 5,
+      "killNum": 7,
+      "placementPoints": 3,
+      "totalPoints": 10,
+      "teamLogo": "assets/Logo/17.png",
+      "teamId": 17
+    },
+    {
+      "id": "7561",
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 6,
+      "killNum": 5,
+      "placementPoints": 2,
+      "totalPoints": 7,
+      "teamLogo": "assets/Logo/24.png",
+      "teamId": 24
+    },
+    {
+      "id": "8261",
+      "teamName": "RAGEFURY ESPORTS",
+      "rank": 9,
+      "killNum": 6,
+      "placementPoints": 0,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/20.png",
+      "teamId": 20
+    },
+    {
+      "id": "bef6",
+      "teamName": "EVOLUTION MRU",
+      "rank": 7,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/11.png",
+      "teamId": 11
+    },
+    {
+      "id": "cfb6",
+      "teamName": "ZODIAC ESPORTS",
+      "rank": 8,
+      "killNum": 2,
+      "placementPoints": 1,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/15.png",
+      "teamId": 15
+    },
+    {
+      "id": "1955",
+      "teamName": "NOS ESPORTS",
+      "rank": 13,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/21.png",
+      "teamId": 21
+    },
+    {
+      "id": "33c6",
+      "teamName": "VOID GAMING",
+      "rank": 10,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/22.png",
+      "teamId": 22
+    },
+    {
+      "id": "302f",
+      "teamName": "MAURITIUS 1992 ESPORTS",
+      "rank": 12,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/16.png",
+      "teamId": 16
+    },
+    {
+      "id": "7100",
+      "teamName": "LAST SURVIVOR",
+      "rank": 14,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/18.png",
+      "teamId": 18
+    },
+    {
+      "id": "5dbd",
+      "teamName": "READY 2 CONQUER",
+      "rank": 15,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/25.png",
+      "teamId": 25
+    },
+    {
+      "id": "9daa",
+      "teamName": "FAKE DREAM",
+      "rank": 16,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/14.png",
+      "teamId": 14
+    }
+  ],
+  "matchstanding7": [
+    {
+      "id": "9d88",
+      "teamName": "OVERKILL",
+      "rank": 1,
+      "killNum": 10,
+      "placementPoints": 10,
+      "totalPoints": 20,
+      "teamLogo": "assets/Logo/19.png",
+      "teamId": 19
+    },
+    {
+      "id": "3d7b",
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 2,
+      "killNum": 9,
+      "placementPoints": 6,
+      "totalPoints": 15,
+      "teamLogo": "assets/Logo/24.png",
+      "teamId": 24
+    },
+    {
+      "id": "cd29",
+      "teamName": "EVOLUTION MRU",
+      "rank": 3,
+      "killNum": 8,
+      "placementPoints": 5,
+      "totalPoints": 13,
+      "teamLogo": "assets/Logo/11.png",
+      "teamId": 11
+    },
+    {
+      "id": "ade6",
+      "teamName": "MAU ESPORTS",
+      "rank": 4,
+      "killNum": 7,
+      "placementPoints": 4,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/17.png",
+      "teamId": 17
+    },
+    {
+      "id": "cdc8",
+      "teamName": "ZODIAC ESPORTS",
+      "rank": 5,
+      "killNum": 2,
+      "placementPoints": 3,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/15.png",
+      "teamId": 15
+    },
+    {
+      "id": "8894",
+      "teamName": "FAKE DREAM",
+      "rank": 6,
+      "killNum": 3,
+      "placementPoints": 2,
+      "totalPoints": 5,
+      "teamLogo": "assets/Logo/14.png",
+      "teamId": 14
+    },
+    {
+      "id": "c272",
+      "teamName": "LAST SURVIVOR",
+      "rank": 7,
+      "killNum": 3,
+      "placementPoints": 1,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/18.png",
+      "teamId": 18
+    },
+    {
+      "id": "73c2",
+      "teamName": "AESTHETIC ESPORTS",
+      "rank": 14,
+      "killNum": 4,
+      "placementPoints": 0,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/13.png",
+      "teamId": 13
+    },
+    {
+      "id": "0610",
+      "teamName": "RAGEFURY ESPORTS",
+      "rank": 12,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/20.png",
+      "teamId": 20
+    },
+    {
+      "id": "7f50",
+      "teamName": "READY 2 CONQUER",
+      "rank": 8,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/25.png",
+      "teamId": 25
+    },
+    {
+      "id": "fe2d",
+      "teamName": "GOALDIGGERS ESPORTS",
+      "rank": 11,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/23.png",
+      "teamId": 23
+    },
+    {
+      "id": "d954",
+      "teamName": "VOID GAMING",
+      "rank": 13,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/22.png",
+      "teamId": 22
+    },
+    {
+      "id": "d636",
+      "teamName": "MAURITIUS 1992 ESPORTS",
+      "rank": 16,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/16.png",
+      "teamId": 16
+    },
+    {
+      "id": "169b",
+      "teamName": "TEAM ATOM",
+      "rank": 9,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/12.png",
+      "teamId": 12
+    },
+    {
+      "id": "e17f",
+      "teamName": "NOS ESPORTS",
+      "rank": 15,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/21.png",
+      "teamId": 21
+    },
+    {
+      "id": "3099",
+      "teamName": "THE FINAL QUEST",
+      "rank": 10,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/10.png",
+      "teamId": 10
+    }
+  ],
+  "matchstanding8": [
+    {
+      "id": "bd61",
+      "teamName": "VOID GAMING",
+      "rank": 1,
+      "killNum": 6,
+      "placementPoints": 10,
+      "totalPoints": 16,
+      "teamLogo": "assets/Logo/22.png",
+      "teamId": 22
+    },
+    {
+      "id": "2237",
+      "teamName": "MAURITIUS 1992 ESPORTS",
+      "rank": 4,
+      "killNum": 10,
+      "placementPoints": 4,
+      "totalPoints": 14,
+      "teamLogo": "assets/Logo/16.png",
+      "teamId": 16
+    },
+    {
+      "id": "64ca",
+      "teamName": "MAU ESPORTS",
+      "rank": 2,
+      "killNum": 5,
+      "placementPoints": 6,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/17.png",
+      "teamId": 17
+    },
+    {
+      "id": "b6e2",
+      "teamName": "READY 2 CONQUER",
+      "rank": 8,
+      "killNum": 10,
+      "placementPoints": 1,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/25.png",
+      "teamId": 25
+    },
+    {
+      "id": "61ae",
+      "teamName": "EVOLUTION MRU",
+      "rank": 5,
+      "killNum": 6,
+      "placementPoints": 3,
+      "totalPoints": 9,
+      "teamLogo": "assets/Logo/11.png",
+      "teamId": 11
+    },
+    {
+      "id": "bfb4",
+      "teamName": "ZODIAC ESPORTS",
+      "rank": 3,
+      "killNum": 1,
+      "placementPoints": 5,
+      "totalPoints": 6,
+      "teamLogo": "assets/Logo/15.png",
+      "teamId": 15
+    },
+    {
+      "id": "0462",
+      "teamName": "THE FINAL QUEST",
+      "rank": 6,
+      "killNum": 2,
+      "placementPoints": 2,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/10.png",
+      "teamId": 10
+    },
+    {
+      "id": "c6d2",
+      "teamName": "FAKE DREAM",
+      "rank": 12,
+      "killNum": 4,
+      "placementPoints": 0,
+      "totalPoints": 4,
+      "teamLogo": "assets/Logo/14.png",
+      "teamId": 14
+    },
+    {
+      "id": "209a",
+      "teamName": "TEAM ATOM",
+      "rank": 15,
+      "killNum": 3,
+      "placementPoints": 0,
+      "totalPoints": 3,
+      "teamLogo": "assets/Logo/12.png",
+      "teamId": 12
+    },
+    {
+      "id": "a998",
+      "teamName": "RAGEFURY ESPORTS",
+      "rank": 7,
+      "killNum": 1,
+      "placementPoints": 1,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/20.png",
+      "teamId": 20
+    },
+    {
+      "id": "11b5",
+      "teamName": "AESTHETIC ESPORTS",
+      "rank": 11,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/13.png",
+      "teamId": 13
+    },
+    {
+      "id": "5887",
+      "teamName": "GOALDIGGERS ESPORTS",
+      "rank": 13,
+      "killNum": 2,
+      "placementPoints": 0,
+      "totalPoints": 2,
+      "teamLogo": "assets/Logo/23.png",
+      "teamId": 23
+    },
+    {
+      "id": "e260",
+      "teamName": "OVERKILL",
+      "rank": 9,
+      "killNum": 1,
+      "placementPoints": 0,
+      "totalPoints": 1,
+      "teamLogo": "assets/Logo/19.png",
+      "teamId": 19
+    },
+    {
+      "id": "69d8",
+      "teamName": "NOS ESPORTS",
+      "rank": 10,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/21.png",
+      "teamId": 21
+    },
+    {
+      "id": "45e0",
+      "teamName": "LAST SURVIVOR",
+      "rank": 14,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/18.png",
+      "teamId": 18
+    },
+    {
+      "id": "bea6",
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 16,
+      "killNum": 0,
+      "placementPoints": 0,
+      "totalPoints": 0,
+      "teamLogo": "assets/Logo/24.png",
+      "teamId": 24
+    }
+  ],
   "matchstanding9": [],
   "matchstanding10": [],
   "matchstanding11": [],
   "matchstanding12": [],
   "overallstanding": [
     {
-      "teamName": "Team10",
+      "id": "8696",
+      "teamName": "EVOLUTION MRU",
       "rank": 1,
-      "killNum": 14,
-      "placementPoints": 16,
-      "teamId": 10,
-      "totalPoints": 30,
-      "teamLogo": "assets/Logo/SMFXESPORTS.png",
-      "id": 1,
-      "wins": 1
-    },
-    {
-      "teamName": "Team13",
-      "rank": 2,
-      "killNum": 9,
-      "placementPoints": 16,
-      "teamId": 13,
-      "totalPoints": 25,
-      "teamLogo": "assets/Logo/MAU ESPORTS.png",
-      "id": 2,
-      "wins": 1
-    },
-    {
-      "teamName": "Team11",
-      "rank": 3,
-      "killNum": 13,
-      "placementPoints": 10,
+      "killNum": 48,
+      "placementPoints": 31,
+      "totalPoints": 79,
+      "teamLogo": "assets/Logo/11.png",
       "teamId": 11,
-      "totalPoints": 23,
-      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
-      "id": 3,
+      "wins": 2
+    },
+    {
+      "id": "6a00",
+      "teamName": "AESTHETIC ESPORTS",
+      "rank": 2,
+      "killNum": 44,
+      "placementPoints": 31,
+      "totalPoints": 75,
+      "teamLogo": "assets/Logo/13.png",
+      "teamId": 13,
+      "wins": 2
+    },
+    {
+      "id": "ba50",
+      "teamName": "MAU ESPORTS",
+      "rank": 3,
+      "killNum": 43,
+      "placementPoints": 27,
+      "totalPoints": 70,
+      "teamLogo": "assets/Logo/17.png",
+      "teamId": 17,
+      "wins": 0
+    },
+    {
+      "id": "1937",
+      "teamName": "OVERKILL",
+      "rank": 4,
+      "killNum": 39,
+      "placementPoints": 26,
+      "totalPoints": 65,
+      "teamLogo": "assets/Logo/19.png",
+      "teamId": 19,
+      "wins": 1
+    },
+    {
+      "id": "e559",
+      "teamName": "GOALDIGGERS ESPORTS",
+      "rank": 5,
+      "killNum": 40,
+      "placementPoints": 17,
+      "totalPoints": 57,
+      "teamLogo": "assets/Logo/23.png",
+      "teamId": 23,
+      "wins": 1
+    },
+    {
+      "id": "d7c8",
+      "teamName": "PRODIGY ESPORTS NATION",
+      "rank": 6,
+      "killNum": 33,
+      "placementPoints": 13,
+      "totalPoints": 46,
+      "teamLogo": "assets/Logo/24.png",
+      "teamId": 24,
+      "wins": 0
+    },
+    {
+      "id": "7b9e",
+      "teamName": "THE FINAL QUEST",
+      "rank": 7,
+      "killNum": 31,
+      "placementPoints": 12,
+      "totalPoints": 43,
+      "teamLogo": "assets/Logo/10.png",
+      "teamId": 10,
+      "wins": 0
+    },
+    {
+      "id": "fee8",
+      "teamName": "ZODIAC ESPORTS",
+      "rank": 8,
+      "killNum": 24,
+      "placementPoints": 18,
+      "totalPoints": 42,
+      "teamLogo": "assets/Logo/15.png",
+      "teamId": 15,
+      "wins": 0
+    },
+    {
+      "id": "b828",
+      "teamName": "FAKE DREAM",
+      "rank": 9,
+      "killNum": 20,
+      "placementPoints": 16,
+      "totalPoints": 36,
+      "teamLogo": "assets/Logo/14.png",
+      "teamId": 14,
+      "wins": 1
+    },
+    {
+      "id": "1a85",
+      "teamName": "MAURITIUS 1992 ESPORTS",
+      "rank": 10,
+      "killNum": 24,
+      "placementPoints": 11,
+      "totalPoints": 35,
+      "teamLogo": "assets/Logo/16.png",
+      "teamId": 16,
+      "wins": 0
+    },
+    {
+      "id": "85f9",
+      "teamName": "RAGEFURY ESPORTS",
+      "rank": 11,
+      "killNum": 22,
+      "placementPoints": 12,
+      "totalPoints": 34,
+      "teamLogo": "assets/Logo/20.png",
+      "teamId": 20,
+      "wins": 0
+    },
+    {
+      "id": "c417",
+      "teamName": "TEAM ATOM",
+      "rank": 12,
+      "killNum": 25,
+      "placementPoints": 8,
+      "totalPoints": 33,
+      "teamLogo": "assets/Logo/12.png",
+      "teamId": 12,
+      "wins": 0
+    },
+    {
+      "id": "1248",
+      "teamName": "VOID GAMING",
+      "rank": 13,
+      "killNum": 15,
+      "placementPoints": 15,
+      "totalPoints": 30,
+      "teamLogo": "assets/Logo/22.png",
+      "teamId": 22,
+      "wins": 1
+    },
+    {
+      "id": "fa07",
+      "teamName": "READY 2 CONQUER",
+      "rank": 14,
+      "killNum": 18,
+      "placementPoints": 7,
+      "totalPoints": 25,
+      "teamLogo": "assets/Logo/25.png",
+      "teamId": 25,
+      "wins": 0
+    },
+    {
+      "id": "0809",
+      "teamName": "LAST SURVIVOR",
+      "rank": 15,
+      "killNum": 12,
+      "placementPoints": 8,
+      "totalPoints": 20,
+      "teamLogo": "assets/Logo/18.png",
+      "teamId": 18,
+      "wins": 0
+    },
+    {
+      "id": "dab1",
+      "teamName": "NOS ESPORTS",
+      "rank": 16,
+      "killNum": 7,
+      "placementPoints": 4,
+      "totalPoints": 11,
+      "teamLogo": "assets/Logo/21.png",
+      "teamId": 21,
       "wins": 0
     }
   ]

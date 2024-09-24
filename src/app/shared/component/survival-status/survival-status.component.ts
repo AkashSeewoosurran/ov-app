@@ -11,9 +11,7 @@ import {
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 import { CommonModule } from '@angular/common';
-import { LocalTeamInfo, TeamInfoList } from '../../models/teamInfo.model';
-import { Observable, combineLatest, delay } from 'rxjs';
-import { PlayerInfoList, PlayerStatus } from '../../models/playerInfo.model';
+import { TeamInfoList } from '../../models/teamInfo.model';
 import { PubgmDataService } from '../../services/pubgm-data.service';
 import { SharedService } from '../../services/shared-service.service';
 import {
@@ -22,12 +20,15 @@ import {
   style,
   transition,
   animate,
+  query,
+  stagger,
 } from '@angular/animations';
+import { AppCustomMaterialModule } from '../../modules/app-custom-material.module';
 
 @Component({
   selector: 'app-survival-status',
   standalone: true,
-  imports: [MatTableModule, CommonModule],
+  imports: [MatTableModule, CommonModule, AppCustomMaterialModule],
   exportAs: 'appSurvivalStatus',
   templateUrl: './survival-status.component.html',
   styleUrls: ['./survival-status.component.scss'],
@@ -74,19 +75,19 @@ export class SurvivalStatusComponent implements OnInit {
     this.service.getDashboardData().subscribe((data) => {
       this.showSurvivalStatus = data[1].toggleValue;
     });
+
     this.sharedService.teamInfoList$.subscribe({
       next: (teamInfoList: TeamInfoList[]) => {
-        console.log('teams', teamInfoList);
-        teamInfoList.sort((a: any, b: any) => {
-          if (a.liveMemberNum === 0 && b.liveMemberNum !== 0) {
-            return 1;
-          }
-          if (a.liveMemberNum !== 0 && b.liveMemberNum === 0) {
-            return -1;
-          }
-          // If both teams have liveMemberNum > 0 or both have liveMemberNum = 0, sort by killNum
-          return b.killNum - a.killNum;
-        });
+        // teamInfoList.sort((a: any, b: any) => {
+        //   if (a.liveMemberNum === 0 && b.liveMemberNum !== 0) {
+        //     return 1;
+        //   }
+        //   if (a.liveMemberNum !== 0 && b.liveMemberNum === 0) {
+        //     return -1;
+        //   }
+        //   // If both teams have liveMemberNum > 0 or both have liveMemberNum = 0, sort by killNum
+        //   return b.killNum - a.killNum;
+        // });
         this.dataSource = new MatTableDataSource(teamInfoList.slice(0, 16));
 
         this.filterTill5Teams(teamInfoList);
@@ -98,7 +99,8 @@ export class SurvivalStatusComponent implements OnInit {
     const filteredTeamInfoList = teamInfoList.filter(
       (teams) => teams.liveMemberNum > 0
     );
-    this.top5boolean = filteredTeamInfoList.length > 5;
+    this.showSurvivalStatus = filteredTeamInfoList.length > 10;
+    console.log('showSurvivalStatus', this.showSurvivalStatus);
   }
 
   // getRankCellBackgroundColor(element: TeamInfoList): string {
@@ -125,6 +127,39 @@ export class SurvivalStatusComponent implements OnInit {
       return 'outside-zone';
     } else {
       return 'normal';
+    }
+  }
+
+  // getPlayerColor(player: any): string {
+  //   if (player.liveState == 5) {
+  //     return '#808080';
+  //   } else if (player.liveState == 4) {
+  //     return '#ff0000';
+  //   } else {
+  //     if (player.health > 70) {
+  //       return '#008000';
+  //     } else if (player.health > 40 && player.health <= 70) {
+  //       return '#ffff00';
+  //     } else if (player.health > 0 && player.health <= 39) {
+  //       return '#ff0000';
+  //     }
+  //   }
+  //   return '#ff0000'; // Default color if none of the conditions match
+  // }
+
+  getPlayerClass(player: any): string {
+    if (player.liveState === 5) {
+      return 'black-bar';
+    } else if (player.liveState === 4) {
+      return 'red-bar';
+    } else if (player.health > 70) {
+      return 'green';
+    } else if (player.health > 40 && player.health <= 70) {
+      return 'yellow';
+    } else if (player.health > 0 && player.health <= 40) {
+      return 'red';
+    } else {
+      return ''; // Default or no class if no conditions are met
     }
   }
 }

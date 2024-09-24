@@ -10,11 +10,12 @@ import {
   style,
   state,
 } from '@angular/animations';
+import { AppCustomMaterialModule } from '../../modules/app-custom-material.module';
 
 @Component({
   selector: 'app-survival-status-top5',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AppCustomMaterialModule],
   templateUrl: './survival-status-top5.component.html',
   styleUrls: ['./survival-status-top5.component.scss'],
   animations: [
@@ -45,10 +46,14 @@ export class SurvivalStatusTop5Component implements OnInit {
   lstTop5Teams: TeamInfoList[] = [];
   top5boolean: boolean;
 
-  constructor(private sharedService: SharedService) {}
+  constructor(
+    private sharedService: SharedService,
+    private service: PubgmDataService
+  ) {}
 
   ngOnInit(): void {
     this.sharedService.teamInfoList$.subscribe((teamInfoList) => {
+      console.log('teamInfoList', teamInfoList);
       this.lstTop5Teams = teamInfoList
         .sort((a, b) => b.killNum - a.killNum)
         .filter((teams) => teams.liveMemberNum > 0)
@@ -67,7 +72,7 @@ export class SurvivalStatusTop5Component implements OnInit {
     const filteredTeamInfoList = teamInfoList.filter(
       (teams) => teams.liveMemberNum > 0
     );
-    this.top5boolean = filteredTeamInfoList.length > 5;
+    this.top5boolean = filteredTeamInfoList.length > 4;
   }
 
   getRankCellClass(element: TeamInfoList, className: string): string {

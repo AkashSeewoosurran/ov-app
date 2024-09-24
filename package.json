@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "nx serve --port=8000",
+    "start": "nx serve --port=8000 --host=192.168.100.236",
+    "server-start": "concurrently 'json-server --watch db/dayplayerstats.json --port 3001 --host 192.168.100.236' 'json-server --watch db/daystanding.json --port 3000 --host 192.168.100.236' 'json-server --watch db/db.json --port 3002 --host 192.168.100.236'",
     "build": "nx build",
     "watch": "nx build --watch --configuration development",
     "test": "nx test"
@@ -21,8 +22,10 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "echarts": "^5.5.1",
     "firebase": "^10.6.0",
     "json-server": "^0.17.4",
+    "ngx-echarts": "^18.0.0",
     "rxjs": "~7.8.0",
     "ts-xlsx": "^0.0.11",
     "tslib": "^2.3.0",

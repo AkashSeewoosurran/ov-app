@@ -1,0 +1,85 @@
+.name-box {
+  width: 790px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.start-box,
+.end-box {
+  width: 160px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .player-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.playerInfo {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--secondary-color);
+}
+
+.teamName {
+  line-height: 24px;
+  font-weight: bold;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+
+
+.logo {
+  background-color: var(--primary-color);
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-pic {
+  display: block;
+  margin: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+.text {
+  margin-left: 10px;
+
+  p {
+    background-color: var(--secondary-color);
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: var(--tertiary-color)
+  }
+}
+
+.dmg {
+  font-family: "oswald-regular", Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+.middle-box {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -44,13 +44,13 @@ export class MapOverlayComponent implements OnInit {
   //   combineLatest([
   //     this.service.getTeamInfoList(),
   //     this.service.getPlayerInfoList(),
-  //     // this.service.getCircleInfo(),
-  //   ]).subscribe(([teamInfoList, playerInfoList]) => {
+  //     this.service.getCircleInfo(),
+  //   ]).subscribe(([teamInfoList, playerInfoList, circleInfo]) => {
   //     this.teamInfoList = this.sharedService.AddPlayerStatusToTeamInfoList(
   //       teamInfoList.teamInfoList,
   //       playerInfoList.playerInfoList
   //     );
-  //     // this.circleInfo = circleInfo;
+  //     this.circleInfo = circleInfo;
   //     this.playerInfoList = playerInfoList.playerInfoList;
   //     this.leftTeamInfoList = this.teamInfoList.slice(0, 8);
   //     this.rightTeamInfoList = this.teamInfoList.slice(8, 16);

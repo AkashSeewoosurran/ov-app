@@ -1,16 +1,9 @@
-import {
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Component,
-  Input,
-  OnInit,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 import { ObsPlayer, PlayerInfoList } from '../../models/playerInfo.model';
 import { CommonModule } from '@angular/common';
 import { PubgmDataService } from '../../services/pubgm-data.service';
-import { Observable, combineLatest, of, switchMap, tap } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { combineLatest } from 'rxjs';
 import {
   trigger,
   state,
@@ -20,11 +13,11 @@ import {
 } from '@angular/animations';
 
 @Component({
-  selector: 'app-obs-player',
+  selector: 'app-obs2-player',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './obs-player.component.html',
-  styleUrls: ['./obs-player.component.scss'],
+  templateUrl: './obs2-player.component.html',
+  styleUrls: ['./obs2-player.component.scss'],
   changeDetection: ChangeDetectionStrategy.Default,
   animations: [
     trigger('slideDownUp', [
@@ -46,16 +39,16 @@ import {
     ]),
   ],
 })
-export class ObsPlayerComponent implements OnInit {
+export class Obs2PlayerComponent implements OnInit {
   currentPlayerInfo?: PlayerInfoList;
   showPlayerDetails: boolean;
 
   constructor(private service: PubgmDataService) {}
 
   ngOnInit(): void {
-    this.service.getDashboardData().subscribe((data) => {
-      this.showPlayerDetails = data[2].toggleValue;
-    });
+    // this.service.getDashboardData().subscribe((data) => {
+    //   this.showPlayerDetails = data[2].toggleValue;
+    // });
     combineLatest([
       this.service.getPlayerInfoList(),
       this.service.getObservingPlayer(),
@@ -86,23 +79,23 @@ export class ObsPlayerComponent implements OnInit {
     this.currentPlayerInfo = playersList.find(
       (player) => player.uId == currentPlayer.observingPlayer[0]
     );
-    // const playerPath = `assets/players/${this.currentPlayerInfo?.uId}.png`;
-    // // this.currentPlayerInfo!.character = playerPath;
-    // this.checkImageExists(playerPath)
-    //   .then(() => {
-    //     this.currentPlayerInfo!.character = playerPath; // Remove optional chaining and nullish coalescing operator
-    //   })
-    //   .catch(() => {
-    //     this.currentPlayerInfo!.character = 'assets/players/default.png'; // Update the property assignment
-    //   });
+    const playerPath = `assets/players/${this.currentPlayerInfo?.uId}.png`;
+    // this.currentPlayerInfo!.character = playerPath;
+    this.checkImageExists(playerPath)
+      .then(() => {
+        this.currentPlayerInfo!.character = playerPath; // Remove optional chaining and nullish coalescing operator
+      })
+      .catch(() => {
+        this.currentPlayerInfo!.character = 'assets/players/default.png'; // Update the property assignment
+      });
   }
 
-  // private checkImageExists(url: string): Promise<boolean> {
-  //   return new Promise((resolve, reject) => {
-  //     const img = new Image();
-  //     img.onload = () => resolve(true);
-  //     img.onerror = () => reject(false);
-  //     img.src = url;
-  //   });
-  // }
+  private checkImageExists(url: string): Promise<boolean> {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(true);
+      img.onerror = () => reject(false);
+      img.src = url;
+    });
+  }
 }

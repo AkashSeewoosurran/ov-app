@@ -20,6 +20,8 @@ export class StandingOverlayComponent implements OnInit {
     'elims',
     'total',
   ];
+  rightDataSource: MatchStandingInfo[] = [];
+  leftDataSource: MatchStandingInfo[] = [];
 
   constructor(private service: PubgmDataService) {}
 
@@ -28,7 +30,7 @@ export class StandingOverlayComponent implements OnInit {
       .getDashboardData()
       .pipe(
         map((data) => {
-          console.log(data);
+          // console.log(data);
           return data[3].matchStanding;
         }),
         switchMap((matchStanding) =>
@@ -38,11 +40,13 @@ export class StandingOverlayComponent implements OnInit {
       .subscribe((res: MatchStandingInfo[]) => {
         this.dataSourceLeft = new MatTableDataSource(res.slice(0, 8));
         this.dataSourceRight = new MatTableDataSource(res.slice(8, 16));
+        this.leftDataSource = res.slice(0, 8);
+        this.rightDataSource = res.slice(8, 16);
       });
   }
 
   handleImgError(event: any) {
-    console.log(event);
+    // console.log(event);
     event.target.src = '';
   }
 }

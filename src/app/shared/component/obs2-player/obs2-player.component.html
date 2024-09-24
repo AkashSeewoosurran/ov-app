@@ -1,0 +1,32 @@
+<div class="name-box" *ngIf="currentPlayerInfo">
+  <div class="start-box">
+    <img class="player-pic" [src]="this.currentPlayerInfo.character" />
+  </div>
+  <div class="middle-box"></div>
+  <div class="end-box">
+    <div class="playerInfo">
+      <div class="logo">
+        <img class="logo-pic" src="assets/hit.png">
+      </div>
+      <div class="text">
+        <p>{{currentPlayerInfo.damage}}<span class="dmg"> DMG</span></p>
+      </div>
+    </div>
+    <div class="playerInfo">
+      <div class="logo">
+        <img class="logo-pic" src="assets/grenade.png">
+      </div>
+      <div class="text">
+        <p>{{currentPlayerInfo.killNumByGrenade}}<span class="dmg"> ELIMS</span></p>
+      </div>
+    </div>
+    <div class="playerInfo">
+      <div class="logo">
+        <img class="logo-pic" src="assets/headshot.png">
+      </div>
+      <div class="text">
+        <p>{{currentPlayerInfo.maxKillDistance/100}}<span class="dmg"> M</span></p>
+      </div>
+    </div>
+  </div>
+</div>

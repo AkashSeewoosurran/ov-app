@@ -30,6 +30,9 @@ export class OverallStandingOverlayComponent implements OnInit {
     'rtotal',
   ];
 
+  rightDataSource: OverallStandingInfo[] = [];
+  leftDataSource: OverallStandingInfo[] = [];
+
   constructor(private service: PubgmDataService) {}
 
   ngOnInit(): void {
@@ -38,6 +41,14 @@ export class OverallStandingOverlayComponent implements OnInit {
       .subscribe((res: OverallStandingInfo[]) => {
         this.dataSourceLeft = new MatTableDataSource(res.slice(0, 5));
         this.dataSourceRight = new MatTableDataSource(res.slice(5, 16));
+
+        this.leftDataSource = res.slice(0, 8);
+        this.rightDataSource = res.slice(8, 16);
       });
+  }
+
+  handleImgError(event: any) {
+    // console.log(event);
+    event.target.src = '';
   }
 }

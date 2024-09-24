@@ -41,7 +41,7 @@
 
 
 .logo {
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color);
   width: 33.33%;
   height: 100%;
   display: flex;
@@ -65,8 +65,8 @@
     padding-top: 10px;
     text-align: center;
     font-weight: bold;
-    font-family: "monoBold", Arial, Helvetica, sans-serif;
-    font-size: medium;
+    font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+    font-size: x-large;
     color: var(--tertiary-color)
   }
 }
@@ -77,4 +77,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.dmg {
+  font-family: "oswald-regular", Arial, Helvetica, sans-serif;
+  font-size: small;
 }

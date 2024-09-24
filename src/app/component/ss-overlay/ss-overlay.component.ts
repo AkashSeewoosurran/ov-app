@@ -69,6 +69,7 @@ export class SsOverlayComponent implements OnInit {
   top5boolean: boolean = false;
 
   lstTestArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  showSurvivalStatus: boolean;
 
   constructor(
     private service: PubgmDataService,
@@ -84,8 +85,8 @@ export class SsOverlayComponent implements OnInit {
       this.service.getTeamInfoList(),
       this.service.getPlayerInfoList(),
     ]).subscribe(([teamInfoList, playerInfoList]) => {
-      this.assignLogoToPlayersAndSort(playerInfoList, this.localTeamInfo);
-
+      // this.assignLogoToPlayersAndSort(playerInfoList, this.localTeamInfo);
+      this.sharedService.updatePlayerInfoList(playerInfoList);
       this.sharedService.AddPlayerStatusToTeamInfoList(
         this.assignLogoToTeamsAndSort(teamInfoList, this.localTeamInfo),
         playerInfoList
@@ -102,6 +103,7 @@ export class SsOverlayComponent implements OnInit {
   //     this.service.getTeamInfoList(),
   //     this.service.getPlayerInfoList(),
   //   ]).subscribe(([teamInfoList, playerInfoList]) => {
+  //     console.log('playerInfoList', playerInfoList);
   //     this.assignLogoToPlayersAndSort(
   //       playerInfoList.playerInfoList,
   //       this.localTeamInfo
@@ -123,13 +125,21 @@ export class SsOverlayComponent implements OnInit {
   ): void {
     res.forEach((player: PlayerInfoList) => {
       this.teamInfo = localTeamInfo.find(
-        (localTeam: ExcelTeamInfo) => localTeam.teamName === player.teamName
+        (localTeam: ExcelTeamInfo) => localTeam.teamId == player.teamId
       );
       if (this.teamInfo) {
-        player.picUrl = this.teamInfo.teamLogo64;
+        player.picUrl = this.teamInfo.teamLogo;
       }
     });
     this.sharedService.updatePlayerInfoList(res);
+  }
+
+  filterTill5Teams(teamInfoList: TeamInfoList[]): void {
+    const filteredTeamInfoList = teamInfoList.filter(
+      (teams) => teams.liveMemberNum > 0
+    );
+    this.showSurvivalStatus = filteredTeamInfoList.length > 10;
+    console.log('showSurvivalStatus', this.showSurvivalStatus);
   }
 
   assignLogoToTeamsAndSort(
@@ -138,19 +148,16 @@ export class SsOverlayComponent implements OnInit {
   ): TeamInfoList[] {
     res.forEach((team: TeamInfoList) => {
       this.teamInfo = localTeamInfo.find(
-        (localTeam: ExcelTeamInfo) =>
-          localTeam.teamName === team.teamName ||
-          localTeam.teamId === team.teamId
+        (localTeam: ExcelTeamInfo) => localTeam.teamId == team.teamId
       );
       if (this.teamInfo) {
         team.teamTag = this.teamInfo.teamTag;
+        team.logoPicUrl = `${this.teamInfo.teamLogo}`;
       } else {
         team.teamTag = team.teamName.slice(0, 4);
       }
-      if (this.teamInfo) {
-        team.logoPicUrl = `${this.teamInfo.teamLogo}`;
-      }
     });
+    this.filterTill5Teams(res);
     return res.sort((a: any, b: any) => {
       if (a.liveMemberNum === 0 && b.liveMemberNum !== 0) {
         return 1;

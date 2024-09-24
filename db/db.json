@@ -3,20 +3,20 @@
     {
       "toggleName": "showTop5Kills",
       "toggleValue": false,
-      "id": 1
+      "id": "1"
     },
     {
       "toggleName": "showSurvivalStatus",
       "toggleValue": true,
-      "id": 2
+      "id": "2"
     },
     {
       "toggleName": "showPlayerDetails",
       "toggleValue": false,
-      "id": 3
+      "id": "3"
     },
     {
-      "id": 4,
+      "id": "4",
       "matchStanding": 1
     }
   ],
@@ -27,6 +27,77 @@
     "Counter": "44",
     "MaxTime": "300"
   },
+  "getgameglobalinfo": {
+    "gameGlobalInfo": {
+      "CircleArray": [
+        {
+          "Size": "203616.000000",
+          "X": "267799.375000",
+          "Y": "164111.734375"
+        },
+        {
+          "Size": "165438.000000",
+          "X": "266495.875000",
+          "Y": "192762.406250"
+        },
+        {
+          "Size": "82719.000000",
+          "X": "218977.343750",
+          "Y": "190570.015625"
+        },
+        {
+          "Size": "41359.000000",
+          "X": "239887.437500",
+          "Y": "208290.265625"
+        },
+        {
+          "Size": "20679.000000",
+          "X": "244976.500000",
+          "Y": "213895.921875"
+        },
+        {
+          "Size": "10339.000000",
+          "X": "241455.000000",
+          "Y": "212996.906250"
+        },
+        {
+          "Size": "5169.000000",
+          "X": "236918.156250",
+          "Y": "212104.359375"
+        }
+      ],
+      "PlaneStartLocX": "679895.125000",
+      "PlaneStartLocY": "896956.812500",
+      "PlaneStopLocX": "181640.078125",
+      "PlaneStopLocY": "-117633.250000"
+    }
+  },
+  "teambackpackinfo": {
+    "teamBackPackInfo": {
+      "teamBackPackList": [
+        {
+          "mainWeapon1Id": 1,
+          "mainWeapon1AmmoNumInClip": 30,
+          "mainWeapon2Id": 2,
+          "mainWeapon2AmmoNumInClip": 30,
+          "items": {
+            "firstAidKit": 5,
+            "bandage": 3,
+            "medKit": 1,
+            "energyDrink": 5,
+            "painkiller": 4,
+            "adrenaline": 1,
+            "grenade": 6,
+            "flashbang": 2,
+            "smokeGrenade": 4,
+            "molotovCocktail": 1
+          },
+          "teamId": 3,
+          "playerKey": 5298992401
+        }
+      ]
+    }
+  },
   "getobservingplayer": {
     "observingPlayer": {
       "0": 5298992401
@@ -35,259 +106,211 @@
   "localteaminfo": [
     {
       "teamId": 10,
+      "teamName": "THE FINAL QUEST",
+      "teamTag": "TFQ",
+      "member1": 0,
+      "member2": 0,
+      "member3": 0,
+      "member4": 0,
+      "member5": 0,
       "teamColor": "#850E3D",
-      "teamName": "FOR YOU",
-      "teamTag": "4U",
-      "teamLogo": "assets/Logo/FOR YOU.png",
-      "teamLogo64": "https://image1.challengermode.com/02c3902a-8a03-42b2-6072-08db67fe1fe8_64_64",
-      "teamLogo128": "https://image1.challengermode.com/02c3902a-8a03-42b2-6072-08db67fe1fe8_128_128",
-      "teamLogo256": "https://image1.challengermode.com/02c3902a-8a03-42b2-6072-08db67fe1fe8_256_256",
-      "member1": "4U٭Fragyy",
-      "member2": "4U٭Luffyy",
-      "member3": "4U٭Zelyy",
-      "member4": "4U٭Mafyy",
-      "member5": "4U٭Miny",
-      "id": 1
+      "teamLogo": "assets/Logo/10.png",
+      "id": "1"
     },
     {
       "teamId": 11,
+      "teamName": "EVOLUTION MRU",
+      "teamTag": "EVO",
+      "member1": 51281826778,
+      "member2": 542981085,
+      "member3": 5345014066,
+      "member4": 5512997577,
+      "member5": 5355387719,
       "teamColor": "#CFA613",
-      "teamName": "MAU ESPORTS",
-      "teamTag": "MAU",
-      "teamLogo": "assets/Logo/MAU ESPORTS.png",
-      "teamLogo64": "https://image1.challengermode.com/eca740e1-13d5-4f3b-0989-08dacf03a750_64_64",
-      "teamLogo128": "https://image1.challengermode.com/eca740e1-13d5-4f3b-0989-08dacf03a750_128_128",
-      "teamLogo256": "https://image1.challengermode.com/eca740e1-13d5-4f3b-0989-08dacf03a750_256_256",
-      "member1": "mauHANSLEYzzz",
-      "member2": "mauVORTEXXX",
-      "member3": "mauSKYDOOO",
-      "member4": "mauBUMBUMSIR",
-      "member5": "mauHATEEES",
-      "id": 2
+      "teamLogo": "assets/Logo/11.png",
+      "id": "2"
     },
     {
       "teamId": 12,
+      "teamName": "TEAM ATOM",
+      "teamTag": "ATOM",
+      "member1": 0,
+      "member2": 0,
+      "member3": 0,
+      "member4": 0,
+      "member5": 0,
       "teamColor": "#42A5A3",
-      "teamName": "MAZOR GAMING",
-      "teamTag": "mazor",
-      "teamLogo": "assets/Logo/MAZOR GAMING.png",
-      "teamLogo64": "https://image1.challengermode.com/4ddc4df2-2463-403e-da7f-08dbbe76819a_64_64",
-      "teamLogo128": "https://image1.challengermode.com/4ddc4df2-2463-403e-da7f-08dbbe76819a_128_128",
-      "teamLogo256": "https://image1.challengermode.com/4ddc4df2-2463-403e-da7f-08dbbe76819a_256_256",
-      "member1": "mazorATRØX99",
-      "member2": "mazorZEKRØ99",
-      "member3": "mazorDANGER",
-      "member4": "mazorDEMONIC",
-      "member5": "mazorPRAN4V",
-      "id": 3
+      "teamLogo": "assets/Logo/12.png",
+      "id": "3"
     },
     {
       "teamId": 13,
+      "teamName": "AESTHETIC ESPORTS",
+      "teamTag": "AES",
+      "member1": 534084250,
+      "member2": 5460748125,
+      "member3": 5642626787,
+      "member4": 5749133496,
+      "member5": 5167618012,
       "teamColor": "#6D7E89",
-      "teamName": "MN1 ESPORTS",
-      "teamTag": "mn1",
-      "teamLogo": "assets/Logo/MN1 ESPORTS.png",
-      "teamLogo64": "https://image1.challengermode.com/7b1a86c3-1f25-4ebc-48c9-08db2f845e1a_64_64",
-      "teamLogo128": "https://image1.challengermode.com/7b1a86c3-1f25-4ebc-48c9-08db2f845e1a_128_128",
-      "teamLogo256": "https://image1.challengermode.com/7b1a86c3-1f25-4ebc-48c9-08db2f845e1a_256_256",
-      "member1": "mn1ēREAL",
-      "member2": "mn1īLORD",
-      "member3": "mn1īSKULL",
-      "member4": "mn1iFREEZEN82",
-      "member5": "mn1īPOPO",
-      "id": 4
+      "teamLogo": "assets/Logo/13.png",
+      "id": "4"
     },
     {
       "teamId": 14,
+      "teamName": "FAKE DREAM",
+      "teamTag": "FAKE",
+      "member1": 0,
+      "member2": 0,
+      "member3": 0,
+      "member4": 0,
+      "member5": 0,
       "teamColor": "#FF9B00",
-      "teamName": "MZR ES AF",
-      "teamTag": "MZR",
-      "teamLogo": "assets/Logo/MZR ES AF.png",
-      "teamLogo64": "https://image1.challengermode.com/8b6d2763-b877-465e-bc6b-08dbe0617259_64_64",
-      "teamLogo128": "https://image1.challengermode.com/8b6d2763-b877-465e-bc6b-08dbe0617259_128_128",
-      "teamLogo256": "https://image1.challengermode.com/8b6d2763-b877-465e-bc6b-08dbe0617259_256_256",
-      "member1": "mzrDRITZ27",
-      "member2": "mzr44ZERFZz",
-      "member3": "KrypHAKUNA",
-      "member4": "mzrXyris5",
-      "member5": "mzrSHYLOCK7",
-      "id": 5
+      "teamLogo": "assets/Logo/14.png",
+      "id": "5"
     },
     {
       "teamId": 15,
+      "teamName": "ZODIAC ESPORTS",
+      "teamTag": "ZODIAC",
+      "member1": 5870720184,
+      "member2": 51311311043,
+      "member3": 5262178731,
+      "member4": 5669333756,
+      "member5": 0,
       "teamColor": "#3B3F49",
-      "teamName": "NOS ESPORTS",
-      "teamTag": "nos",
-      "teamLogo": "assets/Logo/NOS ESPORTS.png",
-      "teamLogo64": "https://image1.challengermode.com/8304421c-bed4-421d-86e0-08db4a81b282_64_64",
-      "teamLogo128": "https://image1.challengermode.com/8304421c-bed4-421d-86e0-08db4a81b282_128_128",
-      "teamLogo256": "https://image1.challengermode.com/8304421c-bed4-421d-86e0-08db4a81b282_256_256",
-      "member1": "nosSPYDER",
-      "member2": "nosLUVISH",
-      "member3": "nosDARCO",
-      "member4": "nosGRIZZ",
-      "member5": "nosVIPER",
-      "id": 6
+      "teamLogo": "assets/Logo/15.png",
+      "id": "6"
     },
     {
       "teamId": 16,
+      "teamName": "MAURITIUS 1992 ESPORTS",
+      "teamTag": "MU92",
+      "member1": 5551027642,
+      "member2": 5600785570,
+      "member3": 5600785570,
+      "member4": 5106929060,
+      "member5": 0,
       "teamColor": "#E86F8D",
-      "teamName": "PRODIGY ESPORTS NATION",
-      "teamTag": "pen",
-      "teamLogo": "assets/Logo/PRODIGY ESPORTS NATION.png",
-      "teamLogo64": "https://image1.challengermode.com/30b93fda-30af-48c3-a392-08dbbf9acdd9_64_64",
-      "teamLogo128": "https://image1.challengermode.com/30b93fda-30af-48c3-a392-08dbbf9acdd9_128_128",
-      "teamLogo256": "https://image1.challengermode.com/30b93fda-30af-48c3-a392-08dbbf9acdd9_256_256",
-      "member1": "penCHOCO",
-      "member2": "penSALVATOR",
-      "member3": "penBLACKLIST",
-      "member4": "penECTASYYY",
-      "member5": "penPHO3NIX",
-      "id": 7
+      "teamLogo": "assets/Logo/16.png",
+      "id": "7"
     },
     {
       "teamId": 17,
+      "teamName": "MAU ESPORTS",
+      "teamTag": "MAU",
+      "member1": 0,
+      "member2": 0,
+      "member3": 0,
+      "member4": 0,
+      "member5": 0,
       "teamColor": "#015057",
-      "teamName": "ROGUE ESPORTS",
-      "teamTag": "rogue",
-      "teamLogo": "assets/Logo/ROGUE ESPORTS.png",
-      "teamLogo64": "https://image1.challengermode.com/322d166e-6f80-494d-a971-08dbf6b8aea5_64_64",
-      "teamLogo128": "https://image1.challengermode.com/322d166e-6f80-494d-a971-08dbf6b8aea5_128_128",
-      "teamLogo256": "https://image1.challengermode.com/322d166e-6f80-494d-a971-08dbf6b8aea5_256_256",
-      "member1": "rogueCLUTCHG0D",
-      "member2": "roguePYROSz",
-      "member3": "rogueARAAA",
-      "member4": "roguePARABOYYY",
-      "member5": "rogueEAZY",
-      "id": 8
+      "teamLogo": "assets/Logo/17.png",
+      "id": "8"
     },
     {
       "teamId": 18,
+      "teamName": "LAST SURVIVOR",
+      "teamTag": "LST",
+      "member1": 0,
+      "member2": 0,
+      "member3": 0,
+      "member4": 0,
+      "member5": 0,
       "teamColor": "#7A4008",
-      "teamName": "SMFXESPORTS",
-      "teamTag": "SMFX",
-      "teamLogo": "assets/Logo/SMFXESPORTS.png",
-      "teamLogo64": "https://image1.challengermode.com/27555931-a5a2-4c2d-919c-08db31c47fdb_64_64",
-      "teamLogo128": "https://image1.challengermode.com/27555931-a5a2-4c2d-919c-08db31c47fdb_128_128",
-      "teamLogo256": "https://image1.challengermode.com/27555931-a5a2-4c2d-919c-08db31c47fdb_256_256",
-      "member1": "SMFxDEKU",
-      "member2": "SMFxFIONIX",
-      "member3": "SMFxKYROS",
-      "member4": "SMFxGODLY",
-      "member5": "SMFxFLIX",
-      "id": 9
+      "teamLogo": "assets/Logo/18.png",
+      "id": "9"
     },
     {
       "teamId": 19,
+      "teamName": "OVERKILL",
+      "teamTag": "OVER",
+      "member1": 0,
+      "member2": 0,
+      "member3": 0,
+      "member4": 0,
+      "member5": 0,
       "teamColor": "#7F9B0F",
-      "teamName": "TEAM 4MV",
-      "teamTag": "4MV",
-      "teamLogo": "assets/Logo/TEAM 4MV.png",
-      "teamLogo64": "https://image1.challengermode.com/1a675c38-cb9b-456e-5eff-08dbab2ffc3a_64_64",
-      "teamLogo128": "https://image1.challengermode.com/1a675c38-cb9b-456e-5eff-08dbab2ffc3a_128_128",
-      "teamLogo256": "https://image1.challengermode.com/1a675c38-cb9b-456e-5eff-08dbab2ffc3a_256_256",
-      "member1": "4MV丨PARADOXvr",
-      "member2": "4MV丨TH4UGER",
-      "member3": "4MV | LUCIFER99",
-      "member4": "4MV丨UHIGHH",
-      "member5": "4MV丨DOKmvp",
-      "id": 10
+      "teamLogo": "assets/Logo/19.png",
+      "id": "10"
     },
     {
       "teamId": 20,
+      "teamName": "RAGEFURY ESPORTS",
+      "teamTag": "RF",
+      "member1": 5132825625,
+      "member2": 5362572815,
+      "member3": 5417058939,
+      "member4": 5399513628,
+      "member5": 5519379584,
       "teamColor": "#774E90",
-      "teamName": "TEAM ATOM",
-      "teamTag": "atom",
-      "teamLogo": "assets/Logo/TEAM ATOM.png",
-      "teamLogo64": "https://image1.challengermode.com/33fc9702-bc67-46ca-7081-08db3c0ee00b_64_64",
-      "teamLogo128": "https://image1.challengermode.com/33fc9702-bc67-46ca-7081-08db3c0ee00b_128_128",
-      "teamLogo256": "https://image1.challengermode.com/33fc9702-bc67-46ca-7081-08db3c0ee00b_256_256",
-      "member1": "atomSTANIC77",
-      "member2": "atomDEVIL",
-      "member3": "atomHENTAI",
-      "member4": "atomCAPORAL77",
-      "member5": "atomINSANE77",
-      "id": 11
+      "teamLogo": "assets/Logo/20.png",
+      "id": "11"
     },
     {
       "teamId": 21,
+      "teamName": "NOS ESPORTS",
+      "teamTag": "NOS",
+      "member1": 5120682237,
+      "member2": 5121439222,
+      "member3": 5130935576,
+      "member4": 5424776192,
+      "member5": 5575776989,
       "teamColor": "#31796B",
-      "teamName": "TEAM UNIQUE",
-      "teamTag": "Uniq",
-      "teamLogo": "assets/Logo/TEAM UNIQUE.png",
-      "teamLogo64": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_64_64",
-      "teamLogo128": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_128_128",
-      "teamLogo256": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_256_256",
-      "member1": "UniqKAISH",
-      "member2": "UniqXZIST",
-      "member3": "UniqMADMAN",
-      "member4": "UniqFROST",
-      "member5": "UniqZGOD",
-      "id": 12
+      "teamLogo": "assets/Logo/21.png",
+      "id": "12"
     },
     {
       "teamId": 22,
+      "teamName": "VOID GAMING",
+      "teamTag": "VOID",
+      "member1": 5679204924,
+      "member2": 571071944,
+      "member3": 5719749476,
+      "member4": 5818934094,
+      "member5": 0,
       "teamColor": "#6B758D",
-      "teamName": "THE FINAL QUEST",
-      "teamTag": "mru",
-      "teamLogo": "assets/Logo/THE FINAL QUEST.png",
-      "teamLogo64": "https://image1.challengermode.com/73bd1f9d-9634-4879-fa7d-08dbbf9eaf2c_64_64",
-      "teamLogo128": "https://image1.challengermode.com/73bd1f9d-9634-4879-fa7d-08dbbf9eaf2c_128_128",
-      "teamLogo256": "https://image1.challengermode.com/73bd1f9d-9634-4879-fa7d-08dbbf9eaf2c_256_256",
-      "member1": "mruHORUS",
-      "member2": "mruGENERÄL",
-      "member3": "mruSYXGOD",
-      "member4": "questPRAYBOY",
-      "member5": "mruTINO",
-      "id": 13
+      "teamLogo": "assets/Logo/22.png",
+      "id": "13"
     },
     {
       "teamId": 23,
+      "teamName": "GOALDIGGERS ESPORTS",
+      "teamTag": "GOLD",
+      "member1": 5389028603,
+      "member2": 5152352778,
+      "member3": 5226458257,
+      "member4": 5557665955,
+      "member5": 51399838073,
       "teamColor": "#A46B5A",
-      "teamName": "UNIQUE GIRLS",
-      "teamTag": "Uniqg",
-      "teamLogo": "assets/Logo/UNIQUE GIRLS.png",
-      "teamLogo64": "https://image1.challengermode.com/be841c5d-ec53-4ee9-8660-08da0e6a8ac4_64_64",
-      "teamLogo128": "https://image1.challengermode.com/be841c5d-ec53-4ee9-8660-08da0e6a8ac4_128_128",
-      "teamLogo256": "https://image1.challengermode.com/be841c5d-ec53-4ee9-8660-08da0e6a8ac4_256_256",
-      "member1": "uniqGRACY",
-      "member2": "uniqHELIA",
-      "member3": "uniqLINA",
-      "member4": "uniqSAN",
-      "member5": "uniqESMÉ",
-      "id": 14
+      "teamLogo": "assets/Logo/23.png",
+      "id": "14"
     },
     {
       "teamId": 24,
+      "teamName": "PRODIGY ESPORTS NATION",
+      "teamTag": "PEN",
+      "member1": 0,
+      "member2": 0,
+      "member3": 0,
+      "member4": 0,
+      "member5": 0,
       "teamColor": "#23224E",
-      "teamName": "UNTOLD",
-      "teamTag": "UNT",
-      "teamLogo": "assets/Logo/UNTOLD.png",
-      "teamLogo64": "https://image1.challengermode.com/7faad2e8-2e45-46fe-e6a6-08da05c14296_64_64",
-      "teamLogo128": "https://image1.challengermode.com/7faad2e8-2e45-46fe-e6a6-08da05c14296_128_128",
-      "teamLogo256": "https://image1.challengermode.com/7faad2e8-2e45-46fe-e6a6-08da05c14296_256_256",
-      "member1": "UNTメ『Hydro』",
-      "member2": "UNTメ『Atrox』",
-      "member3": "UNTメ『SwaD』",
-      "member4": "H3MRO大JUANA",
-      "member5": "UNTメ『RoleX』",
-      "id": 15
+      "teamLogo": "assets/Logo/24.png",
+      "id": "15"
     },
     {
       "teamId": 25,
+      "teamName": "READY 2 CONQUER",
+      "teamTag": "R2C",
+      "member1": 0,
+      "member2": 0,
+      "member3": 0,
+      "member4": 0,
+      "member5": 0,
       "teamColor": "#76771D",
-      "teamName": "XPACE",
-      "teamTag": "xe",
-      "teamLogo": "assets/Logo/XPACE.png",
-      "teamLogo64": "https://image1.challengermode.com/59697093-c2a6-4357-909e-08d98fb66bca_64_64",
-      "teamLogo128": "https://image1.challengermode.com/59697093-c2a6-4357-909e-08d98fb66bca_128_128",
-      "teamLogo256": "https://image1.challengermode.com/59697093-c2a6-4357-909e-08d98fb66bca_256_256",
-      "member1": "xeEINSTEIN",
-      "member2": "xeCR4ZZGUY",
-      "member3": "xeATØMIC",
-      "member4": "xeZORRO",
-      "member5": "astraLIXN",
-      "id": 16
+      "teamLogo": "assets/Logo/25.png",
+      "id": "16"
     }
   ],
   "getteaminfo": [
@@ -295,107 +318,124 @@
       "teamId": 10,
       "teamName": "AAA",
       "teamLogo": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_64_64",
-      "teamTag": "XE"
+      "teamTag": "XE",
+      "id": "21b8"
     },
     {
       "teamId": 11,
       "teamName": "TRINITI GAMING",
       "teamLogo": "assets/Logo/TRINITI GAMING.png",
-      "teamTag": "TG"
+      "teamTag": "TG",
+      "id": "c2ae"
     },
     {
       "teamId": 12,
       "teamName": "2 RIVALS",
       "teamLogo": "assets/Logo/2 RIVALS.png",
-      "teamTag": "2RV"
+      "teamTag": "2RV",
+      "id": "fe30"
     },
     {
       "teamId": 13,
       "teamName": "SECRET ESPORTS",
       "teamLogo": "assets/Logo/SECRET ESPORTS.png",
-      "teamTag": "SE"
+      "teamTag": "SE",
+      "id": "ab8f"
     },
     {
       "teamId": 14,
       "teamName": "ROGUE ESPORTS",
       "teamLogo": "https://image1.challengermode.com/d1207d13-fa53-4885-96ee-08db67ff1763_64_64",
-      "teamTag": "ROGUE"
+      "teamTag": "ROGUE",
+      "id": "cd28"
     },
     {
       "teamId": 15,
       "teamName": "VAMPIRES ESPORTS",
       "teamLogo": "assets/Logo/VAMPIRES ESPORTS.png",
-      "teamTag": "VA"
+      "teamTag": "VA",
+      "id": "8023"
     },
     {
       "teamId": 16,
       "teamName": "BLACK CLOVER X",
       "teamLogo": "assets/Logo/BLACK CLOVER X.png",
-      "teamTag": "BC"
+      "teamTag": "BC",
+      "id": "b6ff"
     },
     {
       "teamId": 17,
       "teamName": "JACK DIGGER ESPORT",
       "teamLogo": "assets/Logo/JACK DIGGER ESPORT.png",
-      "teamTag": "JDE"
+      "teamTag": "JDE",
+      "id": "823e"
     },
     {
       "teamId": 18,
       "teamName": "SKILL PASSIONATES SKIP",
       "teamLogo": "assets/Logo/SKILL PASSIONATES SKIP.png",
-      "teamTag": "SKIP"
+      "teamTag": "SKIP",
+      "id": "3359"
     },
     {
       "teamId": 19,
       "teamName": "EXPIRED REGENERATED",
       "teamLogo": "assets/Logo/EXPIRED REGENERATED.png",
-      "teamTag": "EX"
+      "teamTag": "EX",
+      "id": "28ed"
     },
     {
       "teamId": 20,
       "teamName": "GOD ESPORTS",
       "teamLogo": "assets/Logo/GOD ESPORTS.png",
-      "teamTag": "GOD"
+      "teamTag": "GOD",
+      "id": "24f2"
     },
     {
       "teamId": 21,
       "teamName": "SMFXESPORTS",
       "teamLogo": "assets/Logo/SMFXESPORTS.png",
-      "teamTag": "SMF"
+      "teamTag": "SMF",
+      "id": "4c32"
     },
     {
       "teamId": 22,
       "teamName": "MRU ILLEGALS",
       "teamLogo": "assets/Logo/MRU ILLEGALS.png",
-      "teamTag": "MRU"
+      "teamTag": "MRU",
+      "id": "8604"
     },
     {
       "teamId": 23,
       "teamName": "PERSECUTERS",
       "teamLogo": "assets/Logo/PERSECUTERS.png",
-      "teamTag": "PST"
+      "teamTag": "PST",
+      "id": "e960"
     },
     {
       "teamId": 24,
       "teamName": "JACK DADA ESPORTS",
       "teamLogo": "assets/Logo/JACK DADA ESPORTS.png",
-      "teamTag": "JDEX"
+      "teamTag": "JDEX",
+      "id": "210b"
     },
     {
       "teamId": 25,
       "teamName": "MAU ESPORTS",
       "teamLogo": "assets/Logo/MAU ESPORTS.png",
-      "teamTag": "MAU"
+      "teamTag": "MAU",
+      "id": "34af"
     }
   ],
-  "getteaminfolist": [
+  "getteaminfolist" : [
     {
       "teamId": 23,
       "teamName": "PERSECUTERS",
       "isShowLogo": false,
       "logoPicUrl": "",
-      "killNum": 9,
-      "liveMemberNum": 0
+      "killNum": 8,
+      "liveMemberNum": 4,
+      "id": "1ff4"
     },
     {
       "teamId": 22,
@@ -403,15 +443,17 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 9,
-      "liveMemberNum": 0
+      "liveMemberNum": 4,
+      "id": "2f37"
     },
     {
       "teamId": 20,
       "teamName": "GOD ESPORTS",
       "isShowLogo": false,
       "logoPicUrl": "",
-      "killNum": 9,
-      "liveMemberNum": 0
+      "killNum": 8,
+      "liveMemberNum": 0,
+      "id": "c011"
     },
     {
       "teamId": 17,
@@ -419,7 +461,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 9,
-      "liveMemberNum": 4
+      "liveMemberNum": 0,
+      "id": "2cb6"
     },
     {
       "teamId": 14,
@@ -427,7 +470,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 9,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "da92"
     },
     {
       "teamId": 19,
@@ -435,7 +479,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 9,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "2c38"
     },
     {
       "teamId": 15,
@@ -443,7 +488,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 1,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "c3cd"
     },
     {
       "teamId": 24,
@@ -451,7 +497,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 5,
-      "liveMemberNum": 2
+      "liveMemberNum": 2,
+      "id": "710d"
     },
     {
       "teamId": 25,
@@ -459,7 +506,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 3,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "acaf"
     },
     {
       "teamId": 4,
@@ -467,7 +515,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 2,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "44c7"
     },
     {
       "teamId": 18,
@@ -475,7 +524,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 5,
-      "liveMemberNum": 3
+      "liveMemberNum": 3,
+      "id": "2392"
     },
     {
       "teamId": 16,
@@ -483,7 +533,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 1,
-      "liveMemberNum": 3
+      "liveMemberNum": 3,
+      "id": "136b"
     },
     {
       "teamId": 12,
@@ -491,7 +542,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 4,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "11e7"
     },
     {
       "teamId": 10,
@@ -499,7 +551,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 2,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "a5e4"
     },
     {
       "teamId": 11,
@@ -507,7 +560,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 3,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "f0fc"
     },
     {
       "teamId": 3,
@@ -515,7 +569,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 7,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "12d8"
     },
     {
       "teamId": 21,
@@ -523,7 +578,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 3,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "031c"
     },
     {
       "teamId": 7,
@@ -531,7 +587,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 1,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "d77d"
     },
     {
       "teamId": 5,
@@ -539,7 +596,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 0,
-      "liveMemberNum": 4
+      "liveMemberNum": 4,
+      "id": "f508"
     },
     {
       "teamId": 8,
@@ -547,7 +605,8 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 1,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "c5c1"
     },
     {
       "teamId": 13,
@@ -555,9 +614,12 @@
       "isShowLogo": false,
       "logoPicUrl": "",
       "killNum": 1,
-      "liveMemberNum": 0
+      "liveMemberNum": 0,
+      "id": "0d1d"
     }
   ],
+
+
   "gettotalplayerlist": [
     {
       "uId": 5298992401,
@@ -569,7 +631,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": true,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 279321,
         "y": 419163,
@@ -583,7 +645,7 @@
       "playerKey": 121050454,
       "gotAirDropNum": 0,
       "maxKillDistance": 80,
-      "damage": 270,
+      "damage": 1270,
       "killNumInVehicle": 0,
       "killNumByGrenade": 0,
       "rank": 1,
@@ -601,7 +663,8 @@
       "useSmokeGrenadeNum": 6,
       "useFragGrenadeNum": 3,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "7990"
     },
     {
       "uId": 586657084,
@@ -613,7 +676,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": true,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 277573,
         "y": 426193,
@@ -645,7 +708,8 @@
       "useSmokeGrenadeNum": 5,
       "useFragGrenadeNum": 5,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "f199"
     },
     {
       "uId": 5704761170,
@@ -657,7 +721,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": true,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 278603,
         "y": 424659,
@@ -689,7 +753,8 @@
       "useSmokeGrenadeNum": 2,
       "useFragGrenadeNum": 4,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "22e1"
     },
     {
       "uId": 5112965199,
@@ -701,7 +766,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 275297,
         "y": 428055,
@@ -733,7 +798,8 @@
       "useSmokeGrenadeNum": 3,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "499c"
     },
     {
       "uId": 5246392128,
@@ -745,7 +811,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 289964,
         "y": 397495,
@@ -777,7 +843,8 @@
       "useSmokeGrenadeNum": 2,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "551e"
     },
     {
       "uId": 566242257,
@@ -789,7 +856,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 295575,
         "y": 392245,
@@ -821,7 +888,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "f0bd"
     },
     {
       "uId": 5444572096,
@@ -833,7 +901,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 349740,
         "y": 394542,
@@ -865,7 +933,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "e7e2"
     },
     {
       "uId": 5721780796,
@@ -877,7 +946,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 350093,
         "y": 396231,
@@ -909,7 +978,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "ca89"
     },
     {
       "uId": 5685195692,
@@ -921,7 +991,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 227046,
         "y": 324598,
@@ -953,7 +1023,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "e22c"
     },
     {
       "uId": 5173127322,
@@ -965,7 +1036,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 228802,
         "y": 326632,
@@ -997,7 +1068,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "eaf3"
     },
     {
       "uId": 5114769219,
@@ -1009,7 +1081,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 221763,
         "y": 327645,
@@ -1041,7 +1113,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "7ddb"
     },
     {
       "uId": 5106929060,
@@ -1053,7 +1126,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 229281,
         "y": 326406,
@@ -1085,7 +1158,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "bc03"
     },
     {
       "uId": 5191999954,
@@ -1097,7 +1171,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 285268,
         "y": 399574,
@@ -1129,7 +1203,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "198c"
     },
     {
       "uId": 5845537251,
@@ -1141,7 +1216,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 268402,
         "y": 417203,
@@ -1173,7 +1248,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "cca3"
     },
     {
       "uId": 5410372881,
@@ -1185,7 +1261,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 285305,
         "y": 402577,
@@ -1217,7 +1293,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "aacf"
     },
     {
       "uId": 51218244861,
@@ -1229,7 +1306,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 288135,
         "y": 425914,
@@ -1261,7 +1338,8 @@
       "useSmokeGrenadeNum": 4,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "82a8"
     },
     {
       "uId": 5445249490,
@@ -1273,7 +1351,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 285280,
         "y": 422129,
@@ -1305,7 +1383,8 @@
       "useSmokeGrenadeNum": 2,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "1bb4"
     },
     {
       "uId": 5720661026,
@@ -1317,7 +1396,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 158005,
         "y": 608405,
@@ -1349,7 +1428,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "f0f8"
     },
     {
       "uId": 577403871,
@@ -1361,7 +1441,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 171954,
         "y": 630070,
@@ -1393,7 +1473,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "5fcd"
     },
     {
       "uId": 51554881909,
@@ -1405,7 +1486,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 286314,
         "y": 399845,
@@ -1437,7 +1518,8 @@
       "useSmokeGrenadeNum": 2,
       "useFragGrenadeNum": 3,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "a385"
     },
     {
       "uId": 51857093021,
@@ -1449,7 +1531,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 286047,
         "y": 399660,
@@ -1481,7 +1563,8 @@
       "useSmokeGrenadeNum": 3,
       "useFragGrenadeNum": 2,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "c827"
     },
     {
       "uId": 61614796168,
@@ -1493,7 +1576,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 285563,
         "y": 399312,
@@ -1525,7 +1608,8 @@
       "useSmokeGrenadeNum": 3,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "25b9"
     },
     {
       "uId": 51017887167,
@@ -1537,7 +1621,7 @@
       "teamName": "AAA",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 308602,
         "y": 338461,
@@ -1569,7 +1653,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "03fc"
     },
     {
       "uId": 5582071567,
@@ -1581,7 +1666,7 @@
       "teamName": "BIG BLACK CROCODILE",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 251746,
         "y": 401211,
@@ -1613,7 +1698,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "5866"
     },
     {
       "uId": 5727896088,
@@ -1625,7 +1711,7 @@
       "teamName": "BIG BLACK CROCODILE",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 251705,
         "y": 401289,
@@ -1657,7 +1743,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "5113"
     },
     {
       "uId": 5555350502,
@@ -1669,7 +1756,7 @@
       "teamName": "BIG BLACK CROCODILE",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 252070,
         "y": 401207,
@@ -1701,7 +1788,8 @@
       "useSmokeGrenadeNum": 1,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "21ee"
     },
     {
       "uId": 6821451656,
@@ -1713,7 +1801,7 @@
       "teamName": "BIG BLACK CROCODILE",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 387692,
         "y": 436771,
@@ -1745,7 +1833,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "100d"
     },
     {
       "uId": 51555649369,
@@ -1757,7 +1846,7 @@
       "teamName": "MAU ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 110545,
         "y": 453342,
@@ -1789,7 +1878,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "e571"
     },
     {
       "uId": 5157575816,
@@ -1801,7 +1891,7 @@
       "teamName": "MAU ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 111653,
         "y": 453333,
@@ -1833,7 +1923,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "300d"
     },
     {
       "uId": 5432847610,
@@ -1845,7 +1936,7 @@
       "teamName": "MAU ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 111062,
         "y": 453575,
@@ -1877,7 +1968,8 @@
       "useSmokeGrenadeNum": 1,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 1,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "8ea7"
     },
     {
       "uId": 5780083908,
@@ -1889,7 +1981,7 @@
       "teamName": "MAU ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 113097,
         "y": 452653,
@@ -1921,7 +2013,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "c6de"
     },
     {
       "uId": 577156266,
@@ -1933,7 +2026,7 @@
       "teamName": "CRY 4 ME ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 257890,
         "y": 424225,
@@ -1965,7 +2058,8 @@
       "useSmokeGrenadeNum": 6,
       "useFragGrenadeNum": 3,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "7ae3"
     },
     {
       "uId": 51311311043,
@@ -1977,7 +2071,7 @@
       "teamName": "CRY 4 ME ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 257755,
         "y": 424401,
@@ -2009,7 +2103,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 2,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "fbfb"
     },
     {
       "uId": 5483151596,
@@ -2021,7 +2116,7 @@
       "teamName": "CRY 4 ME ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 256828,
         "y": 424192,
@@ -2053,7 +2148,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 2,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "f076"
     },
     {
       "uId": 5223358372,
@@ -2065,7 +2161,7 @@
       "teamName": "CRY 4 ME ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 112042,
         "y": 450532,
@@ -2097,7 +2193,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "5bc3"
     },
     {
       "uId": 5654782986,
@@ -2109,7 +2206,7 @@
       "teamName": "MN1 ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 252279,
         "y": 400928,
@@ -2141,7 +2238,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "4f83"
     },
     {
       "uId": 5580139538,
@@ -2153,7 +2251,7 @@
       "teamName": "MN1 ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 251109,
         "y": 401293,
@@ -2185,7 +2283,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "fdd4"
     },
     {
       "uId": 5687770990,
@@ -2197,7 +2296,7 @@
       "teamName": "MN1 ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 181247,
         "y": 177792,
@@ -2229,7 +2328,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "cce0"
     },
     {
       "uId": 5436802106,
@@ -2241,7 +2341,7 @@
       "teamName": "OVERKILL",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 259219,
         "y": 404812,
@@ -2273,7 +2373,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "d1fd"
     },
     {
       "uId": 5435015594,
@@ -2285,7 +2386,7 @@
       "teamName": "OVERKILL",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 78877,
         "y": 481216,
@@ -2317,7 +2418,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "a6b1"
     },
     {
       "uId": 5627037677,
@@ -2361,7 +2463,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "0ffe"
     },
     {
       "uId": 5870720184,
@@ -2405,7 +2508,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 1,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "77b7"
     },
     {
       "uId": 5142664736,
@@ -2449,7 +2553,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "d86d"
     },
     {
       "uId": 5642626787,
@@ -2493,7 +2598,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 2,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "3ae1"
     },
     {
       "uId": 5669333756,
@@ -2537,7 +2643,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "7237"
     },
     {
       "uId": 5411159493,
@@ -2581,7 +2688,8 @@
       "useSmokeGrenadeNum": 4,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 1,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "c319"
     },
     {
       "uId": 51608306218,
@@ -2625,7 +2733,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "3fd8"
     },
     {
       "uId": 5789539655,
@@ -2669,7 +2778,8 @@
       "useSmokeGrenadeNum": 1,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "2ea1"
     },
     {
       "uId": 51490063806,
@@ -2713,7 +2823,8 @@
       "useSmokeGrenadeNum": 2,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "b9aa"
     },
     {
       "uId": 61545997155,
@@ -2757,7 +2868,8 @@
       "useSmokeGrenadeNum": 3,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 1,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "575c"
     },
     {
       "uId": 5761487521,
@@ -2801,7 +2913,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "88e7"
     },
     {
       "uId": 5308021254,
@@ -2845,7 +2958,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "e706"
     },
     {
       "uId": 5397264461,
@@ -2889,7 +3003,8 @@
       "useSmokeGrenadeNum": 6,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "db2e"
     },
     {
       "uId": 534662628,
@@ -2933,7 +3048,8 @@
       "useSmokeGrenadeNum": 2,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 2,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "c655"
     },
     {
       "uId": 51497787596,
@@ -2977,7 +3093,8 @@
       "useSmokeGrenadeNum": 2,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "e4fa"
     },
     {
       "uId": 5359873355,
@@ -3021,7 +3138,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "c9ac"
     },
     {
       "uId": 51219465823,
@@ -3065,7 +3183,8 @@
       "useSmokeGrenadeNum": 1,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 1
+      "useFlashGrenadeNum": 1,
+      "id": "7503"
     },
     {
       "uId": 5355730855,
@@ -3109,7 +3228,8 @@
       "useSmokeGrenadeNum": 4,
       "useFragGrenadeNum": 2,
       "useBurnGrenadeNum": 2,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "dfbc"
     },
     {
       "uId": 5762538224,
@@ -3153,7 +3273,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 1,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "f9ec"
     },
     {
       "uId": 551367904,
@@ -3197,7 +3318,8 @@
       "useSmokeGrenadeNum": 1,
       "useFragGrenadeNum": 3,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "f9b2"
     },
     {
       "uId": 51447754521,
@@ -3241,7 +3363,8 @@
       "useSmokeGrenadeNum": 7,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "1fcf"
     },
     {
       "uId": 5600861477,
@@ -3285,7 +3408,8 @@
       "useSmokeGrenadeNum": 2,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "c0c5"
     },
     {
       "uId": 5943254357,
@@ -3329,7 +3453,8 @@
       "useSmokeGrenadeNum": 3,
       "useFragGrenadeNum": 2,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "a709"
     },
     {
       "uId": 5647604063,
@@ -3373,7 +3498,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 4,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "27a1"
     },
     {
       "uId": 5263634366,
@@ -3417,7 +3543,8 @@
       "useSmokeGrenadeNum": 3,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 1,
-      "useFlashGrenadeNum": 1
+      "useFlashGrenadeNum": 1,
+      "id": "3cb2"
     },
     {
       "uId": 5241274710,
@@ -3461,7 +3588,8 @@
       "useSmokeGrenadeNum": 2,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "bc1f"
     },
     {
       "uId": 5735409023,
@@ -3505,7 +3633,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "d307"
     },
     {
       "uId": 5245332730,
@@ -3549,7 +3678,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 2,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "194f"
     },
     {
       "uId": 5381267702,
@@ -3593,7 +3723,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "703c"
     },
     {
       "uId": 51311905537,
@@ -3637,7 +3768,8 @@
       "useSmokeGrenadeNum": 3,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "5d12"
     },
     {
       "uId": 61230080392,
@@ -3649,7 +3781,7 @@
       "teamName": "BLACK CLOVER",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 204881,
         "y": 382356,
@@ -3681,7 +3813,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "040b"
     },
     {
       "uId": 5683139864,
@@ -3693,7 +3826,7 @@
       "teamName": "BLACK CLOVER",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 296711,
         "y": 487028,
@@ -3725,7 +3858,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "fcfd"
     },
     {
       "uId": 5370674359,
@@ -3737,15 +3871,15 @@
       "teamName": "TRAINED 2 FRAG",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 253624,
         "y": 390028,
         "z": 349
       },
-      "health": 0,
+      "health": 60,
       "healthMax": 100,
-      "liveState": 0,
+      "liveState": 4,
       "killNum": 2,
       "killNumBeforeDie": 2,
       "playerKey": 2412270878,
@@ -3769,7 +3903,8 @@
       "useSmokeGrenadeNum": 3,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "10f6"
     },
     {
       "uId": 5399513628,
@@ -3781,15 +3916,15 @@
       "teamName": "TRAINED 2 FRAG",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 256028,
         "y": 393812,
         "z": 501
       },
-      "health": 0,
+      "health": 50,
       "healthMax": 100,
-      "liveState": 4,
+      "liveState": 0,
       "killNum": 1,
       "killNumBeforeDie": 1,
       "playerKey": 1247367586,
@@ -3813,7 +3948,8 @@
       "useSmokeGrenadeNum": 3,
       "useFragGrenadeNum": 5,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "2dc0"
     },
     {
       "uId": 5132825625,
@@ -3825,13 +3961,13 @@
       "teamName": "TRAINED 2 FRAG",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 236865,
         "y": 377262,
         "z": 68
       },
-      "health": 0,
+      "health": 10,
       "healthMax": 100,
       "liveState": 0,
       "killNum": 1,
@@ -3857,7 +3993,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 3,
       "useBurnGrenadeNum": 1,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "0b54"
     },
     {
       "uId": 61400986649,
@@ -3869,15 +4006,15 @@
       "teamName": "TRAINED 2 FRAG",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 315894,
         "y": 331722,
         "z": 83
       },
-      "health": 0,
+      "health": 80,
       "healthMax": 100,
-      "liveState": 5,
+      "liveState": 0,
       "killNum": 1,
       "killNumBeforeDie": 1,
       "playerKey": 2137139148,
@@ -3901,7 +4038,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 1,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "026e"
     },
     {
       "uId": 5465722538,
@@ -3913,7 +4051,7 @@
       "teamName": "GOALDIGGERS ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 339408,
         "y": 392954,
@@ -3945,7 +4083,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 2,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "3749"
     },
     {
       "uId": 518828900,
@@ -3957,7 +4096,7 @@
       "teamName": "GOALDIGGERS ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 330492,
         "y": 383353,
@@ -3989,7 +4128,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "764e"
     },
     {
       "uId": 6766115579,
@@ -4001,7 +4141,7 @@
       "teamName": "GOALDIGGERS ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 338862,
         "y": 392737,
@@ -4033,7 +4173,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 4,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "5494"
     },
     {
       "uId": 51685038005,
@@ -4045,7 +4186,7 @@
       "teamName": "GOALDIGGERS ESPORTS",
       "character": "None",
       "isFiring": false,
-      "bHasDied": false,
+      "bHasDied": true,
       "location": {
         "x": 365831,
         "y": 398713,
@@ -4077,7 +4218,8 @@
       "useSmokeGrenadeNum": 0,
       "useFragGrenadeNum": 0,
       "useBurnGrenadeNum": 0,
-      "useFlashGrenadeNum": 0
+      "useFlashGrenadeNum": 0,
+      "id": "5107"
     }
   ]
 }

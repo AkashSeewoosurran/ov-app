@@ -75,16 +75,11 @@ export class ZoneProgressbarComponent implements OnInit, OnDestroy {
         console.log('circleInfo', circleInfo);
         this.circleInfo = circleInfo;
         if (circleInfo.circleInfo.CircleStatus == 0) {
-          console.log(
-            this.circleInfo.circleInfo.MaxTime -
-              this.circleInfo.circleInfo.Counter
-          );
           if (
             this.circleInfo.circleInfo.MaxTime -
               this.circleInfo.circleInfo.Counter ==
             15
           ) {
-            console.log('NEED TO START PROGRESS BAR');
             this.progressBoolean.next(true);
           }
         }

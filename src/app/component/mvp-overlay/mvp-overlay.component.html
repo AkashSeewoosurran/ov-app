@@ -1,0 +1,13 @@
+<div class="background">
+  <img class="player-photo" *ngIf="mvpStats" [src]="mvpStats.character"/>
+  <div class="player-details" *ngIf="mvpStats">
+    <div class="player">
+      <div *ngIf="mvpStats.teamLogo" class="image"><img [src]="mvpStats.teamLogo"/></div>
+      <span class="playerName">{{ mvpStats.playerName }}</span>
+    </div>
+    <div class="team">
+      <span class="teamName">{{ mvpStats.teamName }}</span>
+    </div>
+  </div>
+      <div echarts [options]="options" [merge]="mergeOptions" class="radar"></div>
+</div>

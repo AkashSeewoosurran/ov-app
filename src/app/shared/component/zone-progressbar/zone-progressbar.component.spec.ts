@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ZoneProgressbarComponent } from './zone-progressbar.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('ZoneProgressbarComponent', () => {
   let component: ZoneProgressbarComponent;
@@ -7,9 +9,12 @@ describe('ZoneProgressbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ ZoneProgressbarComponent ]
-    })
-    .compileComponents();
+      imports: [
+        ZoneProgressbarComponent,
+        HttpClientTestingModule,
+        NoopAnimationsModule,
+      ],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ZoneProgressbarComponent);
     component = fixture.componentInstance;

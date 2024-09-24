@@ -23,7 +23,7 @@ export class PlayerStatsComponent implements OnInit, AfterViewInit {
 
   MATCHES = MATCHES;
   localTeamInfo: LocalTeamInfo[] = [];
-  playerPath: string = 'D:/webdev/pubgm/pubgm-app/src/';
+  playerPath: string = 'C:/';
   casterDisabled: boolean = true;
 
   constructor(private service: PubgmDataService, private router: Router) {}

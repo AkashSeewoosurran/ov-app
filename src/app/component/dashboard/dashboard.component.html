@@ -5,22 +5,7 @@
 
 <mat-tab-group >
   <mat-tab label="OVERLAY CONTROLS">
-      <div class="overlay-container">
-        <mat-card>
-          <mat-card-header>
-            <mat-card-subtitle>Overlay Controls</mat-card-subtitle>
-          </mat-card-header>
-            <mat-card-content>
-                <div class="slide-container">
-                  <mat-list>
-                    <mat-list-item> show Top 5 players : <mat-slide-toggle [checked]="showTop5Kills" (change)="onToggleChange($event, 1 , 'showTop5Kills')"></mat-slide-toggle></mat-list-item>
-                    <mat-list-item> Survival Status : <mat-slide-toggle [checked]="showSurvivalStatus" (change)="onToggleChange($event, 2 , 'showSurvivalStatus')"></mat-slide-toggle></mat-list-item>
-                    <mat-list-item> Player Details : <mat-slide-toggle  [checked]="showPlayerDetails" (change)="onToggleChange($event, 3 , 'showPlayerDetails')"></mat-slide-toggle></mat-list-item>
-                  </mat-list>
-                </div>
-            </mat-card-content>
-        </mat-card>
-      </div>
+    <app-dashboard-controls></app-dashboard-controls>
   </mat-tab>
   <mat-tab label="MANAGE TEAMS">
     <div class="manage-container">
@@ -49,7 +34,7 @@
       
         <ng-container matColumnDef="teamName">
           <th mat-header-cell *matHeaderCellDef> Team Name </th>
-          <td mat-cell *matCellDef="let element"> {{element.teamName}} </td>
+          <td mat-cell *matCellDef="let element" [ngClass]=""> {{element.teamName}} </td>
         </ng-container>
      
         <ng-container matColumnDef="teamTag">
@@ -99,6 +84,12 @@
     </div>
 
   </mat-tab>
+  <mat-tab label="INTEGRAL STANDING">
+    <div class="container">
+      <app-total-match-standing ></app-total-match-standing>
+    </div>
+
+  </mat-tab>
   <mat-tab label="GAME STANDING">
     <app-game-standing></app-game-standing>
   </mat-tab>
@@ -108,6 +99,12 @@
   <mat-tab label="PLAYER MATCH STATS">
     <app-player-match-stats></app-player-match-stats>
   </mat-tab>
+  <mat-tab label="CUMUL MATCH STATS">
+    <app-cumul-team-stats></app-cumul-team-stats>
+  </mat-tab>
+  <!-- <mat-tab label="MAP">
+    <app-live-map></app-live-map>
+  </mat-tab> -->
 </mat-tab-group>
 
 
