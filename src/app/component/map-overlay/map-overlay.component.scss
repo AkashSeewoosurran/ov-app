@@ -29,8 +29,8 @@
                     height: 2vh;
                     width: 100%;
                     padding-left: 8px;
-                    font-family: 'neueExpBI';
-                    font-size: 18px;
+                    font-family: 'oswald-bold';
+                    font-size: 20px;
                     white-space: nowrap;
                     direction: ltr;
                 }
@@ -78,12 +78,11 @@
                     height: 2vh;
                     width: auto;
                     direction: rtl;
-                    font-family: 'neueExpBI';
-                    font-size: 18px;
+                    font-family: 'oswald-bold';
+                    font-size: 20px;
                     white-space: nowrap;
                     padding-right: 8px;
                 }
-
             }
 
             .logo-container {
@@ -128,7 +127,7 @@
                 text-align: center;
                 background-color: var(--primary-color);
                 color: var(--tertiary-color);
-                font-family: 'neueExpBold';
+                font-family: 'oswald-bold';
             }
         }
 

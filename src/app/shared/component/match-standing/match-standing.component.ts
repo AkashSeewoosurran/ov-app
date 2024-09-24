@@ -1,7 +1,17 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  inject,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PlayerInfoList } from '../../models/playerInfo.model';
-import { MATCHES, MatchStandingInfo } from '../../models/matchStanding.model';
+import {
+  MATCHES,
+  MatchStandingInfo,
+  OverallStandingInfo,
+} from '../../models/matchStanding.model';
 import { PubgmDataService } from '../../services/pubgm-data.service';
 import { LocalTeamInfo, TeamInfoList } from '../../models/teamInfo.model';
 import { AppCustomMaterialModule } from '../../modules/app-custom-material.module';
@@ -22,6 +32,7 @@ import {
 } from '@angular/forms';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { CollectionReference, Firestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-match-standing',
@@ -59,6 +70,8 @@ export class MatchStandingComponent
   MATCHES = MATCHES;
   selectedMatch: number = 1;
   casterDisabled: boolean = true;
+  private fireStore: Firestore = inject(Firestore);
+  tournamentCollection: CollectionReference;
 
   constructor(private service: PubgmDataService, private router: Router) {}
 
@@ -81,6 +94,9 @@ export class MatchStandingComponent
   }
 
   // ngAfterViewInit(): void {
+  //   if (this.router.url === '/dashboard') {
+  //     this.getDashBoardMatchStanding();
+  //   }
   //   this.getDashBoardMatchStanding();
   //   combineLatest([
   //     this.service.getLocalTeamInfo(),
@@ -123,7 +139,7 @@ export class MatchStandingComponent
           return this.service.getMatchStanding(this.selectedMatch);
         })
       )
-      .subscribe((res) => {
+      .subscribe((res: MatchStandingInfo[]) => {
         this.dataSource = new MatTableDataSource<MatchStandingInfo>(res);
       });
   }
@@ -239,11 +255,17 @@ export class MatchStandingComponent
   }
 
   canUpload() {
-    console.log('selectedMatch', this.selectedMatch);
-    if (this.matchLengths[this.selectedMatch - 1] > 0) {
-      return true;
-    } else {
-      return false;
+    // Check if this.matchLengths is defined and is an array
+    if (Array.isArray(this.matchLengths) && this.matchLengths.length > 0) {
+      // Check if this.selectedMatch is defined and within the range of matchLengths
+      if (
+        this.selectedMatch &&
+        this.selectedMatch > 0 &&
+        this.selectedMatch <= this.matchLengths.length
+      ) {
+        return this.matchLengths[this.selectedMatch - 1] > 0;
+      }
     }
+    return false;
   }
 }

@@ -1,5 +1,5 @@
 <div class="container-box" >
-  <table mat-table [dataSource]="dataSource" *ngIf="dataSource" [@slideInOutAnimationRight] = "showSurvivalStatus ? 'in' : 'out'">
+  <table mat-table [dataSource]="dataSource" *ngIf="dataSource" >
     <ng-container matColumnDef="logoPicUrl">
       <th mat-header-cell *matHeaderCellDef></th>
       <td mat-cell class="logo-container" *matCellDef="let element" [ngClass]="getRankCellClass(element)">
@@ -20,7 +20,7 @@
     </ng-container>
 
     <ng-container matColumnDef="killNum">
-      <th mat-header-cell *matHeaderCellDef>ELIMS</th>
+      <th class="testHeader" mat-header-cell *matHeaderCellDef>ELIMS</th>
       <td
         mat-cell
         class="killCell"
@@ -31,7 +31,7 @@
       </td>
     </ng-container>
 
-    <ng-container matColumnDef="liveMemberNum">
+    <!-- <ng-container matColumnDef="liveMemberNum">
       <th mat-header-cell class="aliveHeaderCell" *matHeaderCellDef><img class="header-logo" src="assets/HealthIcon2x.png"/></th>
       <td mat-cell class="aliveCell" *matCellDef="let element" [ngClass]="getRankCellClass(element)">
         <div class="alive-container">
@@ -48,7 +48,31 @@
           ></div>
         </div>
       </td>
-    </ng-container>
+    </ng-container> -->
+
+<ng-container matColumnDef="liveMemberNum">
+  <th mat-header-cell class="aliveHeaderCell" *matHeaderCellDef>
+    <img class="header-logo" src="assets/HealthIcon2x.png" />
+  </th>
+  <td
+    mat-cell
+    class="aliveCell"
+    *matCellDef="let element"
+    [ngClass]="getRankCellClass(element)"
+  >
+    <div class="alive-container">
+      <mat-progress-bar
+      *ngFor="let player of element.players"
+      class="progressBar"
+      [value]="player.health"
+      [color]="player.liveState === 4
+      ? 'warn'
+      : 'primary'
+  "
+    ></mat-progress-bar>
+    </div>
+  </td>
+</ng-container>
 
     <tr #test mat-header-row class="mat-header-row" *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row [ngClass]="{ imageDead: element.liveMemberNum < 1, aliveRowbackground: element.liveMemberNum >= 1 }"

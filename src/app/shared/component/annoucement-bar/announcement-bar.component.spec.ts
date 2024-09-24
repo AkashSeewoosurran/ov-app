@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AnnouncementBarComponent } from './announcement-bar.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('AnnouncementBarComponent', () => {
   let component: AnnouncementBarComponent;
@@ -7,9 +9,12 @@ describe('AnnouncementBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ AnnouncementBarComponent ]
-    })
-    .compileComponents();
+      imports: [
+        AnnouncementBarComponent,
+        HttpClientTestingModule,
+        NoopAnimationsModule,
+      ],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(AnnouncementBarComponent);
     component = fixture.componentInstance;

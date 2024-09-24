@@ -65,6 +65,11 @@
       <div class="container">
         <app-match-standing ></app-match-standing>
       </div>
+      <mat-tab label="INTEGRAL STANDING">
+        <div class="container">
+          <app-total-match-standing ></app-total-match-standing>
+        </div>
+      </mat-tab>
   
     </mat-tab>
     <mat-tab label="GAME STANDING">
@@ -76,4 +81,10 @@
     <mat-tab label="PLAYER MATCH STATS">
       <app-player-match-stats></app-player-match-stats>
     </mat-tab>
+    <mat-tab label="CUMUL MATCH STATS">
+      <app-cumul-team-stats></app-cumul-team-stats>
+    </mat-tab>
+    <!-- <mat-tab label="MAP">
+      <app-live-map></app-live-map>
+    </mat-tab> -->
   </mat-tab-group>

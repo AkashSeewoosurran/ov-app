@@ -1,7 +1,7 @@
 .background {
     width: 100%;
     height: 100vh;
-    background-image: url("../../../assets/MATCH\ STANDINGS.png");
+    background-image: url("../../../assets/matchSTANDINGSWB.png");
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -18,14 +18,14 @@
 
         .top8-container {
             width: 45%;
+            height: 660px;
 
             img {
                 width: auto;
-                height: 30px;
-                border: 2px solid white;
-                /* Change as needed */
-                border-radius: 10px;
-                /* Change as needed */
+                height: 40px;
+                border: 1px solid white;
+                border-radius: 1px;
+                margin-right: 8px;
             }
 
             .mat-cell,
@@ -47,36 +47,132 @@
 
 }
 
-.mat-column-placement,
-.mat-column-elims,
-.mat-column-total,
-.mat-column-rank {
-    text-align: center;
+// .top8-container {
+//     width: 45%;
+// }
+
+// .top8-container img {
+//     width: auto;
+//     height: 30px;
+//     border: 2px solid white;
+//     border-radius: 10px;
+// }
+
+// .top8-container .mat-cell,
+// .top8-container td {
+//     background-color: #171617;
+//     color: var(--tertiary-color);
+// }
+
+// .top8-container .mat-header-cell,
+// .top8-container th {
+//     background-color: var(--tertiary-color);
+//     color: var(--primary-color);
+//     font-family: 'neueCondBlackIt';
+//     font-size: 24px;
+// }
+
+// .top8-container .mat-row {
+//     margin-bottom: 20px;
+//     /* Adjust the value as needed */
+// }
+
+// .mat-column-placement,
+// .mat-column-elims,
+// .mat-column-total,
+// .mat-column-rank {
+//     text-align: center;
+// }
+
+// .mat-column-teamLogo {
+//     width: 5%;
+// }
+
+// .mat-column-teamName {
+//     width: 40%;
+//     font-family: 'neueCondBI';
+//     font-size: 32px;
+// }
+
+// .mat-column-placement,
+// .mat-column-elims {
+
+//     font-family: 'neueDemiBI';
+//     font-size: 26px;
+// }
+
+// .mat-column-total {
+//     font-family: 'neueDemiBI';
+//     font-size: 33.5px;
+// }
+
+// .mat-column-rank {
+//     font-family: 'neueCondDBI';
+//     font-size: 33px;
+// }
+
+.custom-row {
+    background: #090d40;
+    border-radius: 5px;
+    position: relative;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    overflow: hidden;
+    height: 60px;
+    margin-bottom: 21px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(90deg, #ff00ff, #00ffff);
+        border-radius: inherit;
+        z-index: -1;
+    }
 }
 
-.mat-column-teamLogo {
-    width: 5%;
+.rank {
+    font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.mat-column-teamName {
+.teamName {
+    font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    height: 100%;
     width: 40%;
-    font-family: 'neueCondBI';
-    font-size: 32px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-.mat-column-placement,
-.mat-column-elims {
-
-    font-family: 'neueDemiBI';
-    font-size: 26px;
-}
-
-.mat-column-total {
-    font-family: 'neueDemiBI';
-    font-size: 33.5px;
-}
-
-.mat-column-rank {
-    font-family: 'neueCondDBI';
-    font-size: 33px;
+.placementPoints,
+.killNum,
+.totalPoints {
+    font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    width: 16.7%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

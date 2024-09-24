@@ -8,6 +8,7 @@ import { environment } from 'src/environments/environment.development';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/modules/shared.module';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 const app_modules = [
   SharedModule,
@@ -23,6 +24,9 @@ const app_modules = [
     ...app_modules,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideFirestore(() => getFirestore()),
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts'),
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

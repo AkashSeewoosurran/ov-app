@@ -1,4 +1,4 @@
-<div class="background">
+<!-- <div class="background">
 
     <div class="table-container">
         <div class="top8-container" >
@@ -83,4 +83,75 @@
            </div>
     </div>
 
-</div>
+</div> -->
+
+<!-- <div class="results-container">
+  <div class="table">
+    <div class="table-column">
+      <div class="table-header">
+        <div class="table-row">
+          <div class="cell">#</div>
+          <div class="cell">Team Name</div>
+          <div class="cell">PLC</div>
+          <div class="cell">Elims</div>
+          <div class="cell">Total</div>
+        </div>
+      </div>
+      <div class="table-body">
+      
+        <div class="custom-row" *ngFor="let team of leftDataSource; let i = index">
+          <div class="cell">{{ i + 1 }}</div>
+          <div class="cell">{{ team['teamName'] }}</div>
+          <div class="cell">{{ team['placementPoints'] }}</div>
+          <div class="cell">{{ team['killNum'] }}</div>
+          <div class="cell">{{ team['totalPoints'] }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="table-column">
+      <div class="table-header">
+        <div class="table-row">
+          <div class="cell">#</div>
+          <div class="cell">Team Name</div>
+          <div class="cell">PLC</div>
+          <div class="cell">Elims</div>
+          <div class="cell">Total</div>
+        </div>
+      </div>
+      <div class="table-body">
+        <div class="table-row" *ngFor="let team of rightDataSource; let i = index">
+          <div class="cell">{{ i + 9 }}</div>
+          <div class="cell">{{ team['teamName'] }}</div>
+          <div class="cell">{{ team['placementPoints'] }}</div>
+          <div class="cell">{{ team['killNum'] }}</div>
+          <div class="cell">{{ team['totalPoints'] }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="background">
+  <div class="table-container">
+    <div class="top8-container" >
+      <div class="custom-row" *ngFor="let team of leftDataSource; let i = index">
+        <div class="rank">{{ i + 1 }}</div>
+          <div class="teamName"><img [src]="team['teamLogo']" (error)="handleImgError($event)" />{{ team['teamName'] }}</div>
+          <div class="placementPoints">{{ team['placementPoints'] }}</div>
+          <div class="killNum">{{ team['killNum'] }}</div>
+          <div class="totalPoints">{{ team['totalPoints'] }}</div>
+        </div>
+       </div>
+
+          <div class="top8-container" >
+            <div class="custom-row" *ngFor="let team of rightDataSource; let i = index">
+              <div class="rank">{{ i + 9 }}</div>
+              <div class="teamName"><img [src]="team['teamLogo']" (error)="handleImgError($event)" />{{ team['teamName'] }}</div>
+              <div class="placementPoints">{{ team['placementPoints'] }}</div>
+              <div class="killNum">{{ team['killNum'] }}</div>
+              <div class="totalPoints">{{ team['totalPoints'] }}</div>
+          </div>
+            </div>
+          </div>
+          </div>

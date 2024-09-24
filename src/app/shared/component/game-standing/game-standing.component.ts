@@ -81,7 +81,7 @@ export class GameStandingComponent implements OnInit {
         teams[i].rank = i + 1;
       }
 
-      console.log(teams);
+      // console.log(teams);
       this.dataSource = new MatTableDataSource(teams);
     });
   }

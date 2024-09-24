@@ -16,19 +16,39 @@ import {
   imports: [CommonModule],
   templateUrl: './announcement-bar.component.html',
   styleUrls: ['./announcement-bar.component.scss'],
+  // animations: [
+  //   trigger('slideInOutAnimationRight', [
+  //     state(
+  //       'in',
+  //       style({
+  //         transform: 'translateX(0)',
+  //         opacity: 1,
+  //       })
+  //     ),
+  //     state(
+  //       'out',
+  //       style({
+  //         transform: 'translateX(100%)',
+  //         opacity: 0,
+  //       })
+  //     ),
+  //     transition('in => out', animate('300ms ease-out')),
+  //     transition('out => in', animate('300ms ease-in')),
+  //   ]),
+  // ],
   animations: [
-    trigger('slideInOutAnimationRight', [
+    trigger('slideInOutAnimationTop', [
       state(
         'in',
         style({
-          transform: 'translateX(0)',
+          transform: 'translateY(0)',
           opacity: 1,
         })
       ),
       state(
         'out',
         style({
-          transform: 'translateX(100%)',
+          transform: 'translateY(-100%)',
           opacity: 0,
         })
       ),
@@ -82,6 +102,11 @@ export class AnnouncementBarComponent implements OnInit {
     useFragGrenadeNum: 0,
     useBurnGrenadeNum: 0,
     useFlashGrenadeNum: 0,
+    location: {
+      x: 0,
+      y: 0,
+      z: 0,
+    },
   };
 
   player: PlayerInfoList = this.emptyPlayer;
@@ -101,7 +126,7 @@ export class AnnouncementBarComponent implements OnInit {
       if (player.killNum === 1 && !this.killNumAnnouncementMade) {
         this.makeAnnouncement(player);
         this.killNumAnnouncementMade = true;
-        this.announcementMessage = 'First Blood';
+        this.announcementMessage = '1st Vehicle elim';
         this.slideAnnouncement = true;
       }
       if (
@@ -110,7 +135,7 @@ export class AnnouncementBarComponent implements OnInit {
       ) {
         this.makeAnnouncement(player);
         this.killNumByGrenadeAnnouncementMade = true;
-        this.announcementMessage = 'First Grenade Kill';
+        this.announcementMessage = '1st Grenade Elim';
         this.slideAnnouncement = true;
       }
       if (
@@ -119,7 +144,7 @@ export class AnnouncementBarComponent implements OnInit {
       ) {
         this.makeAnnouncement(player);
         this.killNumInVehicleAnnouncementMade = true;
-        this.announcementMessage = 'First Vehicle Kill';
+        this.announcementMessage = '1st Vehicle Elim';
         this.slideAnnouncement = true;
       }
     }

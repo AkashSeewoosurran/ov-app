@@ -1,4 +1,4 @@
-<div class="container" [@slideUpDown] = "top5boolean ? 'up' : 'down'">
+<div class="container" [@slideUpDown]="top5boolean ? 'up' : 'down'">
     <div class="top5-team">
             <div class="team-container" *ngFor="let teams of lstTop5Teams; trackBy: trackByFn" [@fadeOut]>
                 <div class="team-section" [ngClass]="getRankCellClass(teams , 'team-section')">
@@ -6,10 +6,41 @@
                     <div class="team-name">{{teams.teamTag}}</div>
                 </div>
                 <div class="player-section" [ngClass]="getRankCellClass(teams, 'player-section')">
-                    <div class="player" *ngFor="let player of teams.players"             
-                    [style.background-color]=" player.liveState === 5 ? 'grey'
-                      : player.liveState === 4 ? '#e42236' : '#2a5bd8'"></div>
+                    <div class="aliveCell" [ngClass]="getRankCellClass(teams , 'player-section-section')">
+                          <div class="alive-container">
+                            <mat-progress-bar
+                            *ngFor="let player of teams.players"
+                            class="progressBar"
+                            [value]="player.health"
+                            [color]="player.liveState === 4 
+                            ? 'warn'
+                            : 'primary'
+                        "
+                          ></mat-progress-bar>
+                          </div>
                 </div>
             </div>
     </div>
 </div>
+
+<!-- <div class="container" [@slideUpDown]="top5boolean ? 'up' : 'down'">
+    <div class="top5-team">
+        <div class="team-container" *ngFor="let teams of lstTop5Teams; trackBy: trackByFn" [@fadeOut]>
+            <div class="team-section" [ngClass]="getRankCellClass(teams, 'team-section')">
+                <img class="team-logo" [src]="teams.logoPicUrl">
+                <div class="team-name">{{teams.teamTag}}</div>
+            </div>
+            <div class="player-section" [ngClass]="getRankCellClass(teams, 'player-section')">
+                <div class="player" *ngFor="let player of teams.players"
+                    [style.background-color]=" player.liveState === 5 ? 'grey' : player.liveState === 4 ? '#e42236' : '#2a5bd8'">
+                </div>
+            </div>
+        </div>
+
+        <div class="utility-container">
+            <div class="utility-section" *ngFor="let item of [1, 2, 3, 4, 5]"></div>
+        </div>
+    </div>
+</div> -->
+
+

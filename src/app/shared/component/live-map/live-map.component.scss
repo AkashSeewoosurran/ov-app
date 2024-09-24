@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2px;
+    /* Adjust the gap between the map and table */
+}
+
+.map-container {
+    /* Adjust the width ratio as needed */
+    position: relative;
+    overflow: hidden;
+    /* Hide overflow if map size exceeds container */
+}
+
+.table-container {
+    /* Adjust the width ratio as needed */
+    overflow-x: auto;
+    /* Add horizontal scroll if table is too wide */
+    width: 25%;
+}
+
+.spectate-container {
+    position: absolute;
+    top: 0;
+    /* Aligns it to the top */
+    left: 50%;
+    /* Aligns the left edge of the container to the center */
+    transform: translateX(-50%);
+    /* Moves it back to truly center it */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Optional: background for better visibility */
+    color: white;
+    /* Optional: text color */
+    padding: 10px;
+    /* Optional: padding inside the container */
+    border-radius: 5px;
+    /* Optional: rounded corners */
+    z-index: 1000;
+    /* Optional: ensures it stays on top */
+    text-align: center;
+    /* Centers text inside the container */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+
+
+
+.player-marker {
+    position: absolute;
+    background-color: #000000b3;
+    /* Semi-transparent black background */
+    color: white;
+    padding: 2px 5px;
+    /* Padding around the text */
+    border-radius: 4px;
+    /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    /* Minimum width to make it a bit rectangular */
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid white;
+    /* White border */
+}
+
+.player-dead {
+    background-color: rgba(255, 0, 0, 0.7);
+    /* Semi-transparent grey background */
+    color: lightgrey;
+    /* Grey text to indicate the player is dead */
+    border: 1px solid lightgrey;
+    /* Light grey border */
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+
+.plane-path {
+    position: absolute;
+    background-color: yellow;
+    transform-origin: left center;
+}
+
+.highlight-red {
+    background-color: red;
+    color: white;
+    /* Optional: Make the text color white for better readability */
+}
+
+.highlight-yellow {
+    background-color: yellow;
+    color: black;
+    /* Optional: Make the text color white for better readability */
+}
+
+.highlight-green {
+    background-color: green;
+    color: black;
+    /* Optional: Make the text color white for better readability */
+}

@@ -34,7 +34,7 @@ export class SharedService {
           teamName: player.teamName,
           uId: player.uId,
           rank: player.rank,
-          isFiring: player.isFiring,
+          health: player.health,
           liveState: player.liveState,
           isOutsideBlueCircle: player.isOutsideBlueCircle,
         };
@@ -42,7 +42,7 @@ export class SharedService {
           team.players.push(playerStatus);
         }
       });
-      team.players = team.players.slice(0, 5);
+      team.players = team.players.slice(0, 4);
     });
     this.updateTeamInfoList(teamInfoList.slice(0, 16));
     return teamInfoList;

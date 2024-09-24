@@ -9,7 +9,7 @@ export interface PlayerInfoList {
   character: string;
   isFiring: boolean;
   bHasDied: boolean;
-  location?: Location;
+  location: Location;
   health: number;
   healthMax: number;
   liveState: number;
@@ -48,7 +48,7 @@ export interface PlayerStatus {
   teamName: string;
   playerName: string;
   isOutsideBlueCircle: boolean;
-  isFiring: boolean;
+  health: number;
   liveState: number;
   rank: number;
 }
@@ -81,4 +81,10 @@ export interface PlayerMatchInfo {
   knockouts: number;
   killNum: number;
   rank: number;
+}
+
+export interface Location {
+  x: number;
+  y: number;
+  z: number;
 }

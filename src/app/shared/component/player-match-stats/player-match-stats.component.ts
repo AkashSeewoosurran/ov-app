@@ -43,7 +43,6 @@ export class PlayerMatchStatsComponent implements OnInit {
   displayedColumns: string[] = [
     'rank',
     'playerName',
-    'teamLogo',
     'killNum',
     'damage',
     'assists',
@@ -81,7 +80,6 @@ export class PlayerMatchStatsComponent implements OnInit {
   getPlayerMatchStats() {
     this.service.getPlayerInfoList().subscribe({
       next: (data) => {
-        console.log(data);
         this.playerInfoList = data;
         this.playerStatsLenght = this.playerInfoList.length;
       },
@@ -112,9 +110,7 @@ export class PlayerMatchStatsComponent implements OnInit {
 
     forkJoin(observables).subscribe({
       next: (data) => {
-        console.log(data);
         this.playerStatsLengths = data.map((stats) => stats.length);
-        console.log(this.playerStatsLengths);
       },
       error: (error) => console.error(error),
     });
@@ -124,7 +120,6 @@ export class PlayerMatchStatsComponent implements OnInit {
     if (matchId) {
       this.service.getPlayerMatchStats(matchId).subscribe({
         next: (res) => {
-          console.log(res);
           this.dataSource = new MatTableDataSource<PlayerInfoList>(res);
         },
         complete: () => {

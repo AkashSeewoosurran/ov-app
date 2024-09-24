@@ -12,6 +12,10 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatChipsModule } from '@angular/material/chips';
 // Import other Angular Material modules here
 
 const materialModules = [
@@ -28,6 +32,10 @@ const materialModules = [
   MatBadgeModule,
   MatPaginatorModule,
   MatSortModule,
+  MatSnackBarModule,
+  FormsModule, // Add FormsModule here
+  MatFormFieldModule, // Add MatFormFieldModule here
+  MatChipsModule,
 ];
 
 @NgModule({

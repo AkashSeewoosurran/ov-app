@@ -1,0 +1,132 @@
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../assets/mvp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .player-details {
+        width: 610px;
+        height: 134px;
+        position: absolute;
+        background-image: url("../../../assets/playerName.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 15.26%; // Calculated from x: 293px
+        bottom: 15.69%; // Calculated from y: 727px
+        background-size: contain;
+        background-repeat: no-repeat;
+
+
+    }
+}
+
+img {
+    height: 64px;
+    width: 64px;
+}
+
+.image {
+    width: auto;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 1px;
+    margin-left: 48px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerName {
+    width: 100%;
+    height: 100vh;
+    display: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+.team {
+
+    height: 34px;
+}
+
+//align the radat 
+.radar {
+    width: 80%;
+    height: 80vh;
+    position: absolute;
+    right: -15%;
+}
+
+.player-photo {
+    width: 448px;
+    height: 640px;
+    position: absolute;
+    bottom: 20%;
+    left: 18%;
+}
+
+.custom-row {
+    background: #090d40;
+    border-radius: 5px;
+    position: relative;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    overflow: hidden;
+    height: 60px;
+    width: 400px;
+    margin-bottom: 21px;
+    margin-top: 20px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(90deg, #ff00ff, #00ffff);
+        border-radius: inherit;
+        z-index: -1;
+    }
+}
+
+.playerName {
+    font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 32px;
+}
+
+.teamName {
+    font-family: "oswald-bold", Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 56px;
+}

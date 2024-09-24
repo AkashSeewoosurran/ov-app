@@ -1,5 +1,4 @@
-<div class="bar-container" 
-[@slideUpDown]="(progressBoolean | async) ? 'down' : 'up'"
+<div class="bar-container " [@slideUpDown]="(progressBoolean | async) ? 'down' : 'up'"
 >
     <div class="timer-container"><span class="timer-text"> {{this.timeLeft }}</span></div>
     <div class="close-container">
@@ -10,3 +9,6 @@
     </div>
 
 </div>
+
+
+<!-- [@slideUpDown]="(progressBoolean | async) ? 'down' : 'up'" -->

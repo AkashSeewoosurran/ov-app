@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="map-container">
+    <div style="position: relative; width: 1400px; height: 1400px;">
+      <img [src]="selectedMap" alt="Map"  />
+      <div *ngFor="let player of playerStatsList">
+        <div *ngIf="!(player.health == 0)"
+             [style.left.px]="getPlayerPosition(player.location.x)"
+             [style.top.px]="getPlayerPosition(player.location.y)"
+             [ngStyle]="{
+               'background-color': getTeamColor(player.teamId),
+             }"
+             class="player-marker">
+          <span>{{ player.teamId + " " + player.teamName.substring(0,4)}}</span>
+        </div>
+      </div>
+    
+
+      <div *ngFor="let circle of circleInfoData.gameGlobalInfo.CircleArray"
+     [style.left.px]="getCirclePositionX(circle.X, circle.Size)"
+     [style.top.px]="getCirclePositionY(circle.Y, circle.Size)"
+     [style.width.px]="getCircleDiameter(circle.Size)"
+     [style.height.px]="getCircleDiameter(circle.Size)"
+     class="circle">
+</div>
+
+      <!-- Plane Path -->
+      <div class="plane-path" 
+           [style.left.px]="getPositionX(circleInfoData.gameGlobalInfo.PlaneStartLocX)"
+           [style.top.px]="getPositionY(circleInfoData.gameGlobalInfo.PlaneStartLocY)"
+           [style.width.px]="getPlanePathLength(circleInfoData.gameGlobalInfo.PlaneStartLocX, circleInfoData.gameGlobalInfo.PlaneStartLocY, circleInfoData.gameGlobalInfo.PlaneStopLocX, circleInfoData.gameGlobalInfo.PlaneStopLocY)"
+           [style.height.px]="5"
+           [style.transform]="getPlanePathRotation(circleInfoData.gameGlobalInfo.PlaneStartLocX, circleInfoData.gameGlobalInfo.PlaneStartLocY, circleInfoData.gameGlobalInfo.PlaneStopLocX, circleInfoData.gameGlobalInfo.PlaneStopLocY)">
+      </div>
+    </div>
+  </div>
+
+  <div class="table-container">
+
+<mat-form-field>
+  <mat-label>Choose the Map</mat-label>
+  <mat-select [(ngModel)]="selectedMap">
+    <mat-option value="assets/erangel.jpg">ERANGEL</mat-option>
+    <mat-option value="assets/miramar.png">MIRAMAR</mat-option>
+    <mat-option value="assets/sanhok.png">SANHOK</mat-option>
+  </mat-select>
+</mat-form-field>
+    <table>
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Closest Team</th>
+          <th>Dist(M)</th>
+          <th>Is Firing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let team of closestTeams">
+          <td>{{ team.teamId }}</td>
+          <td>{{ team.closestTeamId }}</td>
+          <td [ngClass]="{'highlight-red': team.distanceKm < 100 , 'highlight-yellow' : team.distanceKm > 100 && team.distanceKm < 200 , 'highlight-green' : team.distanceKm >= 200}">
+            {{ team.distanceKm.toFixed(0) }}
+          </td>
+          <td [ngClass]="{'highlight-red': team.isFiring}">{{team.playerFiring}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="spectate-container">
+  <!-- <table>
+    <tbody>
+      <tr >
+        <td 
+        [ngClass]="{'highlight-red' : snackBarData.isFiring ? snackBarData.isFiring : true }"
+        >{{ "team " + snackBarData.teamId }}</td>
+        <td 
+        [ngClass]="{'highlight-red' : snackBarData.isOtherFiring}"
+        >{{ "team " + snackBarData.closestTeamId }}</td>
+      </tr>
+    </tbody>
+  </table> -->
+</div>

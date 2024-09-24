@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 import { MatTableDataSource } from '@angular/material/table';
-import { ExcelTeamInfo } from 'src/app/shared/models/teamInfo.model';
+import { ExcelTeamInfo, teamColor } from 'src/app/shared/models/teamInfo.model';
 import { PubgmDataService } from 'src/app/shared/services/pubgm-data.service';
 import { WorkBook, WorkSheet, read, utils } from 'xlsx';
 
@@ -53,11 +53,7 @@ export class DashboardComponent implements OnInit {
       toggleName: toggleName,
       toggleValue: toggleValue,
     };
-    this.service.updateDashboardData(toggleData, toggleId).subscribe({
-      next: (res) => {
-        console.log(res);
-      },
-    });
+    this.service.updateDashboardData(toggleData, toggleId).subscribe();
   }
 
   getExcelTeamInfoList() {
@@ -90,6 +86,11 @@ export class DashboardComponent implements OnInit {
       this.excelData = utils.sheet_to_json<ExcelTeamInfo>(ws);
 
       console.log(this.excelData);
+      this.excelData.forEach((team) => {
+        team.teamColor =
+          teamColor.find((t) => t.teamId === team.teamId)?.color ?? '';
+        team.teamLogo = 'assets/Logo/' + team.teamId + '.png';
+      });
     };
     reader.readAsBinaryString(target.files[0]);
   }
