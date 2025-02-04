@@ -10,12 +10,12 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The 
 
 change host to the pc ips (same for the npm run start)
 cd db
-json-server --watch dayplayerstats.json --port 3001 --host 192.168.100.236
+json-server --watch dayplayerstats.json --port 3001 --host 192.168.100.xxx
 cd db
-json-server --watch daystanding.json --port 3000 --host 192.168.100.236
+json-server --watch daystanding.json --port 3000 --host 192.168.100.xxx
 cd db
-json-server --watch db.json --port 3002 --host 192.168.100.236
+json-server --watch db.json --port 3002 --host 192.168.100.xxx
 
 ## Or use concurrently
 
-concurrently "json-server --watch db/dayplayerstats.json --port 3001 --host 192.168.100.236" "json-server --watch db/daystanding.json --port 3000 --host 192.168.100.236" "json-server --watch db/db.json --port 3002 --host 192.168.100.236"
+concurrently "json-server --watch db/dayplayerstats.json --port 3001 --host 192.168.100.xxx" "json-server --watch db/daystanding.json --port 3000 --host 192.168.100.xxx" "json-server --watch db/db.json --port 3002 --host 192.168.100.xxx"
